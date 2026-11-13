@@ -104,6 +104,29 @@ main { padding-block: 20px 48px; }
 .maps figcaption { font-size: 11px; color: var(--muted); text-align: center; letter-spacing: 0.06em; text-transform: uppercase; }
 .maprow { display: grid; gap: 6px; }
 .maprow + .maprow { margin-top: 12px; }
+.interim { margin: 10px 0 0; padding: 8px 12px; border: 1px solid var(--line); border-left: 4px solid var(--warn); border-radius: var(--r); background: var(--warn-soft); font-size: 13px; }
+.xc { border: 1px solid var(--line); border-radius: var(--r); margin-top: 8px; background: var(--panel); }
+.xc summary { cursor: pointer; padding: 8px 12px; display: flex; justify-content: space-between; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+.xc summary .xl { font-weight: 600; overflow-wrap: anywhere; }
+.xc .xn { color: var(--muted); font-size: 12px; white-space: nowrap; }
+.xbody { padding: 4px 12px 12px; display: grid; gap: 10px; }
+.xlist { max-height: 280px; overflow: auto; border-top: 1px solid var(--line); padding-top: 8px; font-size: 13px; }
+.xlist ul { margin: 0; padding-left: 18px; }
+.xlist li { margin: 3px 0; overflow-wrap: anywhere; }
+.xlist a { color: var(--accent); }
+.netpage { display: grid; gap: 18px; }
+.netintro { max-width: 78ch; }
+.netintro h2 { font-family: var(--f-display); font-weight: 600; font-size: 26px; margin: 0 0 8px; }
+.netintro p { margin: 0 0 8px; color: var(--muted); }
+.netbar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+.netbar .modes { margin: 0; }
+.netgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr)); gap: 16px; }
+.netcard { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 14px; display: grid; gap: 10px; min-width: 0; align-content: start; }
+.netcard h3 { font-family: var(--f-display); font-weight: 600; font-size: 20px; margin: 0; overflow-wrap: anywhere; }
+.netcard .sub { font-size: 12px; color: var(--muted); }
+.netcard .pills { display: flex; gap: 6px; flex-wrap: wrap; }
+.netcard .pill.plain { background: var(--soft); color: var(--ink); }
+.netcard .eyebrow { margin-bottom: 4px; }
 .kind { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--muted); border: 1px solid var(--line); border-radius: 3px; padding: 0 4px; margin-right: 6px; vertical-align: 1px; }
 .legend { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); flex-wrap: wrap; }
 .legend canvas { width: 140px; height: 10px; border-radius: 2px; }
@@ -163,12 +186,14 @@ a { color: var(--accent); }
   <div class="wrap">
     <div class="brand">
       <h1>Cognitive Construct Atlas</h1>
-      <p>Brain maps for 1,013 cognitive constructs and 135 tasks, learned from 27,905 within-task contrasts in 8,574
+      <p>Brain maps for 1,013 cognitive constructs, 219 tasks and 208 of their contrasts, learned from 27,905 within-task contrasts in 8,574
         neuroimaging papers, each tagged with the constructs it measures. An extension of the Cognitive Atlas, built on
         an author-topic model.</p>
+      <p class="interim" id="interim" hidden></p>
     </div>
     <nav class="tabs" aria-label="Views">
       <a href="#explore" id="tab-explore">Explore</a>
+      <a href="#networks" id="tab-networks">Networks</a>
       <a href="#methods" id="tab-methods">How it was built</a>
     </nav>
   </div>
@@ -196,6 +221,22 @@ a { color: var(--accent); }
         <div class="list" id="list" role="listbox" aria-label="Constructs and tasks"></div>
       </aside>
       <article class="sheet" id="sheet" aria-live="polite"></article>
+    </div>
+  </section>
+
+  <section id="view-networks" aria-label="Networks" hidden>
+    <div class="netpage">
+      <div class="netintro">
+        <h2 id="net-title">The networks</h2>
+        <p>The model explains every contrast's peaks as a mixture of brain networks. These are the networks of the most typical fit, largest first. Each construct's and task's map is a weighted sum of them.</p>
+        <p id="net-note"></p>
+      </div>
+      <div class="netbar"><span>Show</span>
+        <div class="modes" role="group" aria-label="Map shown">
+          <button id="net-p" type="button" aria-pressed="true">Probability</button>
+          <button id="net-e" type="button" aria-pressed="false">Enrichment over the average map</button>
+        </div></div>
+      <div class="netgrid" id="netgrid"><p class="empty">Loading networks…</p></div>
     </div>
   </section>
 
@@ -228,13 +269,16 @@ a { color: var(--accent); }
           <div><div class="v">211,055</div><div class="k">activation peaks</div></div>
           <div><div class="v">1,013</div><div class="k">constructs with maps</div></div>
           <div><div class="v">736</div><div class="k">linked to the Cognitive Atlas</div></div>
-          <div><div class="v">21</div><div class="k">networks (K)</div></div>
+          <div><div class="v">30</div><div class="k">networks (K)</div></div>
         </div>
 
         <p class="note">This version (November 13, 2026) tags constructs on each contrast rather than only on its task,
           keeps only comparisons of conditions within a task (no group or session comparisons), and gives deactivations
-          their own author. 100 fits and 50 bootstrap fits. Held-out log-likelihood per peak is −9.757, against −9.833
-          for the previous version's structure and −9.978 for the average map.</p>
+          their own author. It is built on the audited corpus: 593 papers were re-read where a contrast sat under a task
+          or construct its peaks did not resemble, and task labels, constructs and 19 kind-of links were corrected.
+          It uses 30 networks, chosen again on that corpus: held-out log-likelihood per peak is −9.751 at K = 30,
+          −9.757 at K = 21 and −9.978 for the average map.</p>
+        <p class="note" id="interim-methods" hidden></p>
 
         <h2 id="m-pipeline">Pipeline</h2>
         <div class="pipeline">
@@ -245,7 +289,7 @@ a { color: var(--accent); }
           <div class="step"><div class="no">5</div><div><h4>Contrast constructs</h4><p>Each contrast gets the constructs it measures, in its direction: a task-vs-baseline contrast takes its task's; a comparison of conditions takes what papers claim for it, else a language model's attribution, else a reading of the paper; a reversed contrast takes what its baseline side has; a deactivation has its own author. Contrasts whose label merges trial phases (cue and outcome, encoding and retrieval) were re-read one by one.</p></div></div>
           <div class="step"><div class="no">6</div><div><h4>Hierarchy</h4><p>Every construct is normalized onto the Cognitive Atlas; new ones are attached under the concept they are a kind of, and missing kind-of links were filled in (add-only). Part-of links are shown but do not pool.</p></div></div>
           <div class="step"><div class="no">7</div><div><h4>Author-topic model</h4><p>Contrasts are documents, peaks are tokens; a contrast's task and its constructs are among its authors, each drawing on K brain networks and shrunk toward its parents.</p></div></div>
-          <div class="step"><div class="no">8</div><div><h4>Release</h4><p>100 independent fits; each construct's map is averaged over them, with its reliability and an uncertainty band from 50 refits to resampled papers.</p></div></div>
+          <div class="step"><div class="no">8</div><div><h4>Release</h4><p>100 independent fits; each construct's map is averaged over them, with its reliability and an uncertainty band from 50 refits to resampled papers. Each task's normalized contrasts with at least 10 analyses from 5 papers also get a model map and MKDAChi2 maps of their own, with links to their analyses on Neurostore.</p></div></div>
         </div>
 
         <h2 id="m-claims">Claims and vocabulary</h2>
@@ -413,21 +457,57 @@ a { color: var(--accent); }
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const fmt = (n) => (n == null ? "—" : Number(n).toLocaleString("en-US"));
   let T = null, byId = new Map(), taskById = new Map(), taskKey = new Map(), selected = null, mode = "list";
+  let taxResolve; const taxReady = new Promise((r) => { taxResolve = r; });
   const thumbs = {}, thumbsLoading = {};
   const sheet = $("#sheet"), list = $("#list"), count = $("#count");
 
   // ---- views (hash routing: #explore, #methods, #c-<construct>, #t-<task>)
   function route() {
     const h = location.hash.replace(/^#/, "");
-    const methods = h === "methods";
-    $("#view-explore").hidden = methods; $("#view-methods").hidden = !methods;
-    ["explore", "methods"].forEach((v) => { const on = (v === "methods") === methods; const a = $(`#tab-${v}`); if (on) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
-    if (!methods && T) {
+    const methods = h === "methods", nets = h === "networks", view = methods ? "methods" : nets ? "networks" : "explore";
+    ["explore", "methods", "networks"].forEach((v) => { $(`#view-${v}`).hidden = v !== view; const a = $(`#tab-${v}`); if (v === view) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+    if (nets) showNetworks();
+    if (view === "explore" && T) {
       if (h.startsWith("c-") && byId.has(h.slice(2)) && h.slice(2) !== selected) select(h.slice(2), false);
       else if (h.startsWith("t-") && taskById.has(h) && h !== selected) select(h, false);
     }
   }
   window.addEventListener("hashchange", route);
+
+  // ---- networks view
+  let NET = null, netKind = "p", netLoading = null;
+  function paintNetworks() {
+    loadThumbs("networks").then((j) => {
+      document.querySelectorAll("#netgrid .netcard").forEach((card) => {
+        const v = j.maps[card.dataset.n], row = card.querySelector(".maprow"); if (!v || !row) return;
+        row.dataset.kind = netKind; paintRows(j, v, [row], { p: "p", e: "e" });
+      });
+    }).catch((err) => { console.error(err); });
+  }
+  function showNetworks() {
+    if (NET) return;
+    if (!netLoading) netLoading = Promise.all([fetch("networks.json").then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }), taxReady]).then(([j]) => {
+      NET = j;
+      $("#net-title").textContent = `The ${j.K} networks`;
+      $("#net-note").textContent = `From fit ${j.seed}, the most typical of ${j.fits} fits. "Recurs" is the share of the other fits that contain a matching network (map correlation of at least 0.8): low values mean the fits split that territory differently, so read the network with care. Names come from the closest of 16 reference networks; "unmatched" means none correlates at 0.5 or more.`;
+      const chip = (id, sh) => { const it = id.startsWith("t-") ? taskById.get(id) : byId.get(id); return it ? `<button class="chip" type="button" data-go="${esc(id)}">${esc(it.label)} <span class="mono" style="color:var(--muted)">${Math.round(sh * 100)}%</span></button>` : ""; };
+      $("#netgrid").innerHTML = j.networks.map((n) => `<article class="netcard" data-n="${esc(n.id)}">
+          <div><h3>${esc(n.shared ? "Shared pattern" : n.name.replace(/^Unmatched network, peak .*/, "Unnamed network"))}</h3>
+            <div class="sub">${n.shared ? "The pattern most contrasts share; removed from construct and task maps." : n.match_r == null ? `No close reference network; strongest at (${n.peaks[0].join(", ")}).` : `Closest reference network, map correlation ${n.match_r.toFixed(2)}.`}</div></div>
+          <div class="pills"><span class="pill plain">${(n.size * 100).toFixed(1)}% of all peaks</span>
+            <span class="pill ${n.recurrence >= 0.8 ? "good" : n.recurrence >= 0.5 ? "warn" : "bad"}">recurs in ${Math.round(n.recurrence * 100)}% of fits</span></div>
+          <div class="maprow" data-kind="p"><div class="maps">${["Sagittal", "Coronal", "Axial"].map((v) => `<figure><canvas aria-label="${v.toLowerCase()} projection of the network"></canvas><figcaption>${v}</figcaption></figure>`).join("")}</div></div>
+          <div><div class="eyebrow">Constructs with the largest share of their map here</div><div class="chips">${n.constructs.slice(0, 8).map(([id, sh]) => chip(id, sh)).join("") || '<span class="empty">None.</span>'}</div></div>
+          <div><div class="eyebrow">Tasks</div><div class="chips">${n.tasks.slice(0, 6).map(([id, sh]) => chip(id, sh)).join("") || '<span class="empty">None.</span>'}</div></div>
+          <div><div class="eyebrow">Peaks (MNI mm)</div><div class="mono" style="font-size:12px;color:var(--muted)">${n.peaks.map((p) => `(${p.join(", ")})`).join("  ")}</div></div>
+        </article>`).join("");
+      paintNetworks();
+    }).catch((err) => { console.error(err); netLoading = null; $("#netgrid").innerHTML = `<p class="empty">The networks could not be loaded. Reload the page to try again.</p>`; });
+  }
+  [["p", "#net-p"], ["e", "#net-e"]].forEach(([k, id]) => $(id).addEventListener("click", () => {
+    netKind = k; $("#net-p").setAttribute("aria-pressed", String(k === "p")); $("#net-e").setAttribute("aria-pressed", String(k === "e")); if (NET) paintNetworks();
+  }));
+  $("#netgrid").addEventListener("click", (e) => { const b = e.target.closest("[data-go]"); if (b) { const id = b.dataset.go; location.hash = id.startsWith("t-") ? id : "c-" + id; window.scrollTo({ top: 0 }); } });
   document.querySelectorAll(".toc a").forEach((a) => a.addEventListener("click", (e) => {
     e.preventDefault(); const el = document.getElementById(a.dataset.to); if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   }));
@@ -595,7 +675,7 @@ a { color: var(--accent); }
       if (!v) { pbox.innerHTML = `<p class="empty">No contrasts with peaks for this ${kind === "tasks" ? "task" : "construct"}.</p>`; return; }
       const note = $("#pp-note"); if (note) note.textContent = `NiMARE's MKDAChi2 on its ${v.n.toLocaleString("en-US")} contrasts against all other contrasts (10 mm spheres), positive z where FDR q < 0.05. Compare with the model's maps above: where they disagree, the networks have reshaped the papers' pattern.`;
       paintRows(j, v, [...pbox.querySelectorAll(".maprow")], { pp: "p", pe: "e" }, { p: 0, e: 0 });
-    }).catch((err) => { console.error(err); const pbox = box.querySelector(".papers"); if (pbox) pbox.innerHTML = `<p class="empty">The MKDAChi2 maps could not be loaded. Reload the page to try again.</p>`; });
+    }).catch((err) => { console.error(err); const pbox = box.querySelector(".papers"); if (pbox) pbox.innerHTML = T.meta && T.meta.mkda_pending ? `<p class="empty">The MKDAChi2 maps for constructs and tasks are still being computed on the audited corpus for this interim build; they will appear at the next update. Contrast-level MKDAChi2 maps are already on each task's page.</p>` : `<p class="empty">The MKDAChi2 maps could not be loaded. Reload the page to try again.</p>`; });
   }
   function legend(id, stops) { const lg = $(id); if (!lg) return; const lc = lg.getContext("2d"); for (let x = 0; x < lg.width; x++) { lc.fillStyle = `rgb(${ramp(stops, x / (lg.width - 1))})`; lc.fillRect(x, 0, 1, lg.height); } }
   const mapsHTML = (what) => `
@@ -631,15 +711,56 @@ a { color: var(--accent); }
       : `<div class="relbox"><div class="top"><span class="eyebrow">Bootstrap band</span><span class="pill warn">running</span></div><p>Refits to resampled papers are still running; this band appears when they finish.</p></div>`;
     return `<div class="rel">
         <div class="relbox"><div class="top"><span class="eyebrow">Map reliability</span><span class="pill ${relClass(it.rel_p)}">${relWord(it.rel_p)} · ${it.rel_p?.toFixed(2) ?? "—"}</span></div>
-          <p>Mean correlation of ${what}'s probability map between 100 independent fits. Enrichment map: ${it.rel_e?.toFixed(2) ?? "—"}.</p></div>
+          <p>Mean correlation of ${what}'s probability map between ${T.meta.seeds} independent fits. Enrichment map: ${it.rel_e?.toFixed(2) ?? "—"}.</p></div>
         <div class="relbox"><div class="top"><span class="eyebrow">Seed band</span><span class="pill ${bandClass(it.band_seed)}">±${it.band_seed == null ? "—" : (it.band_seed / 2).toFixed(2)}</span></div>
           <p>Median width ${it.band_seed?.toFixed(2) ?? "—"} log2 units across fits (optimizer only); ${it.enriched_seed == null ? "—" : Math.round(it.enriched_seed * 100)}% of the shown region is enriched in at least 97.5% of fits.</p></div>
         ${boot}</div>`;
   };
   const netsHTML = (it) => `<div class="nets">${it.nets.map(([name, w, rec]) => `
           <div class="net"><span class="name">${esc(name.replace(/ \(\d\.\d\d\)$/, ""))}</span><span class="bar" aria-hidden="true"><i style="width:${Math.round(w * 100)}%"></i></span>
-          <span class="mono">${(w * 100).toFixed(0)}% <span class="pill ${rec >= 0.8 ? "good" : rec >= 0.5 ? "warn" : "bad"}" title="share of the 100 fits in which this network recurs">${rec == null ? "" : Math.round(rec * 100) + "%"}</span></span></div>`).join("")}</div>
+          <span class="mono">${(w * 100).toFixed(0)}% <span class="pill ${rec >= 0.8 ? "good" : rec >= 0.5 ? "warn" : "bad"}" title="share of the other fits in which this network recurs">${rec == null ? "" : Math.round(rec * 100) + "%"}</span></span></div>`).join("")}</div>
           <p class="empty" style="margin-top:6px">Share of the mixture in the most typical fit; the pill is how often the network recurs across fits.</p>`;
+  const xLegend = (label, lo = "z", hi = "10+") => `<div class="legend" style="justify-content:space-between"><span class="eyebrow">${label}</span>
+            <span style="display:flex;gap:8px;align-items:center">${lo} <canvas class="lgx" width="140" height="10" aria-hidden="true"></canvas> ${hi}</span></div>`;
+  const xViews = (what) => `<div class="maps">${["Sagittal", "Coronal", "Axial"].map((v) => `<figure><canvas aria-label="${v.toLowerCase()} ${what} projection"></canvas><figcaption>${v}</figcaption></figure>`).join("")}</div>`;
+  const contrastsHTML = (t) => {
+    const cm = t.contrast_maps || [], tot = t.contrasts_total || 0;
+    if (!cm.length) return `<div class="block"><h3>Contrasts</h3><p class="empty">${tot ? `None of this task's ${fmt(tot)} normalized contrasts has` : "No normalized contrast has"} at least 10 analyses from 5 papers, the minimum for a map of its own.</p></div>`;
+    return `<div class="block"><h3>Contrasts with their own maps</h3>
+      <p class="empty" style="margin:0 0 4px">NiMARE's Each has a model map and NiMARE's MKDAChi2 on its analyses against all other contrasts (the papers' peaks alone). ${cm.length} of this task's ${fmt(tot)} normalized contrasts have at least 10 analyses from 5 papers. Open one for its maps, its constructs and its analyses on Neurostore.</p>
+      ${cm.map((x) => `<details class="xc" data-x="${esc(x.id)}"><summary><span class="xl">${esc(x.label)}</span><span class="mono xn">${fmt(x.n)} analyses · ${fmt(x.papers)} papers</span></summary>
+        <div class="xbody">
+          ${x.concepts.some(([id]) => byId.has(id)) ? `<div><div class="eyebrow" style="margin-bottom:4px">Constructs on its analyses (share carrying each)</div><div class="chips">${x.concepts.map(([id, sh]) => { const c = byId.get(id); return c ? `<button class="chip" type="button" data-go="${esc(id)}">${esc(c.label)} <span class="mono" style="color:var(--muted)">${Math.round(sh * 100)}%</span></button>` : ""; }).join("")}</div></div>` : ""}
+          <div><div class="eyebrow" style="margin-bottom:4px">Model map${x.rel_p == null ? "" : ` · reliability ${x.rel_p.toFixed(2)} between ${T.meta.seeds} fits`}</div>
+            <p class="empty" style="margin:0 0 6px">The author-topic model's mixture for this contrast's analyses (their task and construct authors), as for a task's map. With few analyses it mostly shows what its task and constructs predict.</p>
+            <div class="maprow" data-kind="p">${xLegend("Probability: where its peaks fall", "30%", "max")}${xViews("probability")}</div>
+            <div class="maprow" data-kind="e">${xLegend("Enrichment over the average task", "1.4×", "8×")}${xViews("enrichment")}</div></div>
+          <div><div class="eyebrow" style="margin-bottom:4px">The papers' peaks, without the model (MKDAChi2)</div>
+            <div class="maprow" data-kind="pe">${xLegend("Association test: more likely than in other contrasts")}${xViews("association")}</div>
+            <div class="maprow" data-kind="pp">${xLegend("Uniformity test: consistent activation")}${xViews("uniformity")}</div></div>
+          <div class="xlist"><p class="empty">Loading analyses…</p></div>
+        </div></details>`).join("")}</div>`;
+  };
+  let xAnalyses = null;
+  const loadAnalyses = () => xAnalyses || (xAnalyses = fetch("contrast_analyses.json").then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).catch((e) => { xAnalyses = null; throw e; }));
+  function openContrast(d) {
+    if (d.dataset.done) return; d.dataset.done = "1";
+    const xid = d.dataset.x, id = selected;
+    d.querySelectorAll("canvas.lgx").forEach((lg) => { const lc = lg.getContext("2d"); for (let x = 0; x < lg.width; x++) { lc.fillStyle = `rgb(${ramp(/^p/.test(lg.closest(".maprow").dataset.kind) && lg.closest(".maprow").dataset.kind !== "pe" ? PRB : ENR, x / (lg.width - 1))})`; lc.fillRect(x, 0, 1, lg.height); } });
+    loadThumbs("mkda_contrasts").then((j) => {
+      if (selected !== id || !d.isConnected) return;
+      const v = j.maps[xid]; if (v) paintRows(j, v, [...d.querySelectorAll('.maprow[data-kind="pp"], .maprow[data-kind="pe"]')], { pp: "p", pe: "e" }, { p: 0, e: 0 });
+    }).catch((err) => { console.error(err); delete d.dataset.done; });
+    loadThumbs("contrasts").then((j) => {
+      if (selected !== id || !d.isConnected) return;
+      const v = j.maps[xid]; if (v) paintRows(j, v, [...d.querySelectorAll('.maprow[data-kind="p"], .maprow[data-kind="e"]')], { p: "p", e: "e" });
+    }).catch((err) => { console.error(err); delete d.dataset.done; });
+    loadAnalyses().then((A) => {
+      const box = d.querySelector(".xlist"); if (!box) return;
+      const rows = A[xid] || [];
+      box.innerHTML = rows.length ? `<div class="eyebrow" style="margin-bottom:4px">Its ${fmt(rows.length)} analyses, named as on Neurostore</div><ul>${rows.map(([a, p, n]) => `<li><a href="https://neurostore.org/api/analyses/${encodeURIComponent(a)}" target="_blank" rel="noopener">${esc(n || a)}</a> <span style="color:var(--muted)">·</span> <a href="https://neurostore.org/api/base-studies/${encodeURIComponent(p)}" target="_blank" rel="noopener">study</a></li>`).join("")}</ul>` : `<p class="empty">No analyses listed.</p>`;
+    }).catch((err) => { console.error(err); const box = d.querySelector(".xlist"); if (box) box.innerHTML = `<p class="empty">The analysis list could not be loaded. Reload the page to try again.</p>`; });
+  }
   const peaksHTML = (it) => it.peaks.length ? `<table class="peaks mono"><tr><th>x</th><th>y</th><th>z</th><th>log2</th></tr>${it.peaks.map((p) => `<tr><td>${p[0]}</td><td>${p[1]}</td><td>${p[2]}</td><td>${p[3].toFixed(2)}</td></tr>`).join("")}</table>` : `<p class="empty">None in the shown region.</p>`;
   const statsHTML = (cells) => `<div class="stats">${cells.map(([v, k]) => `<div class="stat"><div class="v">${v}</div><div class="k">${k}</div></div>`).join("")}</div>`;
   const chipC = (id) => { const c = byId.get(id); return c ? `<button class="chip" type="button" data-go="${esc(id)}">${esc(c.label)}</button>` : ""; };
@@ -703,10 +824,13 @@ a { color: var(--accent); }
         <div class="block"><h3>Constructs it measures</h3>${t.constructs.length ? `<div class="chips">${t.constructs.map(chipC).join("")}</div>` : `<p class="empty">None kept: no construct is claimed distinctively for this task in enough papers, so it sits under its family only.</p>`}</div>
         <div class="block"><h3>Networks it draws on</h3>${t.nets.length ? netsHTML(t) : `<p class="empty">—</p>`}</div>
       </div>
+      ${contrastsHTML(t)}
       <div class="block"><h3>Most enriched voxels (MNI mm)</h3>${peaksHTML(t)}</div>
       <p class="note">A task's map is the mixture of its own contrasts: its task author's share plus the constructs tagged on them. The constructs listed are those papers claim for the whole task; individual contrasts carry their own.</p>`;
   }
   sheet.addEventListener("click", (e) => { const b = e.target.closest("[data-go]"); if (b) { select(b.dataset.go); sheet.scrollIntoView({ block: "start", behavior: "smooth" }); render(); } });
+
+  sheet.addEventListener("toggle", (e) => { const d = e.target; if (d.matches && d.matches("details.xc") && d.open) openContrast(d); }, true);
 
   // ---- boot
   sheet.innerHTML = `<p class="empty">Loading constructs and tasks…</p>`;
@@ -714,10 +838,15 @@ a { color: var(--accent); }
   route();
   fetch("taxonomy.json").then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).then((j) => {
     T = j; T.constructs.forEach((c) => byId.set(c.id, c));
+    if (T.meta && T.meta.interim) {
+      const b = $("#interim"), m = $("#interim-methods");
+      if (b) { b.hidden = false; b.textContent = `Interim build: maps are averaged over ${T.meta.seeds} of the 100 fits at K = ${T.meta.K}; the remaining fits and the bootstrap bands are still running, and network names and recurrences may change. ${T.meta.mkda_pending ? "The contrast-level MKDAChi2 maps are final; those for constructs and tasks are still being computed." : "The MKDAChi2 maps (constructs, tasks and contrasts) do not depend on the fits and are final."}`; }
+      if (m) { m.hidden = false; m.textContent = `Interim build: ${T.meta.seeds} of 100 fits, no bootstrap fits yet. The sections "How many networks", "Stability" and "Limits" below still give the numbers of the previous K = 21 release and will be rewritten when the fits finish.`; }
+    }
     Object.entries(T.tasks).forEach(([k, t]) => { taskById.set(t.id, t); taskKey.set(t.id, k); });
     const h = location.hash.replace(/^#/, "");
     const start = h.startsWith("c-") && byId.has(h.slice(2)) ? h.slice(2) : (h.startsWith("t-") && taskById.has(h) ? h : "response-inhibition");
-    select(start, false); render(); route();
+    taxResolve(); select(start, false); render(); route();
   }).catch(() => { sheet.innerHTML = `<p class="empty">The construct data could not be loaded. Reload the page to try again.</p>`; });
 })();
 </script>
