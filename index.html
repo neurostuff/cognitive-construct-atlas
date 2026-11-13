@@ -114,6 +114,11 @@ main { padding-block: 20px 48px; }
 .xlist ul { margin: 0; padding-left: 18px; }
 .xlist li { margin: 3px 0; overflow-wrap: anywhere; }
 .xlist a { color: var(--accent); }
+.abox { max-height: 440px; }
+.astudy { margin: 0 0 10px; }
+.astudy > a { font-weight: 600; }
+.astudy ul { margin-top: 2px; }
+.afilter { width: 100%; }
 .netpage { display: grid; gap: 18px; }
 .netintro { max-width: 78ch; }
 .netintro h2 { font-family: var(--f-display); font-weight: 600; font-size: 26px; margin: 0 0 8px; }
@@ -741,6 +746,34 @@ a { color: var(--accent); }
           <div class="xlist"><p class="empty">Loading analyses…</p></div>
         </div></details>`).join("")}</div>`;
   };
+  const analysesHTML = (kind, it) => `<div class="block"><h3>Analyses used</h3>
+      <details class="xc alist" data-akind="${kind}" data-aid="${esc(it.id)}"><summary><span class="xl">${fmt(it.contrasts)} analyses from ${fmt(it.papers)} studies</span><span class="mono xn">names and links from Neurostore</span></summary>
+        <div class="xbody"><input class="search afilter" type="search" placeholder="Filter by study title or analysis name" aria-label="Filter analyses" autocomplete="off">
+          <div class="xlist abox"><p class="empty">Loading analyses…</p></div></div></details></div>`;
+  let allAnalyses = null;
+  const loadAll = () => allAnalyses || (allAnalyses = fetch("analyses.json").then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).catch((e) => { allAnalyses = null; throw e; }));
+  function openAnalyses(d) {
+    if (d.dataset.done) return; d.dataset.done = "1";
+    const isT = d.dataset.akind === "t";
+    loadAll().then((A) => {
+      const box = d.querySelector(".abox"), inp = d.querySelector(".afilter"); if (!box) return;
+      const groups = new Map();
+      ((isT ? A.tasks : A.constructs)[d.dataset.aid] || []).forEach((i) => { const a = A.analyses[i]; if (!groups.has(a[1])) groups.set(a[1], []); groups.get(a[1]).push(a); });
+      const list = [...groups.entries()].map(([si, as]) => ({ st: A.studies[si], as })).sort((x, y) => (x.st[1] || "~").localeCompare(y.st[1] || "~"));
+      let shown = 40;
+      const draw = () => {
+        const q = inp.value.trim().toLowerCase();
+        const f = q ? list.filter((g) => (g.st[1] || "").toLowerCase().includes(q) || g.as.some((a) => (a[2] || "").toLowerCase().includes(q))) : list;
+        box.innerHTML = `<div class="eyebrow" style="margin-bottom:6px">${fmt(f.reduce((n, g) => n + g.as.length, 0))} analyses in ${fmt(f.length)} studies${q ? " match" : ""}; each links to Neurostore</div>` +
+          f.slice(0, shown).map((g) => `<div class="astudy"><a href="https://neurostore.org/api/base-studies/${encodeURIComponent(g.st[0])}" target="_blank" rel="noopener">${esc(g.st[1] || g.st[0])}</a>${g.st[2] ? ` <span style="color:var(--muted)">(${esc(String(g.st[2]))})</span>` : ""}
+            <ul>${g.as.map((a) => `<li><a href="https://neurostore.org/api/analyses/${encodeURIComponent(a[0])}" target="_blank" rel="noopener">${esc(a[2] || a[0])}</a>${!isT && a[3] && taskById.get(a[3]) ? ` <span style="color:var(--muted)">· ${esc(taskById.get(a[3]).label)}</span>` : ""}</li>`).join("")}</ul></div>`).join("") +
+          (f.length > shown ? `<button class="chip" type="button" data-more>Show ${Math.min(40, f.length - shown)} more studies</button>` : "") + (f.length ? "" : `<p class="empty">No analysis matches.</p>`);
+      };
+      inp.addEventListener("input", () => { shown = 40; draw(); });
+      box.addEventListener("click", (e) => { if (e.target.closest("[data-more]")) { shown += 40; draw(); } });
+      draw();
+    }).catch((err) => { console.error(err); delete d.dataset.done; const box = d.querySelector(".abox"); if (box) box.innerHTML = `<p class="empty">The analysis list could not be loaded. Reload the page to try again.</p>`; });
+  }
   let xAnalyses = null;
   const loadAnalyses = () => xAnalyses || (xAnalyses = fetch("contrast_analyses.json").then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).catch((e) => { xAnalyses = null; throw e; }));
   function openContrast(d) {
@@ -801,6 +834,7 @@ a { color: var(--accent); }
           <p class="empty" style="margin-top:8px">${c.tasks.length ? `Papers claim it for the whole task in ${esc(c.tasks.map(taskName).join(", "))}; their task-vs-baseline contrasts carry it.` : "No task is claimed to measure it as a whole: it comes from specific contrasts."} The number is how many of the task's contrasts carry it (or a narrower construct); contrasts labelled only with a task family are not listed.</p></div>
         <div class="block"><h3>Networks it draws on</h3>${netsHTML(c)}</div>
       </div>
+      ${c.contrasts ? analysesHTML("c", c) : ""}
       ${(c.part_of || []).length || (c.has_parts || []).length ? `<div class="two">
         <div class="block"><h3>Part of (Cognitive Atlas)</h3>${(c.part_of || []).length ? `<div class="chips">${c.part_of.map(chipC).join("")}</div>` : `<p class="empty">None.</p>`}</div>
         <div class="block"><h3>Has parts (Cognitive Atlas)</h3>${(c.has_parts || []).length ? `<div class="chips">${c.has_parts.map(chipC).join("")}</div>` : `<p class="empty">None.</p>`}
@@ -825,12 +859,13 @@ a { color: var(--accent); }
         <div class="block"><h3>Networks it draws on</h3>${t.nets.length ? netsHTML(t) : `<p class="empty">—</p>`}</div>
       </div>
       ${contrastsHTML(t)}
+      ${t.has_map ? analysesHTML("t", t) : ""}
       <div class="block"><h3>Most enriched voxels (MNI mm)</h3>${peaksHTML(t)}</div>
       <p class="note">A task's map is the mixture of its own contrasts: its task author's share plus the constructs tagged on them. The constructs listed are those papers claim for the whole task; individual contrasts carry their own.</p>`;
   }
   sheet.addEventListener("click", (e) => { const b = e.target.closest("[data-go]"); if (b) { select(b.dataset.go); sheet.scrollIntoView({ block: "start", behavior: "smooth" }); render(); } });
 
-  sheet.addEventListener("toggle", (e) => { const d = e.target; if (d.matches && d.matches("details.xc") && d.open) openContrast(d); }, true);
+  sheet.addEventListener("toggle", (e) => { const d = e.target; if (d.matches && d.open) { if (d.matches("details.alist")) openAnalyses(d); else if (d.matches("details.xc")) openContrast(d); } }, true);
 
   // ---- boot
   sheet.innerHTML = `<p class="empty">Loading constructs and tasks…</p>`;
