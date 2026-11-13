@@ -1,0 +1,806 @@
+{
+ "32P9uHgrew5J|tct_categorization": {
+  "to": "tct_sound_categorization",
+  "name": "Sound / Voice Categorization Task",
+  "family": "perceptual_judgment",
+  "how": "inventory task, both readers"
+ },
+ "35bghXJ3QUYN|recall_and_recognition": {
+  "to": "new_executive_and_reasoning_tool_use_selection_task",
+  "name": "Tool Use Selection Task",
+  "family": "executive_and_reasoning",
+  "how": "provisional task"
+ },
+ "35bghXJ3QUYN|social_cognition_and_games": {
+  "to": "new_executive_and_reasoning_tool_use_selection_task",
+  "name": "Tool Use Selection Task",
+  "family": "executive_and_reasoning",
+  "how": "provisional task"
+ },
+ "37r49ustyirb|hedtsk_facial_emotion_recognition": {
+  "to": "hedtsk_n_back",
+  "name": "N-Back Task",
+  "family": "working_memory_span",
+  "how": "inventory task, both readers"
+ },
+ "3L3oxErXgeSj|hedtsk_pavlovian_fear_conditioning": {
+  "to": "tct_appetitive_conditioning",
+  "name": "Appetitive (Reward) Pavlovian Conditioning",
+  "family": "conditioning_and_reinforcement",
+  "how": "inventory task, both readers"
+ },
+ "3QHvzGntKYJG|working_memory_span": {
+  "to": "tct_bm_passive_viewing",
+  "name": "Passive Visual Viewing",
+  "family": "perceptual_judgment",
+  "how": "inventory task, both readers"
+ },
+ "3WddBvTANGra|hedtsk_facial_emotion_recognition": {
+  "to": "new_emotion_prosodic_emotion_recognition",
+  "name": "Prosodic Emotion Recognition",
+  "family": "emotion",
+  "how": "provisional task"
+ },
+ "3ZmLz48sP7HS|hedtsk_anti_saccade": {
+  "to": "new_motor_performance_memory_guided_saccade_task",
+  "name": "Memory-Guided Saccade Task",
+  "family": "motor_performance",
+  "how": "provisional task"
+ },
+ "3aoUTwu9Cwnt|motor_performance": {
+  "to": "new_executive_and_reasoning_beads_box_task_evidence_gathering",
+  "name": "Beads / Box Task (Evidence Gathering)",
+  "family": "executive_and_reasoning",
+  "how": "provisional task"
+ },
+ "3b2w3GGvdRVh|recall_and_recognition": {
+  "to": "tct_reading",
+  "name": "Reading Task",
+  "family": "language",
+  "how": "inventory task, both readers"
+ },
+ "3bBxUwQMxEPN|hedtsk_task_switching": {
+  "to": "hedtsk_prospective_memory",
+  "name": "Prospective Memory Task",
+  "family": "memory_control",
+  "how": "inventory task, both readers"
+ },
+ "3opmaSpWdk7r|tct_grasping": {
+  "to": "new_reward_and_value_choice_free_choice_face_selection_personal_preference_choice",
+  "name": "Free-Choice Face Selection (personal preference choice)",
+  "family": "reward_and_value_choice",
+  "how": "provisional task"
+ },
+ "3pCLtCbu5FvJ|hedtsk_facial_emotion_recognition": {
+  "to": "hedtsk_old_new_recognition_memory",
+  "name": "Old/New Recognition Memory Task",
+  "family": "recall_and_recognition",
+  "how": "inventory task, both readers"
+ },
+ "3q4DqXWi42ke|hedtsk_free_recall": {
+  "to": "new_spatial_navigation_visuospatial_perspective_taking_task",
+  "name": "Visuospatial Perspective Taking Task",
+  "family": "spatial_navigation",
+  "how": "provisional task"
+ },
+ "3vzNi7fxUr3t|recall_and_recognition": {
+  "to": "new_emotion_smile_authenticity_judgment",
+  "name": "Smile Authenticity Judgment",
+  "family": "emotion",
+  "how": "provisional task"
+ },
+ "3zsPDmL9KcCZ|hedtsk_semantic_priming": {
+  "to": "new_conflict_and_interference_masked_response_priming_task",
+  "name": "Masked Response Priming Task",
+  "family": "conflict_and_interference",
+  "how": "provisional task"
+ },
+ "43JvxTYAcSbz|hedtsk_false_belief": {
+  "to": "tct_reading",
+  "name": "Reading Task",
+  "family": "language",
+  "how": "inventory task, both readers"
+ },
+ "49wHfd6ezs58|working_memory_span": {
+  "to": "tct_visual_localizer",
+  "name": "Visual Category Localizer",
+  "family": "perceptual_judgment",
+  "how": "inventory task, both readers"
+ },
+ "4AAbcSheWThg|hedtsk_paired_associates_learning": {
+  "to": "new_executive_and_reasoning_dual_task_divided_attention_paradigm",
+  "name": "Dual-Task / Divided Attention Paradigm",
+  "family": "executive_and_reasoning",
+  "how": "provisional task"
+ },
+ "4JVwmMsng3Dg|working_memory_span": {
+  "to": "hedtsk_visual_search",
+  "name": "Visual Search Task",
+  "family": "visual_search_and_tracking",
+  "how": "inventory task, both readers"
+ },
+ "4WJbzSe5Xkpn|hedtsk_stroop_color_word": {
+  "to": "tct_semantic_judgment",
+  "name": "Semantic Judgment Task",
+  "family": "language",
+  "how": "inventory task, both readers"
+ },
+ "4XAMaeQAqhUj|hedtsk_old_new_recognition_memory": {
+  "to": "new_emotion_dynamic_emotional_expression_observation",
+  "name": "Dynamic Emotional Expression Observation",
+  "family": "emotion",
+  "how": "provisional task"
+ },
+ "4XMih9cnNKFP|hedtsk_free_recall": {
+  "to": "hedtsk_autobiographical_memory",
+  "name": "Autobiographical Memory Task",
+  "family": "recall_and_recognition",
+  "how": "inventory task, both readers"
+ },
+ "4cY7yrPFUWDX|tct_visual_localizer": {
+  "to": "hedtsk_emotion_regulation",
+  "name": "Emotion Regulation Task",
+  "family": "emotion",
+  "how": "inventory task, both readers"
+ },
+ "4cqLgTF8KSEP|tct_emotional_face_matching": {
+  "to": "tct_face_identity_matching",
+  "name": "Unfamiliar Face Identity Matching",
+  "family": "perceptual_judgment",
+  "how": "inventory task, both readers"
+ },
+ "4w8ogp63B2q8|emotion": {
+  "to": "new_perceptual_judgment_scene_identification_task",
+  "name": "Scene Identification Task",
+  "family": "perceptual_judgment",
+  "how": "provisional task"
+ },
+ "4zsuyhVAMwGp|oddball_and_vigilance": {
+  "to": "hedtsk_visual_search",
+  "name": "Visual Search Task",
+  "family": "visual_search_and_tracking",
+  "how": "inventory task, both readers"
+ },
+ "4zsuyhVAMwGp|hedtsk_facial_emotion_recognition": {
+  "to": "hedtsk_visual_search",
+  "name": "Visual Search Task",
+  "family": "visual_search_and_tracking",
+  "how": "inventory task, both readers"
+ },
+ "545Mx6UXoz3w|tct_categorization": {
+  "to": "tct_category_learning",
+  "name": "Category Learning Task",
+  "family": "conditioning_and_reinforcement",
+  "how": "inventory task, both readers"
+ },
+ "56hth4Z5Fwnn|conflict_and_interference": {
+  "to": "tct_audiovisual_integration",
+  "name": "Audiovisual / Multisensory Integration Task",
+  "family": "perceptual_judgment",
+  "how": "inventory task, both readers"
+ },
+ "5GoHfMhcaVzL|hedtsk_free_recall": {
+  "to": "hedtsk_source_memory",
+  "name": "Source Memory Task",
+  "family": "recall_and_recognition",
+  "how": "inventory task, both readers"
+ },
+ "5HTYHifSuMD9|spatial_navigation": {
+  "to": "new_perceptual_judgment_bistable_perception",
+  "name": "Bistable Perception",
+  "family": "perceptual_judgment",
+  "how": "provisional task"
+ },
+ "5S9hYqLEeWcV|hedtsk_finger_tapping": {
+  "to": "tct_auditory_discrimination",
+  "name": "Auditory Psychophysical Discrimination (pitch, duration, loudness)",
+  "family": "perceptual_judgment",
+  "how": "inventory task, both readers"
+ },
+ "5XhWnaxKGUhf|oddball_and_vigilance": {
+  "to": "new_executive_and_reasoning_instructed_stimulus_response_mapping_instruction_implementat",
+  "name": "Instructed Stimulus-Response Mapping (Instruction Implementation)",
+  "family": "executive_and_reasoning",
+  "how": "provisional task"
+ },
+ "5Xoz6wCCYxGX|hedtsk_old_new_recognition_memory": {
+  "to": "new_language_linguistic_prosody_recognition_task",
+  "name": "Linguistic Prosody Recognition Task",
+  "family": "language",
+  "how": "provisional task"
+ },
+ "5bPwMxRKUdyW|hedtsk_oddball": {
+  "to": "hedtsk_rapid_serial_visual_presentation",
+  "name": "Rapid Serial Visual Presentation Task",
+  "family": "oddball_and_vigilance",
+  "how": "inventory task, both readers"
+ },
+ "5dKuxcNGGqPt|tct_deductive_reasoning": {
+  "to": "new_emotion_subliminal_supraliminal_threat_stimulus_presentation",
+  "name": "Subliminal/Supraliminal Threat Stimulus Presentation",
+  "family": "emotion",
+  "how": "provisional task"
+ },
+ "5f9t3VbUYmJt|hedtsk_free_recall": {
+  "to": "hedtsk_pavlovian_fear_conditioning",
+  "name": "Pavlovian Fear Conditioning Task",
+  "family": "conditioning_and_reinforcement",
+  "how": "inventory task, both readers"
+ },
+ "5pjAxCiw9gtN|hedtsk_n_back": {
+  "to": "new_conditioning_and_reinforcement_cued_action_sequence_learning_motor_cognitive_task_sequences",
+  "name": "Cued Action Sequence Learning (motor / cognitive task sequences)",
+  "family": "conditioning_and_reinforcement",
+  "how": "provisional task"
+ },
+ "5pjAxCiw9gtN|tct_motor_execution": {
+  "to": "hedtsk_motor_sequence_learning",
+  "name": "Motor Sequence Learning Task",
+  "family": "motor_performance",
+  "how": "inventory task, both readers"
+ },
+ "5xGnd6LAZHnr|perceptual_judgment": {
+  "to": "tct_simple_choice_rt",
+  "name": "Simple/Choice Reaction Time Task",
+  "family": "motor_performance",
+  "how": "inventory task, both readers"
+ },
+ "5zC66UnKAJ2j|working_memory_span": {
+  "to": "new_social_cognition_and_games_bystander_emergency_observation",
+  "name": "Bystander Emergency Observation",
+  "family": "social_cognition_and_games",
+  "how": "provisional task"
+ },
+ "67uo2ocAJAPJ|hedtsk_artificial_grammar_learning": {
+  "to": "tct_creativity",
+  "name": "Divergent Thinking/Creativity Task",
+  "family": "executive_and_reasoning",
+  "how": "inventory task, both readers"
+ },
+ "69nW6zkh9yJN|hedtsk_pavlovian_fear_conditioning": {
+  "to": "new_conditioning_and_reinforcement_eyeblink_conditioning",
+  "name": "Eyeblink Conditioning",
+  "family": "conditioning_and_reinforcement",
+  "how": "provisional task"
+ },
+ "6A7EhEVFX9Bn|tct_saccade": {
+  "to": "hedtsk_motor_sequence_learning",
+  "name": "Motor Sequence Learning Task",
+  "family": "motor_performance",
+  "how": "inventory task, both readers"
+ },
+ "6BUS7BHQPJnA|hedtsk_lexical_decision": {
+  "to": "tct_speech_production",
+  "name": "Overt Speech Production Task",
+  "family": "language",
+  "how": "inventory task, both readers"
+ },
+ "6EvAk5F9Atzf|conditioning_and_reinforcement": {
+  "to": "new_language_morphological_inflection_task",
+  "name": "Morphological Inflection Task",
+  "family": "language",
+  "how": "provisional task"
+ },
+ "6H2KyyVtci4a|hedtsk_virtual_radial_arm_maze": {
+  "to": "tct_theory_of_mind",
+  "name": "Theory of Mind Task",
+  "family": "social_cognition_and_games",
+  "how": "inventory task, both readers"
+ },
+ "6NaNVEP8JE4V|hedtsk_old_new_recognition_memory": {
+  "to": "new_recall_and_recognition_visual_self_recognition_task",
+  "name": "Visual Self-Recognition Task",
+  "family": "recall_and_recognition",
+  "how": "provisional task"
+ },
+ "6RTakTsADoeT|working_memory_span": {
+  "to": "new_perceptual_judgment_visual_speech_recognition_lipreading_task",
+  "name": "Visual-Speech Recognition (Lipreading) Task",
+  "family": "perceptual_judgment",
+  "how": "provisional task"
+ },
+ "6RrLKx7K7EGA|hedtsk_virtual_radial_arm_maze": {
+  "to": "hedtsk_source_memory",
+  "name": "Source Memory Task",
+  "family": "recall_and_recognition",
+  "how": "inventory task, both readers"
+ },
+ "6V6rPUJ4QP9y|tct_naturalistic_viewing": {
+  "to": "hedtsk_emotion_regulation",
+  "name": "Emotion Regulation Task",
+  "family": "emotion",
+  "how": "inventory task, both readers"
+ },
+ "6Veyg7u6dAcc|hedtsk_continuous_performance": {
+  "to": "new_motor_performance_bimanual_coordination_task",
+  "name": "Bimanual Coordination Task",
+  "family": "motor_performance",
+  "how": "provisional task"
+ },
+ "6YaLyvCRxmAu|spatial_navigation": {
+  "to": "tct_theory_of_mind",
+  "name": "Theory of Mind Task",
+  "family": "social_cognition_and_games",
+  "how": "inventory task, both readers"
+ },
+ "6ZRqwrFyhjLp|conflict_and_interference": {
+  "to": "tct_approach_avoidance",
+  "name": "Approach-Avoidance Task",
+  "family": "emotion",
+  "how": "inventory task, both readers"
+ },
+ "6cdZzxMoL7yR|hedtsk_rapid_serial_visual_presentation": {
+  "to": "hedtsk_visual_masking",
+  "name": "Visual Masking Task",
+  "family": "perceptual_judgment",
+  "how": "inventory task, both readers"
+ },
+ "6exMuZeJ32Qi|oddball_and_vigilance": {
+  "to": "new_perceptual_judgment_sensory_attenuation_task_self_vs_externally_generated_stimul",
+  "name": "Sensory Attenuation Task (self- vs externally generated stimuli)",
+  "family": "perceptual_judgment",
+  "how": "provisional task"
+ },
+ "6gA7Ydee8mK7|hedtsk_virtual_radial_arm_maze": {
+  "to": "tct_virtual_navigation",
+  "name": "Virtual Navigation / Wayfinding",
+  "family": "spatial_navigation",
+  "how": "inventory task, both readers"
+ },
+ "6gxddxpBHC65|oddball_and_vigilance": {
+  "to": "tct_auditory_stimulation",
+  "name": "Passive Auditory Stimulation",
+  "family": "perceptual_judgment",
+  "how": "inventory task, both readers"
+ },
+ "6igbhYqsfLgC|hedtsk_verbal_fluency": {
+  "to": "hedtsk_n_back",
+  "name": "N-Back Task",
+  "family": "working_memory_span",
+  "how": "inventory task, both readers"
+ },
+ "6qw9PEdM5ywx|hedtsk_picture_naming": {
+  "to": "new_language_spoken_word_picture_matching",
+  "name": "Spoken Word-Picture Matching",
+  "family": "language",
+  "how": "provisional task"
+ },
+ "6tQ5yjmqvK4G|memory_control": {
+  "to": "tct_mental_imagery",
+  "name": "Mental Imagery Task",
+  "family": "spatial_navigation",
+  "how": "inventory task, both readers"
+ },
+ "6uLoLLGp2TVR|hedtsk_old_new_recognition_memory": {
+  "to": "hedtsk_delayed_match_to_sample",
+  "name": "Delayed Match-to-Sample Task",
+  "family": "working_memory_span",
+  "how": "inventory task, both readers"
+ },
+ "6urd6M4A7U4f|spatial_navigation": {
+  "to": "new_motor_performance_virtual_tool_use",
+  "name": "Virtual Tool Use",
+  "family": "motor_performance",
+  "how": "provisional task"
+ },
+ "75k9FQgYw6wi|conditioning_and_reinforcement": {
+  "to": "tct_reading",
+  "name": "Reading Task",
+  "family": "language",
+  "how": "inventory task, both readers"
+ },
+ "78mirfLbsk3i|hedtsk_n_back": {
+  "to": "tct_simple_choice_rt",
+  "name": "Simple/Choice Reaction Time Task",
+  "family": "motor_performance",
+  "how": "inventory task, both readers"
+ },
+ "78xRwgQURKpu|tct_perceptual_decision": {
+  "to": "tct_phonological_judgment",
+  "name": "Phonological/Rhyme Judgment Task",
+  "family": "language",
+  "how": "inventory task, both readers"
+ },
+ "7LUbfTSShNR6|hedtsk_virtual_morris_water_maze": {
+  "to": "hedtsk_reversal_learning",
+  "name": "Reversal Learning Task",
+  "family": "conditioning_and_reinforcement",
+  "how": "inventory task, both readers"
+ },
+ "7P9otc3iCvXp|tct_visual_localizer": {
+  "to": "tct_theory_of_mind",
+  "name": "Theory of Mind Task",
+  "family": "social_cognition_and_games",
+  "how": "inventory task, both readers"
+ },
+ "7PUJphPJUtXp|executive_and_reasoning": {
+  "to": "new_working_memory_span_pitch_memory_task",
+  "name": "Pitch Memory Task",
+  "family": "working_memory_span",
+  "how": "provisional task"
+ },
+ "7UqsQ7x6w2uG|hedtsk_picture_naming": {
+  "to": "new_executive_and_reasoning_tool_selection_task",
+  "name": "Tool Selection Task",
+  "family": "executive_and_reasoning",
+  "how": "provisional task"
+ },
+ "7V8RMZibRahT|tct_empathy_pain_observation": {
+  "to": "tct_mood_induction",
+  "name": "Mood / Emotion Induction",
+  "family": "emotion",
+  "how": "inventory task, both readers"
+ },
+ "7ZEAQDxiQtC3|hedtsk_false_belief": {
+  "to": "tct_theory_of_mind",
+  "name": "Theory of Mind Task",
+  "family": "social_cognition_and_games",
+  "how": "inventory task, both readers"
+ },
+ "7dZkLbhZsVby|tct_implicit_emotional_face": {
+  "to": "new_language_grammatical_gender_decision_task",
+  "name": "Grammatical Gender Decision Task",
+  "family": "language",
+  "how": "provisional task"
+ },
+ "7gd5QpmopsDF|hedtsk_paired_associates_learning": {
+  "to": "tct_writing",
+  "name": "Writing / Spelling Task",
+  "family": "language",
+  "how": "inventory task, both readers"
+ },
+ "7p6HmoiKDKs7|tct_perceptual_decision": {
+  "to": "tct_semantic_judgment",
+  "name": "Semantic Judgment Task",
+  "family": "language",
+  "how": "inventory task, both readers"
+ },
+ "7pnyFvHDAFrd|tct_reading": {
+  "to": "new_emotion_emotional_prosody_identification",
+  "name": "Emotional Prosody Identification",
+  "family": "emotion",
+  "how": "provisional task"
+ },
+ "7tDm9HJdf2ks|hedtsk_artificial_grammar_learning": {
+  "to": "tct_story_listening",
+  "name": "Narrative Listening",
+  "family": "language",
+  "how": "inventory task, both readers"
+ },
+ "83pUyi6vvnWX|motor_performance": {
+  "to": "new_perceptual_judgment_tactile_object_recognition",
+  "name": "Tactile Object Recognition",
+  "family": "perceptual_judgment",
+  "how": "provisional task"
+ },
+ "89yc7qMngeZn|hedtsk_delayed_match_to_sample": {
+  "to": "new_language_degraded_speech_perception_with_prior_information",
+  "name": "Degraded Speech Perception with Prior Information",
+  "family": "language",
+  "how": "provisional task"
+ },
+ "8C8yuWwHmmim|spatial_navigation": {
+  "to": "new_perceptual_judgment_letter_and_line_configuration_viewing",
+  "name": "Letter and Line-Configuration Viewing",
+  "family": "perceptual_judgment",
+  "how": "provisional task"
+ },
+ "8FaHfipmE8f8|tct_grasping": {
+  "to": "tct_action_observation",
+  "name": "Action Observation Task",
+  "family": "motor_performance",
+  "how": "inventory task, both readers"
+ },
+ "9GmH28YhudZv|hedtsk_instrumental_conditioning": {
+  "to": "new_language_incidental_word_viewing",
+  "name": "Incidental Word Viewing",
+  "family": "language",
+  "how": "provisional task"
+ },
+ "9m8n2EaEBUmH|hedtsk_free_recall": {
+  "to": "hedtsk_paired_associates_learning",
+  "name": "Paired Associates Learning Task",
+  "family": "recall_and_recognition",
+  "how": "inventory task, both readers"
+ },
+ "AeMrWSC5fiPR|hedtsk_sentence_comprehension": {
+  "to": "new_perceptual_judgment_musical_syntax_structure_violation_judgment",
+  "name": "Musical Syntax / Structure Violation Judgment",
+  "family": "perceptual_judgment",
+  "how": "provisional task"
+ },
+ "B8hvRDMaggtP|tct_episodic_encoding": {
+  "to": "new_executive_and_reasoning_novel_instruction_following_instructed_task_learning",
+  "name": "Novel Instruction Following (instructed task learning)",
+  "family": "executive_and_reasoning",
+  "how": "provisional task"
+ },
+ "BvrbUKHJLvMZ|hedtsk_oddball": {
+  "to": "tct_speech_production",
+  "name": "Overt Speech Production Task",
+  "family": "language",
+  "how": "inventory task, both readers"
+ },
+ "F8jRiQXXRuHn|executive_and_reasoning": {
+  "to": "new_visual_search_and_tracking_digit_letter_detection_task",
+  "name": "Digit/Letter Detection Task",
+  "family": "visual_search_and_tracking",
+  "how": "provisional task"
+ },
+ "H84PEmM65bbL|conditioning_and_reinforcement": {
+  "to": "new_motor_performance_rule_based_motor_sequence_generation",
+  "name": "Rule-Based Motor Sequence Generation",
+  "family": "motor_performance",
+  "how": "provisional task"
+ },
+ "HSzhc9TVcgxw|working_memory_span": {
+  "to": "new_perceptual_judgment_serial_prediction_task",
+  "name": "Serial Prediction Task",
+  "family": "perceptual_judgment",
+  "how": "provisional task"
+ },
+ "Ktbbm7DtgcXA|hedtsk_semantic_priming": {
+  "to": "new_conflict_and_interference_negative_priming_task",
+  "name": "Negative Priming Task",
+  "family": "conflict_and_interference",
+  "how": "provisional task"
+ },
+ "KtoqHE6XVnKH|hedtsk_verb_generation": {
+  "to": "tct_semantic_judgment",
+  "name": "Semantic Judgment Task",
+  "family": "language",
+  "how": "inventory task, both readers"
+ },
+ "LkyBP9h9uM95|perceptual_judgment": {
+  "to": "new_language_letter_and_phoneme_perception_and_production",
+  "name": "Letter and Phoneme Perception and Production",
+  "family": "language",
+  "how": "provisional task"
+ },
+ "LzhhPD6ZdcDM|recall_and_recognition": {
+  "to": "hedtsk_face_processing",
+  "name": "Face Processing Task",
+  "family": "perceptual_judgment",
+  "how": "inventory task, both readers"
+ },
+ "MaPaEos8iWfu|metacognition_and_interoception": {
+  "to": "tct_sensory_stimulation",
+  "name": "Passive Somatosensory/Chemosensory Stimulation",
+  "family": "perceptual_judgment",
+  "how": "inventory task, both readers"
+ },
+ "NNFTvgEmGeDo|hedtsk_facial_emotion_recognition": {
+  "to": "tct_implicit_emotional_face",
+  "name": "Implicit Emotional Face Processing (incidental judgment)",
+  "family": "emotion",
+  "how": "inventory task, both readers"
+ },
+ "NuEtwqz5ybp9|tct_categorization": {
+  "to": "hedtsk_task_switching",
+  "name": "Task Switching Task",
+  "family": "executive_and_reasoning",
+  "how": "inventory task, both readers"
+ },
+ "TdtDmmbrbQMj|tct_valence_judgment": {
+  "to": "hedtsk_sentence_comprehension",
+  "name": "Sentence Comprehension Task",
+  "family": "language",
+  "how": "inventory task, both readers"
+ },
+ "TujVZADLYhN9|hedtsk_motor_sequence_learning": {
+  "to": "new_social_cognition_and_games_social_action_sequencing_task",
+  "name": "Social Action Sequencing Task",
+  "family": "social_cognition_and_games",
+  "how": "provisional task"
+ },
+ "Uu9hKWdjHzmL|conflict_and_interference": {
+  "to": "new_emotion_emotional_word_listening",
+  "name": "Emotional Word Listening",
+  "family": "emotion",
+  "how": "provisional task"
+ },
+ "VZCN7Um7dLvp|tct_episodic_encoding": {
+  "to": "tct_food_choice",
+  "name": "Food Choice / Portion Selection Task",
+  "family": "reward_and_value_choice",
+  "how": "inventory task, both readers"
+ },
+ "WnSPLa9rzUsF|hedtsk_old_new_recognition_memory": {
+  "to": "new_working_memory_span_sternberg_item_recognition_task",
+  "name": "Sternberg Item Recognition Task",
+  "family": "working_memory_span",
+  "how": "provisional task"
+ },
+ "WzZtSJGMLe8P|hedtsk_rapid_serial_visual_presentation": {
+  "to": "new_recall_and_recognition_boundary_extension_task",
+  "name": "Boundary Extension Task",
+  "family": "recall_and_recognition",
+  "how": "provisional task"
+ },
+ "Y9coWVXLwzno|hedtsk_artificial_grammar_learning": {
+  "to": "tct_semantic_judgment",
+  "name": "Semantic Judgment Task",
+  "family": "language",
+  "how": "inventory task, both readers"
+ },
+ "ZCwhvtvXfBEU|hedtsk_instrumental_conditioning": {
+  "to": "hedtsk_face_processing",
+  "name": "Face Processing Task",
+  "family": "perceptual_judgment",
+  "how": "inventory task, both readers"
+ },
+ "ZhpTw6a8ERB7|hedtsk_virtual_morris_water_maze": {
+  "to": "hedtsk_reversal_learning",
+  "name": "Reversal Learning Task",
+  "family": "conditioning_and_reinforcement",
+  "how": "inventory task, both readers"
+ },
+ "ZoxR34BpVijt|hedtsk_biological_motion_perception": {
+  "to": "tct_pain_stimulation",
+  "name": "Pain Stimulation",
+  "family": "perceptual_judgment",
+  "how": "inventory task, both readers"
+ },
+ "b934E9fw5sAL|executive_and_reasoning": {
+  "to": "new_perceptual_judgment_auditory_distance_judgment",
+  "name": "Auditory Distance Judgment",
+  "family": "perceptual_judgment",
+  "how": "provisional task"
+ },
+ "bqzPWPnqFZ8V|hedtsk_old_new_recognition_memory": {
+  "to": "new_perceptual_judgment_musical_interval_identification",
+  "name": "Musical Interval Identification",
+  "family": "perceptual_judgment",
+  "how": "provisional task"
+ },
+ "cZ9pvFSsan94|hedtsk_paired_associates_learning": {
+  "to": "tct_episodic_encoding",
+  "name": "Episodic Encoding / Subsequent Memory Task",
+  "family": "recall_and_recognition",
+  "how": "inventory task, both readers"
+ },
+ "d5zVpp3LgnCE|tct_mental_arithmetic": {
+  "to": "tct_numerosity",
+  "name": "Numerosity / Magnitude Comparison",
+  "family": "executive_and_reasoning",
+  "how": "inventory task, both readers"
+ },
+ "e78KKXXVGRxa|tct_motor_execution": {
+  "to": "tct_action_observation",
+  "name": "Action Observation Task",
+  "family": "motor_performance",
+  "how": "inventory task, both readers"
+ },
+ "fmCRjZ3AE4QW|hedtsk_virtual_morris_water_maze": {
+  "to": "hedtsk_pavlovian_fear_conditioning",
+  "name": "Pavlovian Fear Conditioning Task",
+  "family": "conditioning_and_reinforcement",
+  "how": "inventory task, both readers"
+ },
+ "hCAoMX5grdWE|hedtsk_free_recall": {
+  "to": "hedtsk_paired_associates_learning",
+  "name": "Paired Associates Learning Task",
+  "family": "recall_and_recognition",
+  "how": "inventory task, both readers"
+ },
+ "hvzzLWwz93TZ|tct_card_guessing": {
+  "to": "tct_risky_decision",
+  "name": "Risky Decision-Making Task",
+  "family": "reward_and_value_choice",
+  "how": "inventory task, both readers"
+ },
+ "juSjikSquqhV|hedtsk_stroop_color_word": {
+  "to": "hedtsk_emotional_stroop",
+  "name": "Emotional Stroop Task",
+  "family": "conflict_and_interference",
+  "how": "inventory task, both readers"
+ },
+ "mc8ggteLP7dm|tct_implicit_emotional_face": {
+  "to": "hedtsk_face_processing",
+  "name": "Face Processing Task",
+  "family": "perceptual_judgment",
+  "how": "inventory task, both readers"
+ },
+ "meqWaNQg5toR|executive_and_reasoning": {
+  "to": "new_metacognition_and_interoception_introspective_attention_minimal_self_task",
+  "name": "Introspective Attention (Minimal Self) Task",
+  "family": "metacognition_and_interoception",
+  "how": "provisional task"
+ },
+ "nqdwmVyqyrQX|working_memory_span": {
+  "to": "new_perceptual_judgment_stimulus_sequence_property_monitoring_object_spatial_timing",
+  "name": "Stimulus Sequence Property Monitoring (object/spatial/timing)",
+  "family": "perceptual_judgment",
+  "how": "provisional task"
+ },
+ "o2xdrc7gpWf7|hedtsk_free_recall": {
+  "to": "tct_fear_extinction",
+  "name": "Fear Extinction Task",
+  "family": "conditioning_and_reinforcement",
+  "how": "inventory task, both readers"
+ },
+ "oM8t6HCbEvqr|hedtsk_autobiographical_memory": {
+  "to": "hedtsk_emotion_regulation",
+  "name": "Emotion Regulation Task",
+  "family": "emotion",
+  "how": "inventory task, both readers"
+ },
+ "oh2sByXSTTsL|tct_motion_perception": {
+  "to": "new_language_tool_knowledge_judgment_task",
+  "name": "Tool Knowledge Judgment Task",
+  "family": "language",
+  "how": "provisional task"
+ },
+ "pGoqusebK2ZP|hedtsk_artificial_grammar_learning": {
+  "to": "tct_nonword_repetition",
+  "name": "Nonword Repetition Task",
+  "family": "language",
+  "how": "inventory task, both readers"
+ },
+ "poXTBP6Lq2rJ|hedtsk_artificial_grammar_learning": {
+  "to": "tct_speech_production",
+  "name": "Overt Speech Production Task",
+  "family": "language",
+  "how": "inventory task, both readers"
+ },
+ "rMFVb2voFQz5|tct_auditory_discrimination": {
+  "to": "tct_phonological_judgment",
+  "name": "Phonological/Rhyme Judgment Task",
+  "family": "language",
+  "how": "inventory task, both readers"
+ },
+ "stk9gXpoAPoz|conditioning_and_reinforcement": {
+  "to": "new_language_inner_speech_generation",
+  "name": "Inner Speech Generation",
+  "family": "language",
+  "how": "provisional task"
+ },
+ "tEThMHrdEbg9|spatial_navigation": {
+  "to": "hedtsk_source_memory",
+  "name": "Source Memory Task",
+  "family": "recall_and_recognition",
+  "how": "inventory task, both readers"
+ },
+ "uz9HrR3o5Soh|tct_food_choice": {
+  "to": "tct_self_referential",
+  "name": "Self-Referential Judgment Task",
+  "family": "memory_control",
+  "how": "inventory task, both readers"
+ },
+ "vMXY5sitPLhj|spatial_navigation": {
+  "to": "tct_motor_imagery",
+  "name": "Motor Imagery Task",
+  "family": "motor_performance",
+  "how": "inventory task, both readers"
+ },
+ "veWJwSk2htBx|hedtsk_picture_naming": {
+  "to": "tct_auditory_stimulation",
+  "name": "Passive Auditory Stimulation",
+  "family": "perceptual_judgment",
+  "how": "inventory task, both readers"
+ },
+ "vm2398XZpVEo|motor_performance": {
+  "to": "new_perceptual_judgment_letter_detection_visuospatial_attention_task",
+  "name": "Letter Detection / Visuospatial Attention Task",
+  "family": "perceptual_judgment",
+  "how": "provisional task"
+ },
+ "xaTZub37WzWt|reward_and_value_choice": {
+  "to": "new_motor_performance_self_initiated_action_free_choice_task",
+  "name": "Self-Initiated Action / Free Choice Task",
+  "family": "motor_performance",
+  "how": "provisional task"
+ },
+ "zTA3LDjHQpKi|oddball_and_vigilance": {
+  "to": "new_reward_and_value_choice_desire_reason_dilemma_paradigm",
+  "name": "Desire-Reason Dilemma Paradigm",
+  "family": "reward_and_value_choice",
+  "how": "provisional task"
+ },
+ "zh5xQici9w2s|hedtsk_sternberg_item_recognition": {
+  "to": "hedtsk_go_no_go",
+  "name": "Go/No-Go Task",
+  "family": "response_inhibition",
+  "how": "inventory task, both readers"
+ }
+}

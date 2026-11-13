@@ -1,0 +1,725 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Cognitive Construct Atlas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a working tool first (search list beside a construct sheet), the method as a second view; quiet slate
+   neutrals with one cobalt accent for structure, and the map colormap reserved for brain data. */
+:root {
+  --bg: #f4f6f8; --panel: #ffffff; --ink: #18212b; --muted: #5a6573; --line: #d9dee5; --soft: #e9edf2;
+  --accent: #2346b5; --accent-soft: #e3e9fb; --good: #1f7a4d; --warn: #9a6400; --bad: #b3261e;
+  --good-soft: #e1f2e9; --warn-soft: #fbefd9; --bad-soft: #fbe3e1; --brain: #dde2e9; --brain-edge: #b9c1cc;
+  --f-display: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r: 6px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #11161c; --panel: #171e26; --ink: #e6ebf1; --muted: #9aa6b4; --line: #2a3440; --soft: #1f2832;
+  --accent: #8ea8ff; --accent-soft: #232f4f; --good: #6fd19c; --warn: #f0b85a; --bad: #ff8a80;
+  --good-soft: #17332a; --warn-soft: #3a2d14; --bad-soft: #3d1d1c; --brain: #26303b; --brain-edge: #3a4654;
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #11161c; --panel: #171e26; --ink: #e6ebf1; --muted: #9aa6b4; --line: #2a3440; --soft: #1f2832;
+  --accent: #8ea8ff; --accent-soft: #232f4f; --good: #6fd19c; --warn: #f0b85a; --bad: #ff8a80;
+  --good-soft: #17332a; --warn-soft: #3a2d14; --bad-soft: #3d1d1c; --brain: #26303b; --brain-edge: #3a4654;
+  color-scheme: dark; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header.top { border-bottom: 1px solid var(--line); background: var(--panel); }
+header.top .wrap { display: flex; align-items: end; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-block: 18px 0; }
+.brand h1 { font-family: var(--f-display); font-weight: 600; font-size: 28px; line-height: 1.15; margin: 0; letter-spacing: -0.01em; }
+.brand p { margin: 4px 0 14px; color: var(--muted); font-size: 14px; max-width: 70ch; }
+nav.tabs { display: flex; gap: 4px; }
+nav.tabs a { display: block; padding: 10px 14px; color: var(--muted); text-decoration: none; font-weight: 500;
+  border-bottom: 2px solid transparent; }
+nav.tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
+nav.tabs a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, .row:focus-visible, .chip:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px; }
+main { padding-block: 20px 48px; }
+.mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+.eyebrow { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+
+/* explorer */
+.explorer { display: grid; grid-template-columns: minmax(280px, 380px) minmax(0, 1fr); gap: 20px; align-items: start; }
+@media (max-width: 860px) { .explorer { grid-template-columns: minmax(0, 1fr); } }
+.side { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); display: flex; flex-direction: column;
+  max-height: calc(100vh - 140px); position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px); min-width: 0; }
+@media (max-width: 860px) { .side { position: static; max-height: 60vh; } }
+.side .controls { padding: 12px; border-bottom: 1px solid var(--line); display: grid; gap: 10px; }
+.search { width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--r);
+  background: var(--bg); color: var(--ink); font: inherit; }
+.modes { display: flex; gap: 4px; flex-wrap: wrap; }
+.modes button { flex: 1 1 auto; font: inherit; font-size: 13px; padding: 6px 8px; border: 1px solid var(--line); background: var(--panel);
+  color: var(--muted); border-radius: var(--r); cursor: pointer; }
+.modes button[aria-pressed="true"] { background: var(--accent-soft); color: var(--ink); border-color: var(--accent); }
+.filters { display: flex; gap: 12px; flex-wrap: wrap; font-size: 13px; color: var(--muted); align-items: center; }
+.filters label { display: flex; gap: 6px; align-items: center; }
+.filters select { font: inherit; font-size: 13px; background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 4px; padding: 2px 4px; }
+.count { font-size: 12px; color: var(--muted); padding: 8px 12px; border-bottom: 1px solid var(--line); }
+.list { overflow-y: auto; min-height: 0; flex: 1; }
+.row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; align-items: center; padding: 8px 12px;
+  border-bottom: 1px solid var(--soft); cursor: pointer; }
+.row:hover { background: var(--soft); }
+.row[aria-selected="true"] { background: var(--accent-soft); }
+.row .name { font-weight: 500; overflow-wrap: anywhere; }
+.row .sub { font-size: 12px; color: var(--muted); overflow-wrap: anywhere; }
+.row .n { font-size: 12px; color: var(--muted); text-align: right; }
+.grp { padding: 10px 12px 4px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; background: var(--bg); border-bottom: 1px solid var(--soft); }
+.tree ul { list-style: none; margin: 0; padding-left: 14px; }
+.tree > ul { padding-left: 4px; }
+.tree li { margin: 0; }
+.tree .node { display: flex; gap: 6px; align-items: baseline; padding: 3px 8px; border-radius: 4px; cursor: pointer; }
+.tree .node:hover { background: var(--soft); }
+.tree .node[aria-selected="true"] { background: var(--accent-soft); }
+.tree .tw { width: 14px; flex: none; color: var(--muted); font-family: var(--f-mono); font-size: 12px; background: none; border: 0; padding: 0; cursor: pointer; }
+.tree .lbl { overflow-wrap: anywhere; }
+.tree .cnt { color: var(--muted); font-size: 12px; margin-left: auto; padding-left: 8px; }
+
+.sheet { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 22px; min-width: 0; display: grid; gap: 22px; }
+.sheet h2 { font-family: var(--f-display); font-size: 32px; font-weight: 600; line-height: 1.1; margin: 0; text-wrap: balance; overflow-wrap: anywhere; }
+.titlebar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
+.badge { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.badge a { color: var(--accent); }
+.badge.atlas { border-color: var(--accent); color: var(--ink); }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
+@media (max-width: 1100px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.stat { background: var(--panel); padding: 10px 12px; min-width: 0; }
+.stat .v { font-family: var(--f-mono); font-size: 20px; font-variant-numeric: tabular-nums; }
+.stat .k { font-size: 12px; color: var(--muted); }
+.rel { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+.relbox { border: 1px solid var(--line); border-radius: var(--r); padding: 12px; display: grid; gap: 6px; }
+.relbox .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.pill { font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+.pill.good { background: var(--good-soft); color: var(--good); }
+.pill.warn { background: var(--warn-soft); color: var(--warn); }
+.pill.bad { background: var(--bad-soft); color: var(--bad); }
+.relbox p { margin: 0; font-size: 13px; color: var(--muted); }
+.maps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.maps figure { margin: 0; background: var(--bg); border: 1px solid var(--line); border-radius: var(--r); padding: 6px; }
+.maps canvas { width: 100%; height: auto; display: block; image-rendering: auto; }
+.maps figcaption { font-size: 11px; color: var(--muted); text-align: center; letter-spacing: 0.06em; text-transform: uppercase; }
+.maprow { display: grid; gap: 6px; }
+.maprow + .maprow { margin-top: 12px; }
+.kind { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--muted); border: 1px solid var(--line); border-radius: 3px; padding: 0 4px; margin-right: 6px; vertical-align: 1px; }
+.legend { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); flex-wrap: wrap; }
+.legend canvas { width: 140px; height: 10px; border-radius: 2px; }
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
+.block h3 { font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; font-weight: 600; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font: inherit; font-size: 13px; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); cursor: pointer; }
+.chip:hover { border-color: var(--accent); }
+.chip.plain { cursor: default; color: var(--muted); }
+.chip.plain:hover { border-color: var(--line); }
+.empty { color: var(--muted); font-size: 13px; }
+.nets { display: grid; gap: 8px; }
+.net { display: grid; grid-template-columns: minmax(0, 1fr) 120px auto; gap: 10px; align-items: center; font-size: 13px; }
+.net .bar { height: 8px; background: var(--soft); border-radius: 4px; overflow: hidden; }
+.net .bar i { display: block; height: 100%; background: var(--accent); }
+.net .name { overflow-wrap: anywhere; }
+.note { font-size: 13px; color: var(--muted); border-left: 3px solid var(--line); padding-left: 10px; margin: 0; }
+table.peaks { border-collapse: collapse; font-size: 13px; }
+table.peaks td, table.peaks th { padding: 3px 10px 3px 0; text-align: left; }
+table.peaks th { color: var(--muted); font-weight: 500; }
+
+/* methods */
+.methods { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 32px; align-items: start; }
+@media (max-width: 860px) { .methods { grid-template-columns: minmax(0, 1fr); } .toc { display: none; } }
+.toc { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px); font-size: 14px; display: grid; gap: 6px; }
+.toc a { color: var(--muted); text-decoration: none; }
+.toc a:hover { color: var(--accent); }
+.prose { max-width: 74ch; min-width: 0; }
+.prose h2 { font-family: var(--f-display); font-weight: 600; font-size: 26px; margin: 36px 0 10px; text-wrap: balance; scroll-margin-top: 16px; }
+.prose h2:first-child { margin-top: 0; }
+.prose p, .prose li { color: var(--ink); }
+.prose .lead { font-size: 18px; color: var(--muted); }
+.prose ul { padding-left: 20px; }
+.prose li { margin: 4px 0; }
+.tablewrap { overflow-x: auto; margin: 12px 0; border: 1px solid var(--line); border-radius: var(--r); background: var(--panel); }
+.prose table { border-collapse: collapse; width: 100%; font-size: 14px; }
+.prose th, .prose td { padding: 8px 12px; border-bottom: 1px solid var(--soft); text-align: left; vertical-align: top; }
+.prose th { color: var(--muted); font-weight: 600; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; background: var(--bg); }
+.prose td.num { font-family: var(--f-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.prose tr.hl td { background: var(--accent-soft); }
+.pipeline { display: grid; gap: 0; margin: 16px 0; counter-reset: step; }
+.step { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); }
+.step:first-child { border-top: 0; }
+.step .no { font-family: var(--f-mono); color: var(--accent); font-size: 14px; padding-top: 2px; }
+.step h4 { margin: 0 0 2px; font-size: 15px; }
+.step p { margin: 0; color: var(--muted); font-size: 14px; }
+.figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; margin: 16px 0; }
+.figs div { background: var(--panel); padding: 12px; }
+.figs .v { font-family: var(--f-mono); font-size: 22px; }
+.figs .k { font-size: 12px; color: var(--muted); }
+code { font-family: var(--f-mono); font-size: 0.9em; background: var(--soft); padding: 1px 4px; border-radius: 3px; overflow-wrap: anywhere; }
+a { color: var(--accent); }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <h1>Cognitive Construct Atlas</h1>
+      <p>Brain maps for 1,013 cognitive constructs and 135 tasks, learned from 27,905 within-task contrasts in 8,574
+        neuroimaging papers, each tagged with the constructs it measures. An extension of the Cognitive Atlas, built on
+        an author-topic model.</p>
+    </div>
+    <nav class="tabs" aria-label="Views">
+      <a href="#explore" id="tab-explore">Explore</a>
+      <a href="#methods" id="tab-methods">How it was built</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="view-explore" aria-label="Explore constructs">
+    <div class="explorer">
+      <aside class="side">
+        <div class="controls">
+          <input id="q" class="search" type="search" placeholder="Search constructs, tasks or wordings" aria-label="Search constructs, tasks or wordings" autocomplete="off">
+          <div class="modes" role="group" aria-label="Browse by">
+            <button id="mode-list" type="button" aria-pressed="true">Search</button>
+            <button id="mode-tasks" type="button" aria-pressed="false">Tasks by family</button>
+            <button id="mode-tree" type="button" aria-pressed="false">Hierarchy</button>
+          </div>
+          <div class="filters">
+            <label><input id="f-atlas" type="checkbox"> In the Cognitive Atlas</label>
+            <label>Min. contrasts
+              <select id="f-min"><option value="0">any</option><option value="50">50</option><option value="100">100</option><option value="500">500</option><option value="1000">1,000</option></select>
+            </label>
+          </div>
+        </div>
+        <div class="count" id="count" aria-live="polite"></div>
+        <div class="list" id="list" role="listbox" aria-label="Constructs and tasks"></div>
+      </aside>
+      <article class="sheet" id="sheet" aria-live="polite"></article>
+    </div>
+  </section>
+
+  <section id="view-methods" aria-label="How it was built" hidden>
+    <div class="methods">
+      <nav class="toc" aria-label="Sections">
+        <a href="#methods" data-to="m-overview">Overview</a>
+        <a href="#methods" data-to="m-pipeline">Pipeline</a>
+        <a href="#methods" data-to="m-claims">Claims and vocabulary</a>
+        <a href="#methods" data-to="m-model">The model</a>
+        <a href="#methods" data-to="m-eval">Does it predict?</a>
+        <a href="#methods" data-to="m-k">How many networks</a>
+        <a href="#methods" data-to="m-stability">Stability</a>
+        <a href="#methods" data-to="m-maps">Reading a map</a>
+        <a href="#methods" data-to="m-limits">Limits</a>
+      </nav>
+      <div class="prose">
+        <h2 id="m-overview">Overview</h2>
+        <p class="lead">Each map answers one question: where in the brain do peaks fall more often than usual when a
+          contrast measures this construct?</p>
+        <p>A task can measure very different things: in the monetary incentive delay task, gain cue &gt; neutral cue
+          measures reward anticipation and gain &gt; no gain at the outcome measures reward processing. So constructs
+          are attached to each contrast, not only to its task. They come from what the papers claim, from the
+          Cognitive Atlas, and, where neither names one, from a language model reading the paper's own description of
+          the analysis; all are normalized onto the Cognitive Atlas. A model of the contrasts then learns which brain
+          networks each construct and each task draws on. No paper had to report a construct-to-coordinate mapping.</p>
+        <div class="figs">
+          <div><div class="v">8,574</div><div class="k">papers with coordinates</div></div>
+          <div><div class="v">27,905</div><div class="k">within-task contrasts</div></div>
+          <div><div class="v">211,055</div><div class="k">activation peaks</div></div>
+          <div><div class="v">1,013</div><div class="k">constructs with maps</div></div>
+          <div><div class="v">736</div><div class="k">linked to the Cognitive Atlas</div></div>
+          <div><div class="v">21</div><div class="k">networks (K)</div></div>
+        </div>
+
+        <p class="note">This version (November 13, 2026) tags constructs on each contrast rather than only on its task,
+          keeps only comparisons of conditions within a task (no group or session comparisons), and gives deactivations
+          their own author. 100 fits and 50 bootstrap fits. Held-out log-likelihood per peak is −9.757, against −9.833
+          for the previous version's structure and −9.978 for the average map.</p>
+
+        <h2 id="m-pipeline">Pipeline</h2>
+        <div class="pipeline">
+          <div class="step"><div class="no">1</div><div><h4>Literature per task</h4><p>Each of about 220 tasks was searched by name, so a task has its full literature, not only the papers that report coordinates.</p></div></div>
+          <div class="step"><div class="no">2</div><div><h4>Construct claims</h4><p>A trained text classifier finds sentences that say what a task measures, and a span tagger marks the construct named.</p></div></div>
+          <div class="step"><div class="no">3</div><div><h4>Vocabulary</h4><p>Wordings are normalized into entries (98,287), merged with Cognitive Atlas concepts where they match.</p></div></div>
+          <div class="step"><div class="no">4</div><div><h4>Task profiles</h4><p>Each task keeps the constructs claimed for it more often than for other tasks (at most 10 per task).</p></div></div>
+          <div class="step"><div class="no">5</div><div><h4>Contrast constructs</h4><p>Each contrast gets the constructs it measures, in its direction: a task-vs-baseline contrast takes its task's; a comparison of conditions takes what papers claim for it, else a language model's attribution, else a reading of the paper; a reversed contrast takes what its baseline side has; a deactivation has its own author. Contrasts whose label merges trial phases (cue and outcome, encoding and retrieval) were re-read one by one.</p></div></div>
+          <div class="step"><div class="no">6</div><div><h4>Hierarchy</h4><p>Every construct is normalized onto the Cognitive Atlas; new ones are attached under the concept they are a kind of, and missing kind-of links were filled in (add-only). Part-of links are shown but do not pool.</p></div></div>
+          <div class="step"><div class="no">7</div><div><h4>Author-topic model</h4><p>Contrasts are documents, peaks are tokens; a contrast's task and its constructs are among its authors, each drawing on K brain networks and shrunk toward its parents.</p></div></div>
+          <div class="step"><div class="no">8</div><div><h4>Release</h4><p>100 independent fits; each construct's map is averaged over them, with its reliability and an uncertainty band from 50 refits to resampled papers.</p></div></div>
+        </div>
+
+        <h2 id="m-claims">Claims and vocabulary</h2>
+        <p>The claim finder runs without a language model at run time. An ensemble of BiomedBERT classifiers, calibrated
+          so that a kept sentence has at least a 90% chance of being a claim, reads each paper; a second model marks the
+          construct in the sentence. It was trained on 36 papers labelled by two people and adjudicated (9,424 units,
+          663 claims). Across the literature it found 309,696 claims using 125,038 distinct wordings.</p>
+        <p>Normalization turns those wordings into 98,287 vocabulary entries. It lemmatizes, drops adjective-only
+          fragments, folds "inhibit the response" into "response inhibition" and "control of attention" into "attention
+          control", and merges entries linked to the same Cognitive Atlas concept. It keeps apart terms that papers
+          list side by side: executive function and cognitive control are separate, because 215 papers write "executive
+          function and cognitive control". Every merge is recorded.</p>
+        <p>A construct joins a task when papers about that task claim it distinctively more often than papers about
+          other tasks (a log-odds z of at least 2, in at least 5 papers), keeping the 10 most distinctive per task.</p>
+
+        <h2 id="m-model">The model</h2>
+        <p>The model is the hierarchical author-topic model of the task-networks project, the family Yeo and colleagues
+          (2015) introduced for BrainMap. Each contrast is generated by its authors:</p>
+        <ul>
+          <li><b>its constructs</b>, what this contrast measures (on 27,107 of the 27,905 contrasts);</li>
+          <li><b>its task</b>, what the task's contrasts share beyond their constructs;</li>
+          <li><b>its stimulus and response modality and stimulus material</b> (auditory, button press, verbal, faces and so on), which carry how the task was run;</li>
+          <li><b>a shared author</b> for the pattern common to every contrast, and <b>a deactivation author</b> on
+            baseline &gt; task contrasts.</li>
+        </ul>
+        <p>Each author is a mixture over K brain networks, and each network is a map over 28,549 voxels on a 4 mm grid.
+          A peak is explained by one of its contrast's authors, so a construct learns what its contrasts share across
+          tasks and the task author what is left. Each mixture is pulled toward its parents (a construct toward the
+          broader construct it is a kind of; a task toward its constructs and family), so thin authors borrow from
+          related ones and a task the model has never seen gets a prediction from its constructs.</p>
+        <p>A construct's map is its own mass plus that of the narrower constructs below it, times the network maps: it
+          rests on the contrasts tagged with it, never on every contrast of a task that measures it. A task's map is the
+          mixture of its own contrasts (its author's share plus the constructs tagged on them). Modality, material and
+          shared mass are left out: a construct is what contrasts measure, not how they were run.</p>
+        <p>The structure was chosen on held-out data. Constructs as authors of each contrast beat constructs as parents
+          of tasks (the previous version) and a variant where each contrast is its own author nested under its task and
+          constructs:</p>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Structure (K = 21, same contrasts and folds)</th><th>Held-out contrasts, log P per peak</th><th>Held-out tasks, gain per peak</th></tr></thead>
+          <tbody>
+            <tr class="hl"><td>Constructs authoring each contrast (this version)</td><td class="num">−9.757</td><td class="num">0.207</td></tr>
+            <tr><td>Constructs authoring each task's contrasts</td><td class="num">−9.830</td><td class="num">0.123</td></tr>
+            <tr><td>Constructs as parents of tasks (previous version)</td><td class="num">−9.833</td><td class="num">0.119</td></tr>
+            <tr><td>Each contrast its own author, nested under task and constructs (best of 6)</td><td class="num">−9.843</td><td class="num">0.133</td></tr>
+          </tbody>
+        </table></div>
+        <p>Held-out contrasts: 5-fold cross-validation, folds by paper. Held-out tasks: 113 tasks removed, their contrasts
+          predicted from the constructs tagged on them; gain over the average map. These numbers were used to choose the
+          structure, so they are slightly optimistic for this version.</p>
+
+        <h2 id="m-eval">Does it predict?</h2>
+        <p>Two tests, both on data the model never saw: held-out contrasts (5-fold cross-validation with folds grouped
+          by paper) and held-out tasks (whole tasks removed, then predicted from their constructs). This version's
+          results are in the table under The model. Against other predictors, the comparison below was run on an
+          earlier version (constructs as task parents, K = 16, all 29,714 contrasts); this version predicts held-out
+          tasks better than that one did.</p>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Predictor of a held-out task (K = 16)</th><th>log P per peak</th></tr></thead>
+          <tbody>
+            <tr><td>Model, from task families</td><td class="num">−9.869</td></tr>
+            <tr class="hl"><td>Model, from constructs</td><td class="num">−9.884</td></tr>
+            <tr><td>NeuroQuery, from construct names</td><td class="num">−9.887</td></tr>
+            <tr><td>NeuroQuery, from the task name</td><td class="num">−9.888</td></tr>
+            <tr><td>Kernel density, from families</td><td class="num">−9.911</td></tr>
+            <tr><td>Kernel density, from constructs</td><td class="num">−9.923</td></tr>
+            <tr><td>Average map</td><td class="num">−9.929</td></tr>
+          </tbody>
+        </table></div>
+        <p>Predicting from constructs beats kernel density on the same constructs (+0.038 nats per peak, 95% interval
+          +0.020 to +0.057) and ties NeuroQuery, which has read many of the held-out papers. The baselines were tuned
+          on the test tasks themselves, which favours them.</p>
+
+        <h2 id="m-k">How many networks</h2>
+        <p>K was searched from 12 to 40 and refined to a step of 1. Held-out prediction rises to a plateau at 18–21
+          and falls after; the release uses K = 21, the best on held-out contrasts. The search was run on the earlier
+          structure; it has not been repeated for this one.</p>
+        <div class="tablewrap"><table>
+          <thead><tr><th>K</th><th>Held-out log-likelihood per peak</th><th>Perplexity</th></tr></thead>
+          <tbody>
+            <tr><td class="num">18</td><td class="num">−9.84763</td><td class="num">18,914</td></tr>
+            <tr><td class="num">20</td><td class="num">−9.84692</td><td class="num">18,900</td></tr>
+            <tr class="hl"><td class="num">21</td><td class="num">−9.84687</td><td class="num">18,899</td></tr>
+            <tr><td>Average map only</td><td class="num">−9.9868</td><td class="num">21,730</td></tr>
+          </tbody>
+        </table></div>
+        <p>The differences inside the plateau are smaller than the differences between random starts at one K, so 21
+          is a choice within a plateau, not a sharp optimum.</p>
+
+        <h2 id="m-stability">Stability</h2>
+        <p>EM finds a local optimum, so fits from different random starts differ. Three fitting procedures were compared
+          on the same 20 starts at K = 21:</p>
+        <div class="tablewrap"><table>
+          <thead><tr><th></th><th>Plain EM</th><th>Annealed EM</th><th>Gibbs, then EM</th></tr></thead>
+          <tbody>
+            <tr><td>Better likelihood than plain EM, same start</td><td class="num">—</td><td class="num">7 of 20</td><td class="num">16 of 20</td></tr>
+            <tr><td>Networks matched between two fits</td><td class="num">62%</td><td class="num">63%</td><td class="num">67%</td></tr>
+            <tr><td>Networks recurring in ≥ 80% of fits</td><td class="num">12 of 21</td><td class="num">8 of 21</td><td class="num">12 of 21</td></tr>
+            <tr><td>Construct maps agreeing at r ≥ 0.9</td><td class="num">71%</td><td class="num">—</td><td class="num">83%</td></tr>
+          </tbody>
+        </table></div>
+        <p>Gibbs sampling followed by EM, the Yeo lab's released procedure, finds better solutions and was adopted.
+          Even so, not every network recurs: over this version's 100 starts, 14 of 21 recur in at least 80% of fits.
+          The data do not decide how the remaining activation divides.</p>
+        <p>Construct maps are much steadier than networks, because a construct's map sums over networks: a region split
+          in two by one fit and kept whole by another gives the same construct map. Across the 100 release fits the
+          median construct's probability map correlates 0.89 between fits, and 84% of constructs exceed 0.8.</p>
+        <p>Which papers were published matters more than the optimizer. Refits to 50 resamples of papers, each from a
+          new start, give a band whose median width is 3.9 log2 units, against 1.5 across starts on the full data.
+          Constructs now rest only on the contrasts tagged with them, so most rest on fewer contrasts than when they
+          pooled whole tasks, and the median band is wider than the previous version's 2.9. Well-studied constructs
+          stay tight (reward processing 0.8, motor control 0.9, working memory 1.3); thin ones widen (processing speed,
+          32 contrasts in 21 papers, 4.6, with none of its shown region reliably enriched).</p>
+
+        <h2 id="m-maps">Reading a map</h2>
+        <ul>
+          <li><b>Probability</b> is P(peak at a voxel | the construct), shown scaled to its own maximum: where the
+            construct's peaks fall. It is dominated by regions common to many tasks.</li>
+          <li><b>Enrichment</b> is log2 of P(peak at a voxel | the construct) over P(peak | the average
+            task). By Bayes' rule it is the reverse-inference map: how much a peak at that voxel raises the odds that
+            the task measures the construct. A value of 1 means twice the average task's rate.</li>
+          <li>It is shown only where the construct puts at least 20% of its maximum probability, so a ratio of two tiny
+            numbers is never drawn.</li>
+          <li><b>Reliability</b> is the mean correlation of a construct's map between the 100 independent fits.</li>
+          <li><b>The seed band</b> is the 2.5th–97.5th percentile of each voxel's enrichment across those fits: how much
+            of the map depends on the optimizer. <b>The bootstrap band</b> refits on papers resampled with replacement
+            and adds how much depends on which papers were published; it is the confidence band.</li>
+          <li><b>What the papers found</b> is computed without the model, with NiMARE's MKDAChi2 (Wager et al. 2007):
+            the construct's or task's contrasts against all other contrasts, from 10 mm spheres around each peak. The
+            uniformity test shows where its contrasts activate consistently; the association test, where activation is
+            more likely than in other contrasts (the reverse-inference map Neurosynth showed). Positive z at FDR
+            q &lt; 0.05. Where
+            it disagrees with the model's maps, the model's networks have reshaped the pattern; at K = 21 one network
+            covers the whole striatum and peaks ventrally, so tasks with dorsal-striatum peaks get ventral-centred
+            model maps.</li>
+          <li><b>Credited mass</b> is how much data the map actually rests on, in contrast-equivalents: each contrast's
+            peaks are shared among its constructs, task, modality, material and shared authors, so a construct gets only
+            its share. Processing speed's 32 contrasts give it 6.5 contrasts' worth of evidence; reward processing's 987
+            give 208.</li>
+        </ul>
+
+        <h2 id="m-limits">Limits</h2>
+        <ul>
+          <li><b>Many contrast tags are machine-made.</b> Where no paper claim or Cognitive Atlas link names a construct,
+            it was attributed by a language model or read from the paper by one. Each source is recorded, but they are not
+            all checked by a person.</li>
+          <li><b>Trial phases are only partly separated.</b> 1,140 contrasts whose label merged phases (cue and outcome,
+            encoding and retrieval, regulation and instruction) were re-read one by one; about 170 more (emotion
+            regulation, gambling decision and outcome) are still pending.</li>
+          <li><b>Thin constructs are less reliable.</b> Reliability tracks credited mass; 208 constructs are tagged only
+            within one task, so their maps cannot separate the construct from that task.</li>
+          <li><b>One network covers the striatum.</b> At K = 21 dorsal and ventral striatum are not separated, so
+            constructs with dorsal-striatum peaks get ventral-centred maps; compare with the MKDAChi2 maps.</li>
+          <li><b>Claims are not ground truth.</b> A map shows where peaks fall for contrasts said to measure the
+            construct, so it inherits the field's usage, including loose or contested usage.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+(() => {
+  "use strict";
+  const $ = (s, el = document) => el.querySelector(s);
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const fmt = (n) => (n == null ? "—" : Number(n).toLocaleString("en-US"));
+  let T = null, byId = new Map(), taskById = new Map(), taskKey = new Map(), selected = null, mode = "list";
+  const thumbs = {}, thumbsLoading = {};
+  const sheet = $("#sheet"), list = $("#list"), count = $("#count");
+
+  // ---- views (hash routing: #explore, #methods, #c-<construct>, #t-<task>)
+  function route() {
+    const h = location.hash.replace(/^#/, "");
+    const methods = h === "methods";
+    $("#view-explore").hidden = methods; $("#view-methods").hidden = !methods;
+    ["explore", "methods"].forEach((v) => { const on = (v === "methods") === methods; const a = $(`#tab-${v}`); if (on) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+    if (!methods && T) {
+      if (h.startsWith("c-") && byId.has(h.slice(2)) && h.slice(2) !== selected) select(h.slice(2), false);
+      else if (h.startsWith("t-") && taskById.has(h) && h !== selected) select(h, false);
+    }
+  }
+  window.addEventListener("hashchange", route);
+  document.querySelectorAll(".toc a").forEach((a) => a.addEventListener("click", (e) => {
+    e.preventDefault(); const el = document.getElementById(a.dataset.to); if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }));
+
+  const relClass = (r) => (r == null ? "warn" : r >= 0.9 ? "good" : r >= 0.8 ? "warn" : "bad");
+  const relWord = (r) => (r == null ? "n/a" : r >= 0.9 ? "high" : r >= 0.8 ? "moderate" : "low");
+  const bandClass = (w) => (w == null ? "warn" : w <= 1 ? "good" : w <= 1.5 ? "warn" : "bad");
+  const famName = (t) => T.families[t.family] || "no family";
+
+  // ---- search over constructs and tasks
+  function scoreC(c, q) {
+    if (!q) return 1;
+    const L = c.label.toLowerCase();
+    if (L === q) return 100; if (L.startsWith(q)) return 80; if (L.includes(q)) return 60;
+    if ((c.cogat_name || "").toLowerCase().includes(q)) return 50;
+    if (c.aliases.some((a) => a.toLowerCase().includes(q))) return 40;
+    if (c.all_tasks.some((t) => (T.tasks[t]?.label || t).toLowerCase().includes(q))) return 20;
+    return 0;
+  }
+  function scoreT(t, q) {
+    if (!q) return 0;
+    const L = t.label.toLowerCase();
+    if (L === q) return 101; if (L.startsWith(q)) return 81; if (L.includes(q)) return 61;
+    if (famName(t).toLowerCase().includes(q)) return 30;
+    return 0;
+  }
+  const passes = (c) => (!$("#f-atlas").checked || c.cogat_id) && c.contrasts >= Number($("#f-min").value);
+  const passesT = (t) => !$("#f-atlas").checked && (t.contrasts || 0) >= Number($("#f-min").value);
+  function row(item, sub, isTask) {
+    return `<div class="row" role="option" tabindex="0" data-id="${esc(item.id)}" aria-selected="${item.id === selected}">
+      <div><div class="name">${isTask ? '<span class="kind">task</span>' : ""}${esc(item.label)}</div><div class="sub">${esc(sub)}</div></div>
+      <div class="n mono">${fmt(item.contrasts)}<br><span class="pill ${relClass(item.rel_p)}" title="map reliability">${item.rel_p == null ? "—" : item.rel_p.toFixed(2)}</span></div></div>`;
+  }
+  function render() {
+    if (!T) return;
+    const raw = $("#q").value.trim(), q = raw.toLowerCase();
+    let html = "", n = 0;
+    if (mode === "list" || q) {
+      const hits = T.constructs.filter(passes).map((c) => [scoreC(c, q), c, false]).filter(([s]) => s > 0)
+        .concat([...taskById.values()].filter(passesT).map((t) => [scoreT(t, q), t, true]).filter(([s]) => s > 0))
+        .sort((a, b) => b[0] - a[0] || b[1].contrasts - a[1].contrasts);
+      n = hits.length;
+      html = hits.slice(0, 400).map(([s, it, isT]) => {
+        if (isT) return row(it, `${famName(it)} · ${it.constructs.length} constructs`, true);
+        let sub = it.cogat_id ? "Cognitive Atlas" : "new term";
+        if (q && s === 40) sub = "also written: " + (it.aliases.find((a) => a.toLowerCase().includes(q)) || "");
+        else if (q && s === 20) sub = "via task: " + (it.all_tasks.map((t) => T.tasks[t]?.label || t).find((t) => t.toLowerCase().includes(q)) || "");
+        else if (it.tasks.length) sub += " · " + it.tasks.map((t) => T.tasks[t]?.label || t).slice(0, 2).join(", ");
+        return row(it, sub, false);
+      }).join("");
+      count.textContent = q ? `${fmt(n)} constructs and tasks match "${raw}"` : `${fmt(n)} constructs, most data first. Search to include tasks.`;
+    } else if (mode === "tasks") {
+      const fams = {};
+      taskById.forEach((t) => { (fams[t.family || "zz"] ||= []).push(t); });
+      Object.keys(fams).sort().forEach((f) => {
+        const ts = fams[f].filter(passesT).sort((a, b) => (b.contrasts || 0) - (a.contrasts || 0));
+        if (!ts.length) return;
+        html += `<div class="grp">${esc(T.families[f] || "no family")}</div>`;
+        html += ts.map((t) => row(t, `${t.constructs.length} constructs · ${fmt(t.papers)} papers`, true)).join("");
+        n += ts.length;
+      });
+      count.textContent = `${fmt(n)} tasks, grouped by family`;
+    } else {
+      const kids = (c) => c.children.map((id) => byId.get(id)).filter(Boolean);
+      const desc = new Map();
+      const size = (c, seen = new Set()) => {
+        if (desc.has(c.id)) return desc.get(c.id);
+        seen.add(c.id); let s = 1;
+        kids(c).forEach((k) => { if (!seen.has(k.id)) s += size(k, seen); });
+        desc.set(c.id, s); return s;
+      };
+      const node = (c, depth, path) => {
+        const ks = kids(c).filter((k) => !path.has(k.id)).sort((a, b) => b.contrasts - a.contrasts);
+        const open = depth < 1 && ks.length > 0 && ks.length <= 12;
+        const p2 = new Set(path); p2.add(c.id);
+        return `<li><div class="node" data-id="${esc(c.id)}" role="treeitem" tabindex="0" aria-selected="${c.id === selected}"${ks.length ? ` aria-expanded="${open}"` : ""}>
+          ${ks.length ? `<button class="tw" type="button" aria-label="expand">${open ? "−" : "+"}</button>` : `<span class="tw"></span>`}
+          <span class="lbl">${esc(c.label)}</span><span class="cnt mono">${fmt(c.contrasts)}</span></div>
+          ${ks.length ? `<ul ${open ? "" : "hidden"}>${ks.map((k) => node(k, depth + 1, p2)).join("")}</ul>` : ""}</li>`;
+      };
+      const roots = T.constructs.filter((c) => !c.parents.length && passes(c)).sort((a, b) => size(b) - size(a) || b.contrasts - a.contrasts);
+      n = roots.length;
+      html = `<div class="tree" role="tree"><ul>${roots.map((c) => node(c, 0, new Set())).join("")}</ul></div>`;
+      count.textContent = `${fmt(n)} top-level constructs (none above them), largest subtrees first`;
+    }
+    list.innerHTML = html || `<p class="empty" style="padding:12px">Nothing matches. Clear the search or relax the filters.</p>`;
+  }
+  list.addEventListener("click", (e) => {
+    const tw = e.target.closest(".tw");
+    if (tw && tw.tagName === "BUTTON") {
+      const li = tw.closest("li"), ul = li.querySelector(":scope > ul");
+      if (ul) { ul.hidden = !ul.hidden; tw.textContent = ul.hidden ? "+" : "−"; tw.closest(".node").setAttribute("aria-expanded", String(!ul.hidden)); }
+      return;
+    }
+    const r = e.target.closest("[data-id]"); if (r) select(r.dataset.id);
+  });
+  list.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") { const r = e.target.closest("[data-id]"); if (r) { e.preventDefault(); select(r.dataset.id); } }
+  });
+  ["#q", "#f-atlas", "#f-min"].forEach((s) => $(s).addEventListener("input", render));
+  ["list", "tasks", "tree"].forEach((m) => $(`#mode-${m}`).addEventListener("click", () => {
+    mode = m; document.querySelectorAll(".modes button").forEach((b) => b.setAttribute("aria-pressed", String(b.id === `mode-${m}`)));
+    if (m !== "list") $("#q").value = "";
+    try { localStorage.setItem("cca-mode", m); } catch (_) {}
+    render();
+  }));
+
+  // ---- brain thumbnails: maximum-intensity projections; probability scaled to its maximum (shown above 30%),
+  // enrichment log2 clipped at 3 (shown above 0.5, i.e. 1.4x the average task, where P >= 20% of its maximum)
+  const ENR = [[0, [40, 11, 84]], [0.25, [120, 28, 109]], [0.5, [190, 55, 82]], [0.75, [237, 105, 37]], [1, [251, 220, 88]]];
+  const PRB = [[0, [24, 48, 105]], [0.35, [26, 110, 160]], [0.7, [52, 182, 160]], [1, [205, 236, 120]]];
+  function ramp(stops, t) {
+    for (let i = 1; i < stops.length; i++) if (t <= stops[i][0]) {
+      const [a, ca] = stops[i - 1], [b, cb] = stops[i], f = (t - a) / (b - a);
+      return ca.map((v, j) => Math.round(v + f * (cb[j] - v)));
+    }
+    return stops[stops.length - 1][1];
+  }
+  const b64 = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
+  const rgb = (h) => { h = h.trim(); if (h.startsWith("#")) { const n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; } const m = h.match(/\d+/g); return m ? m.slice(0, 3).map(Number) : [220, 220, 220]; };
+  function draw(canvas, dims, mask, vals, stops, lo) {
+    const [h, w] = dims, S = 4; canvas.width = w * S; canvas.height = h * S;
+    const off = document.createElement("canvas"); off.width = w; off.height = h;
+    const ctx = off.getContext("2d"), img = ctx.createImageData(w, h);
+    const cs = getComputedStyle(document.documentElement);
+    const brain = rgb(cs.getPropertyValue("--brain")), edge = rgb(cs.getPropertyValue("--brain-edge"));
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+      const i = y * w + x, o = i * 4, m = mask[i], v = vals[i];
+      if (v > lo) { const c = ramp(stops, Math.min(1, (v - lo) / (255 - lo))); img.data.set([c[0], c[1], c[2], 255], o); }
+      else if (m) { const border = !mask[i - 1] || !mask[i + 1] || !mask[i - w] || !mask[i + w]; img.data.set([...(border ? edge : brain), 255], o); }
+      else img.data.set([0, 0, 0, 0], o);
+    }
+    ctx.putImageData(img, 0, 0);
+    const c2 = canvas.getContext("2d"); c2.imageSmoothingEnabled = true; c2.imageSmoothingQuality = "high";
+    c2.clearRect(0, 0, canvas.width, canvas.height); c2.drawImage(off, 0, 0, canvas.width, canvas.height);
+  }
+  function loadThumbs(kind) {
+    if (thumbs[kind]) return Promise.resolve(thumbs[kind]);
+    // thumbnails come in shards (thumbs_<kind>_1.json says how many there are), each under the host's file limit
+    const part = (i) => fetch(`thumbs_${kind}_${i}.json`).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); });
+    if (!thumbsLoading[kind]) thumbsLoading[kind] = part(1)
+      .then((j) => Promise.all(Array.from({ length: (j.shards || 1) - 1 }, (_, k) => part(k + 2)))
+        .then((rest) => { rest.forEach((x) => Object.assign(j.maps, x.maps)); return j; }))
+      .then((j) => { j.maskBytes = j.mask.map(b64); thumbs[kind] = j; return j; });
+    return thumbsLoading[kind];
+  }
+  function paintRows(j, v, rows, keys, lo) {
+    const dims = [j.shape.sagittal, j.shape.coronal, j.shape.axial];
+    rows.forEach((r) => {
+      const isP = keys[r.dataset.kind] === "p", src = v[keys[r.dataset.kind]];
+      const cut = lo ? lo[keys[r.dataset.kind]] : (isP ? 76 : 42);
+      r.querySelectorAll(".maps canvas").forEach((cv, k) => draw(cv, dims[k], j.maskBytes[k], b64(src[k]), isP ? PRB : ENR, cut));
+    });
+  }
+  function paintMaps(kind, id) {
+    const box = $("#maps"); if (!box) return;
+    loadThumbs(kind).then((j) => {
+      if (selected !== id || !$("#maps")) return;
+      const v = j.maps[id]; if (!v) { box.innerHTML = `<p class="empty">No map: no contrasts carry this ${kind === "tasks" ? "task" : "construct"}.</p>`; return; }
+      paintRows(j, v, [...box.querySelectorAll('.maprow[data-kind="p"], .maprow[data-kind="e"]')], { p: "p", e: "e" });
+    }).catch((err) => { console.error(err); box.innerHTML = `<p class="empty">The brain maps could not be loaded. Reload the page to try again.</p>`; });
+    loadThumbs("mkda_" + kind).then((j) => {
+      if (selected !== id || !$("#maps")) return;
+      const v = j.maps[id], pbox = box.querySelector(".papers"); if (!pbox) return;
+      if (!v) { pbox.innerHTML = `<p class="empty">No contrasts with peaks for this ${kind === "tasks" ? "task" : "construct"}.</p>`; return; }
+      const note = $("#pp-note"); if (note) note.textContent = `NiMARE's MKDAChi2 on its ${v.n.toLocaleString("en-US")} contrasts against all other contrasts (10 mm spheres), positive z where FDR q < 0.05. Compare with the model's maps above: where they disagree, the networks have reshaped the papers' pattern.`;
+      paintRows(j, v, [...pbox.querySelectorAll(".maprow")], { pp: "p", pe: "e" }, { p: 0, e: 0 });
+    }).catch((err) => { console.error(err); const pbox = box.querySelector(".papers"); if (pbox) pbox.innerHTML = `<p class="empty">The MKDAChi2 maps could not be loaded. Reload the page to try again.</p>`; });
+  }
+  function legend(id, stops) { const lg = $(id); if (!lg) return; const lc = lg.getContext("2d"); for (let x = 0; x < lg.width; x++) { lc.fillStyle = `rgb(${ramp(stops, x / (lg.width - 1))})`; lc.fillRect(x, 0, 1, lg.height); } }
+  const mapsHTML = (what) => `
+      <div id="maps">
+        <div class="maprow" data-kind="p">
+          <div class="legend" style="justify-content:space-between"><span class="eyebrow">Probability: where ${what}'s peaks fall</span>
+            <span style="display:flex;gap:8px;align-items:center">30% <canvas id="lg-p" width="140" height="10" aria-hidden="true"></canvas> max</span></div>
+          <div class="maps">${["Sagittal", "Coronal", "Axial"].map((v) => `<figure><canvas aria-label="${v.toLowerCase()} probability projection"></canvas><figcaption>${v}</figcaption></figure>`).join("")}</div>
+        </div>
+        <div class="maprow" data-kind="e">
+          <div class="legend" style="justify-content:space-between"><span class="eyebrow">Enrichment: reverse inference over the average task</span>
+            <span style="display:flex;gap:8px;align-items:center">1.4× <canvas id="lg-e" width="140" height="10" aria-hidden="true"></canvas> 8×</span></div>
+          <div class="maps">${["Sagittal", "Coronal", "Axial"].map((v) => `<figure><canvas aria-label="${v.toLowerCase()} enrichment projection"></canvas><figcaption>${v}</figcaption></figure>`).join("")}</div>
+        </div>
+        <div class="papers">
+          <h3 class="eyebrow" style="margin:18px 0 4px">What the papers found, without the model (MKDAChi2)</h3>
+          <p class="empty" style="margin:0 0 8px" id="pp-note">NiMARE's MKDAChi2 on ${what}'s contrasts against all other contrasts. Compare it with the model's maps above: where they disagree, the model's networks have reshaped the papers' pattern.</p>
+          <div class="maprow" data-kind="pp">
+            <div class="legend" style="justify-content:space-between"><span class="eyebrow">Uniformity test: consistent activation</span>
+              <span style="display:flex;gap:8px;align-items:center">z <canvas id="lg-pp" width="140" height="10" aria-hidden="true"></canvas> 10+</span></div>
+            <div class="maps">${["Sagittal", "Coronal", "Axial"].map((v) => `<figure><canvas aria-label="${v.toLowerCase()} paper peak density projection"></canvas><figcaption>${v}</figcaption></figure>`).join("")}</div>
+          </div>
+          <div class="maprow" data-kind="pe">
+            <div class="legend" style="justify-content:space-between"><span class="eyebrow">Association test: more likely than in other contrasts</span>
+              <span style="display:flex;gap:8px;align-items:center">z <canvas id="lg-pe" width="140" height="10" aria-hidden="true"></canvas> 10+</span></div>
+            <div class="maps">${["Sagittal", "Coronal", "Axial"].map((v) => `<figure><canvas aria-label="${v.toLowerCase()} paper peak ratio projection"></canvas><figcaption>${v}</figcaption></figure>`).join("")}</div>
+          </div>
+        </div>
+      </div>`;
+  const relHTML = (it, what) => {
+    const boot = it.band_boot != null
+      ? `<div class="relbox"><div class="top"><span class="eyebrow">Bootstrap band</span><span class="pill ${bandClass(it.band_boot)}">±${(it.band_boot / 2).toFixed(2)}</span></div><p>Median width ${it.band_boot.toFixed(2)} log2 units over refits to resampled papers (papers and optimizer); ${Math.round(it.enriched_boot * 100)}% of the shown region stays enriched at its lower edge.</p></div>`
+      : `<div class="relbox"><div class="top"><span class="eyebrow">Bootstrap band</span><span class="pill warn">running</span></div><p>Refits to resampled papers are still running; this band appears when they finish.</p></div>`;
+    return `<div class="rel">
+        <div class="relbox"><div class="top"><span class="eyebrow">Map reliability</span><span class="pill ${relClass(it.rel_p)}">${relWord(it.rel_p)} · ${it.rel_p?.toFixed(2) ?? "—"}</span></div>
+          <p>Mean correlation of ${what}'s probability map between 100 independent fits. Enrichment map: ${it.rel_e?.toFixed(2) ?? "—"}.</p></div>
+        <div class="relbox"><div class="top"><span class="eyebrow">Seed band</span><span class="pill ${bandClass(it.band_seed)}">±${it.band_seed == null ? "—" : (it.band_seed / 2).toFixed(2)}</span></div>
+          <p>Median width ${it.band_seed?.toFixed(2) ?? "—"} log2 units across fits (optimizer only); ${it.enriched_seed == null ? "—" : Math.round(it.enriched_seed * 100)}% of the shown region is enriched in at least 97.5% of fits.</p></div>
+        ${boot}</div>`;
+  };
+  const netsHTML = (it) => `<div class="nets">${it.nets.map(([name, w, rec]) => `
+          <div class="net"><span class="name">${esc(name.replace(/ \(\d\.\d\d\)$/, ""))}</span><span class="bar" aria-hidden="true"><i style="width:${Math.round(w * 100)}%"></i></span>
+          <span class="mono">${(w * 100).toFixed(0)}% <span class="pill ${rec >= 0.8 ? "good" : rec >= 0.5 ? "warn" : "bad"}" title="share of the 100 fits in which this network recurs">${rec == null ? "" : Math.round(rec * 100) + "%"}</span></span></div>`).join("")}</div>
+          <p class="empty" style="margin-top:6px">Share of the mixture in the most typical fit; the pill is how often the network recurs across fits.</p>`;
+  const peaksHTML = (it) => it.peaks.length ? `<table class="peaks mono"><tr><th>x</th><th>y</th><th>z</th><th>log2</th></tr>${it.peaks.map((p) => `<tr><td>${p[0]}</td><td>${p[1]}</td><td>${p[2]}</td><td>${p[3].toFixed(2)}</td></tr>`).join("")}</table>` : `<p class="empty">None in the shown region.</p>`;
+  const statsHTML = (cells) => `<div class="stats">${cells.map(([v, k]) => `<div class="stat"><div class="v">${v}</div><div class="k">${k}</div></div>`).join("")}</div>`;
+  const chipC = (id) => { const c = byId.get(id); return c ? `<button class="chip" type="button" data-go="${esc(id)}">${esc(c.label)}</button>` : ""; };
+  const chipT = (key, n) => { const t = T.tasks[key]; return t ? `<button class="chip" type="button" data-go="${esc(t.id)}"><span class="kind">task</span>${esc(t.label)}${n == null ? "" : ` <span class="mono" style="color:var(--muted)">${fmt(n)}</span>`}</button>` : ""; };
+
+  function select(id, push = true) {
+    const isTask = id.startsWith("t-") && taskById.has(id);
+    if (!isTask && !byId.has(id)) return;
+    selected = id;
+    const h = isTask ? `#${id}` : `#c-${id}`;
+    if (push && location.hash !== h) history.replaceState(null, "", h);
+    list.querySelectorAll("[data-id]").forEach((r) => r.setAttribute("aria-selected", String(r.dataset.id === id)));
+    if (isTask) renderTask(taskById.get(id)); else renderConstruct(byId.get(id));
+    legend("#lg-p", PRB); legend("#lg-e", ENR); legend("#lg-pp", PRB); legend("#lg-pe", ENR);
+    paintMaps(isTask ? "tasks" : "constructs", id);
+  }
+  function renderConstruct(c) {
+    const taskName = (t) => T.tasks[t]?.label || t;
+    const atlas = c.cogat_id
+      ? `<span class="badge atlas">Cognitive Atlas: <a href="https://www.cognitiveatlas.org/concept/id/${esc(c.cogat_id)}" target="_blank" rel="noopener">${esc(c.cogat_name || c.label)}</a>${c.cogat_by_name ? " (matched by name)" : ""}</span>`
+      : `<span class="badge">New term, not in the Cognitive Atlas</span>`;
+    const sameMap = c.same_map.length
+      ? `<p class="note">Same map as ${c.same_map.length} other construct${c.same_map.length > 1 ? "s" : ""}, because they rest on exactly the same tasks:</p><div class="chips" style="margin-top:8px">${c.same_map.slice(0, 24).map(chipC).join("")}</div>`
+      : `<p class="empty">No other construct rests on exactly this set of tasks.</p>`;
+    sheet.innerHTML = `
+      <div><div class="eyebrow">Construct</div><h2>${esc(c.label)}</h2>
+        <div class="titlebar">${atlas}${c.all_tasks.length === 1 ? `<span class="badge">tagged within one task</span>` : ""}</div></div>
+      ${statsHTML([[fmt(c.contrasts), "contrasts tagged (with narrower)"], [fmt(c.papers), "papers with coordinates"],
+                   [c.mass == null ? "—" : Math.round(c.mass).toLocaleString("en-US"), "credited mass (contrast-equiv.)"], [fmt(c.claim_papers ?? c.vocab_papers), "papers claiming it"]])}
+      ${mapsHTML("this construct")}
+      ${relHTML(c, "this construct")}
+      <div class="two">
+        <div class="block"><h3>Broader constructs</h3>${c.parents.length ? `<div class="chips">${c.parents.map(chipC).join("")}</div>` : `<p class="empty">None: a top-level construct.</p>`}</div>
+        <div class="block"><h3>Narrower constructs</h3>${c.children.length ? `<div class="chips">${c.children.map(chipC).join("")}</div>` : `<p class="empty">None.</p>`}</div>
+      </div>
+      <div class="two">
+        <div class="block"><h3>Its contrasts come from</h3>${c.all_tasks.length ? `<div class="chips">${c.all_tasks.slice(0, 16).map((t, i) => chipT(t, (c.task_counts || [])[i])).join("")}</div>${c.all_tasks.length > 16 ? `<p class="empty" style="margin-top:6px">and ${c.all_tasks.length - 16} more tasks.</p>` : ""}` : `<p class="empty">No contrast carries it.</p>`}
+          <p class="empty" style="margin-top:8px">${c.tasks.length ? `Papers claim it for the whole task in ${esc(c.tasks.map(taskName).join(", "))}; their task-vs-baseline contrasts carry it.` : "No task is claimed to measure it as a whole: it comes from specific contrasts."} The number is how many of the task's contrasts carry it (or a narrower construct); contrasts labelled only with a task family are not listed.</p></div>
+        <div class="block"><h3>Networks it draws on</h3>${netsHTML(c)}</div>
+      </div>
+      ${(c.part_of || []).length || (c.has_parts || []).length ? `<div class="two">
+        <div class="block"><h3>Part of (Cognitive Atlas)</h3>${(c.part_of || []).length ? `<div class="chips">${c.part_of.map(chipC).join("")}</div>` : `<p class="empty">None.</p>`}</div>
+        <div class="block"><h3>Has parts (Cognitive Atlas)</h3>${(c.has_parts || []).length ? `<div class="chips">${c.has_parts.map(chipC).join("")}</div>` : `<p class="empty">None.</p>`}
+          <p class="empty" style="margin-top:6px">Shown for reference: a task that measures a part does not measure the whole, so part-of links do not pool tasks into a map.</p></div>
+      </div>` : ""}
+      ${c.same_map.length ? `<div class="block"><h3>Shares its map with</h3>${sameMap}</div>` : ""}
+      <div class="two">
+        <div class="block"><h3>Also written as</h3>${c.aliases.length ? `<div class="chips">${c.aliases.map((a) => `<span class="chip plain">${esc(a)}</span>`).join("")}</div>` : `<p class="empty">No other wording.</p>`}</div>
+        <div class="block"><h3>Most enriched voxels (MNI mm)</h3>${peaksHTML(c)}</div>
+      </div>`;
+  }
+  function renderTask(t) {
+    sheet.innerHTML = `
+      <div><div class="eyebrow">Task</div><h2>${esc(t.label)}</h2>
+        <div class="titlebar"><span class="badge">Family: ${esc(famName(t))}</span></div></div>
+      ${statsHTML([[fmt(t.contrasts), "contrasts"], [fmt(t.papers), "papers with coordinates"],
+                   [t.mass == null ? "—" : Math.round(t.mass).toLocaleString("en-US"), "credited mass (contrast-equiv.)"], [fmt(t.constructs.length), "constructs it measures"]])}
+      ${t.has_map ? mapsHTML("this task") : `<p class="empty">No map: this task has no contrasts in the corpus.</p>`}
+      ${t.has_map ? relHTML(t, "this task") : ""}
+      <div class="two">
+        <div class="block"><h3>Constructs it measures</h3>${t.constructs.length ? `<div class="chips">${t.constructs.map(chipC).join("")}</div>` : `<p class="empty">None kept: no construct is claimed distinctively for this task in enough papers, so it sits under its family only.</p>`}</div>
+        <div class="block"><h3>Networks it draws on</h3>${t.nets.length ? netsHTML(t) : `<p class="empty">—</p>`}</div>
+      </div>
+      <div class="block"><h3>Most enriched voxels (MNI mm)</h3>${peaksHTML(t)}</div>
+      <p class="note">A task's map is the mixture of its own contrasts: its task author's share plus the constructs tagged on them. The constructs listed are those papers claim for the whole task; individual contrasts carry their own.</p>`;
+  }
+  sheet.addEventListener("click", (e) => { const b = e.target.closest("[data-go]"); if (b) { select(b.dataset.go); sheet.scrollIntoView({ block: "start", behavior: "smooth" }); render(); } });
+
+  // ---- boot
+  sheet.innerHTML = `<p class="empty">Loading constructs and tasks…</p>`;
+  try { const m = localStorage.getItem("cca-mode"); if (m === "tasks" || m === "tree") $(`#mode-${m}`).click(); } catch (_) {}
+  route();
+  fetch("taxonomy.json").then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).then((j) => {
+    T = j; T.constructs.forEach((c) => byId.set(c.id, c));
+    Object.entries(T.tasks).forEach(([k, t]) => { taskById.set(t.id, t); taskKey.set(t.id, k); });
+    const h = location.hash.replace(/^#/, "");
+    const start = h.startsWith("c-") && byId.has(h.slice(2)) ? h.slice(2) : (h.startsWith("t-") && taskById.has(h) ? h : "response-inhibition");
+    select(start, false); render(); route();
+  }).catch(() => { sheet.innerHTML = `<p class="empty">The construct data could not be loaded. Reload the page to try again.</p>`; });
+})();
+</script>
+
+</body></html>

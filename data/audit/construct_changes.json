@@ -1,0 +1,1050 @@
+[
+ {
+  "round": 1,
+  "analysis": "xdRMdurdbefD",
+  "task": "hedtsk_facial_emotion_recognition",
+  "removed": [
+   "visual letter recognition"
+  ],
+  "proposed_additions": [
+   "auditory perception",
+   "emotion recognition",
+   "valence"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 1,
+  "analysis": "DSWNK3sn4LdH",
+  "task": "hedtsk_go_no_go",
+  "removed": [
+   "punishment processing"
+  ],
+  "proposed_additions": [
+   "relief"
+  ],
+  "previous_source": "paper"
+ },
+ {
+  "round": 1,
+  "analysis": "5rVFZc8VNV7W",
+  "task": "executive_and_reasoning",
+  "removed": [
+   "recognition"
+  ],
+  "proposed_additions": [
+   "conflict detection",
+   "interference",
+   "response conflict"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 1,
+  "analysis": "KRnHyRgyycfG",
+  "task": "tct_pain_stimulation",
+  "removed": [
+   "theory of mind"
+  ],
+  "proposed_additions": [
+   "emotional expression",
+   "motor control"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 1,
+  "analysis": "XTZZ7M6NAWeZ",
+  "task": "perceptual_judgment",
+  "removed": [
+   "food cue reactivity"
+  ],
+  "proposed_additions": [
+   "object categorization",
+   "visual object recognition"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 1,
+  "analysis": "7MHRR3fsmRrt",
+  "task": "tct_working_memory_generic",
+  "removed": [
+   "memory retrieval",
+   "working memory retrieval"
+  ],
+  "proposed_additions": [
+   "emotion perception",
+   "social cognition",
+   "working memory maintenance"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 1,
+  "analysis": "2BAbeuojm7Mw",
+  "task": "conflict_and_interference",
+  "removed": [
+   "face perception",
+   "visual face recognition"
+  ],
+  "proposed_additions": [
+   "emotion perception",
+   "emotional face recognition",
+   "facial expression"
+  ],
+  "previous_source": "paper"
+ },
+ {
+  "round": 1,
+  "analysis": "WWzy96MYpLh5",
+  "task": "conflict_and_interference",
+  "removed": [
+   "face perception",
+   "visual face recognition"
+  ],
+  "proposed_additions": [
+   "emotion perception",
+   "emotional face recognition",
+   "facial expression"
+  ],
+  "previous_source": "paper"
+ },
+ {
+  "round": 1,
+  "analysis": "SaauU4ccxwqP",
+  "task": "hedtsk_stroop_color_word",
+  "removed": [
+   "response inhibition"
+  ],
+  "proposed_additions": [
+   "motor control"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 1,
+  "analysis": "97peruDJsrbg",
+  "task": "hedtsk_verbal_fluency",
+  "removed": [
+   "thought",
+   "autobiographical memory",
+   "introspection"
+  ],
+  "proposed_additions": [
+   "lexical retrieval",
+   "word generation"
+  ],
+  "previous_source": "paper"
+ },
+ {
+  "round": 1,
+  "analysis": "xtBSz9sEwCLH",
+  "task": "tct_dichotic_listening",
+  "removed": [
+   "cognitive load"
+  ],
+  "proposed_additions": [],
+  "previous_source": "paper"
+ },
+ {
+  "round": 1,
+  "analysis": "MB3KYNa7hVav",
+  "task": "hedtsk_semantic_priming",
+  "removed": [
+   "fear",
+   "negative emotion"
+  ],
+  "proposed_additions": [
+   "implicit memory",
+   "repetition priming"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 1,
+  "analysis": "47zUFhEDGZs9",
+  "task": "hedtsk_old_new_recognition_memory",
+  "removed": [
+   "encoding"
+  ],
+  "proposed_additions": [
+   "working memory maintenance"
+  ],
+  "previous_source": "paper_phase"
+ },
+ {
+  "round": 1,
+  "analysis": "55yhhBrzP3iE",
+  "task": "hedtsk_old_new_recognition_memory",
+  "removed": [
+   "working memory maintenance"
+  ],
+  "proposed_additions": [
+   "encoding"
+  ],
+  "previous_source": "paper_phase"
+ },
+ {
+  "round": 1,
+  "analysis": "sWosxkgcnJrh",
+  "task": "hedtsk_simon",
+  "removed": [
+   "right hand response execution"
+  ],
+  "proposed_additions": [
+   "spatial attention",
+   "visual perception",
+   "visuospatial processing"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 1,
+  "analysis": "fQPyAMN2zjrP",
+  "task": "hedtsk_go_no_go",
+  "removed": [
+   "salience"
+  ],
+  "proposed_additions": [],
+  "previous_source": "paper"
+ },
+ {
+  "round": 1,
+  "analysis": "BiWkdhbC6LYu",
+  "task": "emotion",
+  "removed": [
+   "encoding",
+   "episodic memory",
+   "familiarity",
+   "memory",
+   "recognition",
+   "recollection",
+   "verbal learning"
+  ],
+  "proposed_additions": [
+   "pain",
+   "semantic processing",
+   "social cognition",
+   "social pain"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 1,
+  "analysis": "XRKW5oWAVpKh",
+  "task": "emotion",
+  "removed": [
+   "encoding",
+   "episodic memory",
+   "familiarity",
+   "memory",
+   "recognition",
+   "recollection",
+   "verbal learning"
+  ],
+  "proposed_additions": [
+   "imagined physical pain",
+   "pain",
+   "semantic processing"
+  ],
+  "previous_source": "paper"
+ },
+ {
+  "round": 1,
+  "analysis": "rcm6p8Af8kVZ",
+  "task": "memory_control",
+  "removed": [
+   "face perception"
+  ],
+  "proposed_additions": [
+   "self evaluation"
+  ],
+  "previous_source": "paper"
+ },
+ {
+  "round": 1,
+  "analysis": "cxYnPf2LE8HV",
+  "task": "hedtsk_picture_naming",
+  "removed": [
+   "somatosensation"
+  ],
+  "proposed_additions": [],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "ahpt2EFxjyDA",
+  "task": "tct_episodic_encoding",
+  "removed": [
+   "route knowledge"
+  ],
+  "proposed_additions": [
+   "allocentric"
+  ],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "6mpkdUJQWsDf",
+  "task": "hedtsk_n_back",
+  "removed": [
+   "association learning",
+   "learning",
+   "memory acquisition",
+   "spatial planning",
+   "visual episodic memory"
+  ],
+  "proposed_additions": [
+   "face perception"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "gRM6nFLCxeUm",
+  "task": "hedtsk_n_back",
+  "removed": [
+   "association learning",
+   "learning",
+   "memory acquisition",
+   "spatial planning",
+   "visual episodic memory"
+  ],
+  "proposed_additions": [
+   "face perception"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "qkDAN7H3QsZv",
+  "task": "hedtsk_n_back",
+  "removed": [
+   "association learning",
+   "learning",
+   "memory acquisition",
+   "spatial planning",
+   "visual episodic memory"
+  ],
+  "proposed_additions": [
+   "face perception"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "BveVRFdepj3Q",
+  "task": "hedtsk_monetary_incentive_delay",
+  "removed": [
+   "attention"
+  ],
+  "proposed_additions": [],
+  "previous_source": "paper_phase"
+ },
+ {
+  "round": 2,
+  "analysis": "duCPXSKF5P8W",
+  "task": "tct_emotional_face_matching",
+  "removed": [
+   "predictable threat"
+  ],
+  "proposed_additions": [],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "WBWi5YM5zGzi",
+  "task": "hedtsk_mental_rotation",
+  "removed": [
+   "motor control"
+  ],
+  "proposed_additions": [
+   "mental rotation",
+   "motor imagery"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "ha3XBqyXBedd",
+  "task": "hedtsk_mental_rotation",
+  "removed": [
+   "motor control"
+  ],
+  "proposed_additions": [
+   "mental rotation",
+   "motor imagery"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "LHE7Xqdeeov5",
+  "task": "hedtsk_go_no_go",
+  "removed": [
+   "attention"
+  ],
+  "proposed_additions": [],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "gPYVonueHgmH",
+  "task": "hedtsk_go_no_go",
+  "removed": [
+   "attention"
+  ],
+  "proposed_additions": [],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "WaWi8YBNRZgX",
+  "task": "tct_object_location_memory",
+  "removed": [
+   "recollection",
+   "memory retrieval"
+  ],
+  "proposed_additions": [
+   "associative memory",
+   "episodic memory encoding",
+   "memory encoding"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "st6HLJWaYFWq",
+  "task": "hedtsk_free_recall",
+  "removed": [
+   "visual perception"
+  ],
+  "proposed_additions": [
+   "source memory"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "4Fmk3ALYcjop",
+  "task": "hedtsk_n_back",
+  "removed": [
+   "attachment",
+   "theory of mind"
+  ],
+  "proposed_additions": [],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "znf3AVUATJ7K",
+  "task": "hedtsk_n_back",
+  "removed": [
+   "self referential"
+  ],
+  "proposed_additions": [
+   "attachment",
+   "emotion",
+   "theory of mind"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "zp9RJKDGcif2",
+  "task": "hedtsk_oddball",
+  "removed": [
+   "happiness"
+  ],
+  "proposed_additions": [
+   "distraction",
+   "selective attention",
+   "visual perception"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "wQsoEg5y3p3c",
+  "task": "tct_deductive_reasoning",
+  "removed": [
+   "belief"
+  ],
+  "proposed_additions": [
+   "fear",
+   "negative emotion",
+   "threat processing"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "LFCsi4gMEXPc",
+  "task": "working_memory_span",
+  "removed": [
+   "selective attention"
+  ],
+  "proposed_additions": [
+   "working memory"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "uhZFwGSFGKaG",
+  "task": "tct_mental_arithmetic",
+  "removed": [
+   "inhibition"
+  ],
+  "proposed_additions": [
+   "emotional reactivity",
+   "salience"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "Nso9TmmAUS5u",
+  "task": "conditioning_and_reinforcement",
+  "removed": [
+   "lexical retrieval"
+  ],
+  "proposed_additions": [
+   "cognitive effort",
+   "morphological processing"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "ZknSjvysgbju",
+  "task": "conditioning_and_reinforcement",
+  "removed": [
+   "lexical retrieval"
+  ],
+  "proposed_additions": [
+   "cognitive effort",
+   "morphological processing"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "KdnnhRmrPwCP",
+  "task": "hedtsk_posner_spatial_cueing",
+  "removed": [
+   "surprise"
+  ],
+  "proposed_additions": [
+   "motor preparation",
+   "sustained attention",
+   "temporal attention"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "zsjE3obZURwi",
+  "task": "hedtsk_oddball",
+  "removed": [
+   "recognition"
+  ],
+  "proposed_additions": [
+   "episodic memory encoding",
+   "memory encoding"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "r5y4342CRnQh",
+  "task": "tct_gesture",
+  "removed": [
+   "facial happiness recognition"
+  ],
+  "proposed_additions": [
+   "lipreading",
+   "speech perception"
+  ],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "cLGbvrWd38bV",
+  "task": "spatial_navigation",
+  "removed": [
+   "biological motion"
+  ],
+  "proposed_additions": [
+   "motion perception"
+  ],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "bLn86buPDskX",
+  "task": "reward_and_value_choice",
+  "removed": [
+   "familiarity"
+  ],
+  "proposed_additions": [],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "n6B49qRTLuFP",
+  "task": "hedtsk_oddball",
+  "removed": [
+   "reward processing"
+  ],
+  "proposed_additions": [],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "7LGV6sgbWtJG",
+  "task": "hedtsk_n_back",
+  "removed": [
+   "visual pseudoword recognition"
+  ],
+  "proposed_additions": [
+   "phonological processing",
+   "speech perception"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "RbGJkSpTQmUw",
+  "task": "tct_stimulus_rating",
+  "removed": [
+   "familiarity"
+  ],
+  "proposed_additions": [
+   "music perception",
+   "pleasure",
+   "reward processing"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "NxmtMa8gWthx",
+  "task": "tct_reading",
+  "removed": [
+   "facial happiness recognition"
+  ],
+  "proposed_additions": [
+   "emotion perception",
+   "positive emotion",
+   "prosody"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "8jtk4q2CyZ5L",
+  "task": "hedtsk_free_recall",
+  "removed": [
+   "semantic knowledge"
+  ],
+  "proposed_additions": [
+   "cued recall",
+   "declarative memory",
+   "memory retrieval"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "N2QFGaJSkcS7",
+  "task": "hedtsk_sentence_comprehension",
+  "removed": [
+   "attentional resources"
+  ],
+  "proposed_additions": [
+   "auditory working memory",
+   "working memory"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "yyM7ndjecspw",
+  "task": "emotion",
+  "removed": [
+   "acoustic processing"
+  ],
+  "proposed_additions": [
+   "auditory attention",
+   "selective attention"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "4ToiB96TW9js",
+  "task": "tct_mental_arithmetic",
+  "removed": [
+   "visual letter recognition"
+  ],
+  "proposed_additions": [
+   "arithmetic processing",
+   "numerical cognition",
+   "numerosity",
+   "numerosity perception"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "5DGNSF3bvuZ3",
+  "task": "hedtsk_emotion_regulation",
+  "removed": [
+   "acoustic processing"
+  ],
+  "proposed_additions": [
+   "appraisal",
+   "cognitive appraisal",
+   "emotion generation"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "xufbmqqUjSBH",
+  "task": "hedtsk_heartbeat_detection",
+  "removed": [
+   "self referential"
+  ],
+  "proposed_additions": [
+   "attention",
+   "interoception"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "5dpEbr6pnyjp",
+  "task": "hedtsk_paired_associates_learning",
+  "removed": [
+   "updating"
+  ],
+  "proposed_additions": [
+   "sustained attention"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "qVMEuMmhV7jx",
+  "task": "hedtsk_paired_associates_learning",
+  "removed": [
+   "updating"
+  ],
+  "proposed_additions": [
+   "sustained attention"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "KvFqqfxatbEk",
+  "task": "tct_episodic_encoding",
+  "removed": [
+   "reward anticipation"
+  ],
+  "proposed_additions": [],
+  "previous_source": "paper_phase"
+ },
+ {
+  "round": 2,
+  "analysis": "wksdHSi3RroM",
+  "task": "hedtsk_emotion_regulation",
+  "removed": [
+   "decision making"
+  ],
+  "proposed_additions": [
+   "agency",
+   "emotion regulation",
+   "volition"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "4CJbQMm58aNk",
+  "task": "perceptual_judgment",
+  "removed": [
+   "orthographic representation"
+  ],
+  "proposed_additions": [
+   "articulatory planning",
+   "motor planning",
+   "perception-action coupling",
+   "speech production"
+  ],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "rRLUXC9sM6XW",
+  "task": "hedtsk_visual_search",
+  "removed": [
+   "oddball detection",
+   "novelty detection"
+  ],
+  "proposed_additions": [
+   "visual search"
+  ],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "eof3swyFRpSQ",
+  "task": "hedtsk_old_new_recognition_memory",
+  "removed": [
+   "response execution"
+  ],
+  "proposed_additions": [
+   "recognition memory",
+   "source memory"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "8P567FpsBmNE",
+  "task": "tct_creativity",
+  "removed": [
+   "social cognition"
+  ],
+  "proposed_additions": [],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "LRReHgJrLphW",
+  "task": "tct_categorization",
+  "removed": [
+   "inhibition"
+  ],
+  "proposed_additions": [],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "nAJU2TGzi8hZ",
+  "task": "hedtsk_source_memory",
+  "removed": [
+   "mental imagery",
+   "imagery"
+  ],
+  "proposed_additions": [
+   "recollection",
+   "source memory",
+   "source monitoring"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "8mUZF3TvTvp4",
+  "task": "hedtsk_pavlovian_fear_conditioning",
+  "removed": [
+   "visual place recognition",
+   "visual scene perception"
+  ],
+  "proposed_additions": [
+   "distraction",
+   "emotion regulation",
+   "mental imagery"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "c9fdezTPtj7S",
+  "task": "hedtsk_old_new_recognition_memory",
+  "removed": [
+   "pain"
+  ],
+  "proposed_additions": [],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "QLZCugT7vq6B",
+  "task": "conflict_and_interference",
+  "removed": [
+   "auditory word comprehension",
+   "semantic processing"
+  ],
+  "proposed_additions": [
+   "negative emotion",
+   "threat perception"
+  ],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "8Dyi4Y3kRnaw",
+  "task": "hedtsk_old_new_recognition_memory",
+  "removed": [
+   "attention"
+  ],
+  "proposed_additions": [],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "ShBLwY5fMox5",
+  "task": "perceptual_judgment",
+  "removed": [
+   "forgetting"
+  ],
+  "proposed_additions": [
+   "detection",
+   "perceptual awareness",
+   "somatosensation",
+   "somatosensory perception"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "oPfGAYDy7WAX",
+  "task": "perceptual_judgment",
+  "removed": [
+   "forgetting"
+  ],
+  "proposed_additions": [
+   "detection",
+   "perceptual awareness",
+   "somatosensation",
+   "somatosensory perception"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "rtJHWRpFDzgo",
+  "task": "hedtsk_finger_tapping",
+  "removed": [
+   "coordination",
+   "dexterity",
+   "fine motor",
+   "fine motor control",
+   "manual dexterity",
+   "motor control",
+   "motor performance",
+   "motor speed",
+   "motor timing"
+  ],
+  "proposed_additions": [
+   "word generation"
+  ],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "xUrUyrLhW2yE",
+  "task": "emotion",
+  "removed": [
+   "acoustic processing"
+  ],
+  "proposed_additions": [
+   "audiovisual perception",
+   "multisensory integration"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "bGfkpyKjKjsE",
+  "task": "hedtsk_task_switching",
+  "removed": [
+   "successful inhibition"
+  ],
+  "proposed_additions": [
+   "cognitive flexibility",
+   "task switching"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "RbfKQEgEXVaZ",
+  "task": "tct_threat_of_shock",
+  "removed": [
+   "aversive salience"
+  ],
+  "proposed_additions": [],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "NVV6yTpZkrie",
+  "task": "hedtsk_pavlovian_fear_conditioning",
+  "removed": [
+   "mental imagery"
+  ],
+  "proposed_additions": [],
+  "previous_source": "paper_phase"
+ },
+ {
+  "round": 2,
+  "analysis": "35veNDJ5Qgv9",
+  "task": "hedtsk_artificial_grammar_learning",
+  "removed": [
+   "cognitive flexibility"
+  ],
+  "proposed_additions": [
+   "manipulation",
+   "phonological processing",
+   "prosody"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "wHBcfEuh2yeE",
+  "task": "hedtsk_artificial_grammar_learning",
+  "removed": [
+   "spatial cognition",
+   "relational comparison"
+  ],
+  "proposed_additions": [
+   "lexical retrieval",
+   "naming",
+   "semantic processing"
+  ],
+  "previous_source": "codex"
+ },
+ {
+  "round": 2,
+  "analysis": "5pGEZs3q9KWD",
+  "task": "tct_mental_imagery",
+  "removed": [
+   "pitch perception"
+  ],
+  "proposed_additions": [
+   "timbre perception"
+  ],
+  "previous_source": "paper"
+ },
+ {
+  "round": 2,
+  "analysis": "R9vV8rR3ydXM",
+  "task": "hedtsk_old_new_recognition_memory",
+  "removed": [
+   "visual perception"
+  ],
+  "proposed_additions": [
+   "recognition",
+   "recognition memory"
+  ],
+  "previous_source": "paper"
+ }
+]

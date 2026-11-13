@@ -1,0 +1,20 @@
+child	parent	relation	reason
+attention	cognitive control	kind_of	Attention includes bottom-up, stimulus-driven processes; it is broader than top-down control, not a kind of it.
+semantic processing	spreading activation	kind_of	Spreading activation is a specific search mechanism within semantic networks; the relation is inverted/mechanism-of, not is-a.
+cognitive load	understanding mental states	kind_of	Working-memory demand is unrelated to attributing mental states to others.
+reward processing	positive feedback processing	kind_of	Positive feedback is one form of reward; the relation is inverted (parent is narrower than child).
+reasoning	decision making	kind_of	Drawing inferences is a distinct process that may support choosing, not a kind of selecting among alternatives.
+spatial attention	visual attention	kind_of	Spatial attention is defined by spatial coordinates in any modality; it cross-cuts rather than specialises visual attention.
+salience	attention	kind_of	Salience is a stimulus parameter that drives attention, a cause/property rather than a kind of attentional process.
+reading	visual object recognition	kind_of	Reading is decoding symbols for meaning (also possible by touch); visual recognition is at most a component of it.
+interference	cognitive control	kind_of	Interference is the disruptive effect that control must resolve, not a kind of top-down control.
+lexical selection	word production	kind_of	Lexical selection is a stage (part) of word production, not a kind of it; no definitions available.
+response conflict	task difficulty	kind_of	Response conflict is one cause of difficulty, not a kind of perceived effort.
+orienting response	novelty detection	kind_of	The orienting response is a reaction triggered by detecting novel or salient stimuli, a consequence rather than a kind of detection.
+movement	motor control	kind_of	Movement is the change of position being supervised; motor control is the function governing it, not its superclass.
+pain	nociception	kind_of	Pain is a sensory and emotional experience usually caused by nociception, not a kind of noxious-stimulus encoding.
+extinction	context memory	kind_of	Extinction is new learning that reduces a conditioned response; it is context-dependent but not a kind of context memory.
+prosocial behavior	social cognition	kind_of	Prosocial behaviour is action toward others, related to but not a kind of processing information about conspecifics.
+risky decision making	impulsivity	kind_of	Risky decision making is a kind of decision making; impulsivity is a trait that may influence it.
+risk processing	decision making	kind_of	Extracting risk information is an input to choice, not itself a selection among alternatives.
+attentional engagement	attention shifting	kind_of	Engagement is a component/phase contrasted with shifting and disengagement, not a kind of shifting.

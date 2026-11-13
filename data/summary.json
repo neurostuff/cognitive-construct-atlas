@@ -1,0 +1,18 @@
+{
+ "analyses": 27905,
+ "papers": 8574,
+ "analyses_with_a_contrast": 26072,
+ "contrasts": 12602,
+ "tasks": 218,
+ "provisional_tasks": 78,
+ "tasks_with_cognitive_atlas_id": 53,
+ "families": 18,
+ "concepts": 1015,
+ "concepts_in_cognitive_atlas": 742,
+ "concepts_proposed": 273,
+ "kind_of_relations": 1212,
+ "part_of_relations": 47,
+ "removed_relations": 19,
+ "contrast_concept_assertions": 35438,
+ "corpus": "corpus_w_B.json"
+}

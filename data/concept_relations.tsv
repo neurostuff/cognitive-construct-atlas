@@ -1,0 +1,1260 @@
+child	parent	relation	source
+abductive reasoning	reasoning	kind_of	cognitive atlas or literature
+abstract knowledge	knowledge	kind_of	cognitive atlas or literature
+abstract reasoning	cognitive control	kind_of	cognitive atlas or literature
+abstract reasoning	reasoning	kind_of	cognitive atlas or literature
+acoustic encoding	encoding	kind_of	cognitive atlas or literature
+acoustic encoding	auditory encoding	kind_of	added 2026-11 (model-proposed, add-only pass)
+acoustic phonetic processing	speech perception	kind_of	cognitive atlas or literature
+acoustic phonetic processing	speech processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+acoustic processing	auditory perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+action initiation	action	kind_of	added 2026-11 (model-proposed, add-only pass)
+action outcome learning	instrumental learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+action perception	perception	kind_of	cognitive atlas or literature
+active cognitive inhibition	inhibition	kind_of	cognitive atlas or literature
+active maintenance	working memory maintenance	kind_of	cognitive atlas or literature
+active recall	recall	kind_of	cognitive atlas or literature
+active recall	active retrieval	kind_of	added 2026-11 (model-proposed, add-only pass)
+active retrieval	retrieval	kind_of	cognitive atlas or literature
+acute psychosocial stress	stress	kind_of	cognitive atlas or literature
+acute psychosocial stress	psychosocial stress	kind_of	added 2026-11 (model-proposed, add-only pass)
+acute psychosocial stress	acute stress	kind_of	added 2026-11 (model-proposed, add-only pass)
+acute stress	stress	kind_of	cognitive atlas or literature
+acute stress response	stress	kind_of	cognitive atlas or literature
+acute stress response	acute stress	kind_of	added 2026-11 (model-proposed, add-only pass)
+acute stress response	stress reactivity	kind_of	added 2026-11 (model-proposed, add-only pass)
+adaptive control	cognitive control	kind_of	cognitive atlas or literature
+aesthetic exprience	emotion	kind_of	cognitive atlas or literature
+affect perception	perception	kind_of	cognitive atlas or literature
+affect perception	emotional processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+affect recognition	affect perception	kind_of	cognitive atlas or literature
+affective empathy	empathy	kind_of	cognitive atlas or literature
+affective theory of mind	theory of mind	kind_of	cognitive atlas or literature
+affective tom	theory of mind	kind_of	cognitive atlas or literature
+alerting	attention	kind_of	cognitive atlas or literature
+alertness	sustained attention	kind_of	cognitive atlas or literature
+alertness	attentional state	kind_of	added 2026-11 (model-proposed, add-only pass)
+allocation of attentional resources	attention	kind_of	cognitive atlas or literature
+allocation of attentional resources	attentional control	kind_of	added 2026-11 (model-proposed, add-only pass)
+altruism	prosocial behavior	kind_of	added 2026-11 (model-proposed, add-only pass)
+altruistic motivation	motivation	kind_of	cognitive atlas or literature
+altruistic motivation	social motivation	kind_of	added 2026-11 (model-proposed, add-only pass)
+altruistic punishment	social norm processing	kind_of	cognitive atlas or literature
+altruistic punishment	altruism	kind_of	added 2026-11 (model-proposed, add-only pass)
+amodal representation	mental representation	kind_of	cognitive atlas or literature
+analog representation	mental representation	kind_of	cognitive atlas or literature
+analogical inference	analogical reasoning	kind_of	cognitive atlas or literature
+analogical inference	inference	kind_of	added 2026-11 (model-proposed, add-only pass)
+analogical problem solving	problem solving	kind_of	cognitive atlas or literature
+analogical problem solving	analogical reasoning	kind_of	added 2026-11 (model-proposed, add-only pass)
+analogical reasoning	reasoning	kind_of	cognitive atlas or literature
+analogical reasoning	inductive reasoning	kind_of	added 2026-11 (model-proposed, add-only pass)
+analogical transfer	analogical reasoning	kind_of	cognitive atlas or literature
+analogy	reasoning	kind_of	cognitive atlas or literature
+animacy perception	visual perception	kind_of	cognitive atlas or literature
+ans	numerical cognition	kind_of	cognitive atlas or literature
+ans	magnitude representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+anticipatory anxiety	anxiety	kind_of	cognitive atlas or literature
+anxiety	emotion	kind_of	cognitive atlas or literature
+anxiety	negative emotion	kind_of	added 2026-11 (model-proposed, add-only pass)
+apparent motion	visual perception	kind_of	cognitive atlas or literature
+appetite	motivation	kind_of	cognitive atlas or literature
+appetitive motivation	motivation	kind_of	added 2026-11 (model-proposed, add-only pass)
+approach	appetitive motivation	kind_of	cognitive atlas or literature
+approach avoidance	motivation	kind_of	added 2026-11 (model-proposed, add-only pass)
+approach bias	cognitive bias	kind_of	cognitive atlas or literature
+approach bias	attentional bias	kind_of	cognitive atlas or literature
+arithmetic processing	numerical cognition	kind_of	cognitive atlas or literature
+arousal (emotion)	arousal	kind_of	cognitive atlas or literature
+arousal (physical)	arousal	kind_of	cognitive atlas or literature
+articulation	speech production	kind_of	cognitive atlas or literature
+articulatory loop	working memory	kind_of	cognitive atlas or literature
+articulatory loop	phonological loop	kind_of	added 2026-11 (model-proposed, add-only pass)
+articulatory planning	motor planning	kind_of	cognitive atlas or literature
+articulatory rehearsal	rehearsal	kind_of	cognitive atlas or literature
+assimilation	learning	kind_of	cognitive atlas or literature
+association learning	learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+associative priming	priming	kind_of	cognitive atlas or literature
+attachment	emotion	kind_of	cognitive atlas or literature
+attention allocation	attention	kind_of	cognitive atlas or literature
+attention capacity	attentional resources	kind_of	cognitive atlas or literature
+attention shift	attention	kind_of	cognitive atlas or literature
+attention shifting	attentional control	kind_of	added 2026-11 (model-proposed, add-only pass)
+attention span	attention	kind_of	cognitive atlas or literature
+attentional asymmetries	attention	kind_of	cognitive atlas or literature
+attentional asymmetry	attentional bias	kind_of	cognitive atlas or literature
+attentional bias	cognitive bias	kind_of	added 2026-11 (model-proposed, add-only pass)
+attentional blink	temporal attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+attentional capture	exogenous attention	kind_of	cognitive atlas or literature
+attentional capture	involuntary attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+attentional control	cognitive control	kind_of	cognitive atlas or literature
+attentional cost	attentional resources	kind_of	cognitive atlas or literature
+attentional cost	attentional demand	kind_of	added 2026-11 (model-proposed, add-only pass)
+attentional deficit	inattention	kind_of	cognitive atlas or literature
+attentional demand	cognitive load	kind_of	cognitive atlas or literature
+attentional demands	attentional load	kind_of	cognitive atlas or literature
+attentional disengagement	attention shifting	kind_of	cognitive atlas or literature
+attentional disengagement	disengagement	kind_of	added 2026-11 (model-proposed, add-only pass)
+attentional effort	cognitive effort	kind_of	cognitive atlas or literature
+attentional engagement	attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+attentional focusing	attention	kind_of	cognitive atlas or literature
+attentional guidance	visual attention	kind_of	cognitive atlas or literature
+attentional load	cognitive load	kind_of	cognitive atlas or literature
+attentional modulation	attention	kind_of	cognitive atlas or literature
+attentional performance	sustained attention	kind_of	cognitive atlas or literature
+attentional performance	attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+attentional resources	resource	kind_of	cognitive atlas or literature
+attentional state	attention	kind_of	cognitive atlas or literature
+attentional tracking	visual attention	kind_of	cognitive atlas or literature
+attribution	social cognition	kind_of	cognitive atlas or literature
+audiovisual perception	multisensory integration	kind_of	cognitive atlas or literature
+audition	perception	kind_of	cognitive atlas or literature
+auditory arithmetic processing	arithmetic processing	kind_of	cognitive atlas or literature
+auditory attention	attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+auditory encoding	encoding	kind_of	cognitive atlas or literature
+auditory feedback	feedback processing	kind_of	cognitive atlas or literature
+auditory grouping	auditory scene analysis	kind_of	cognitive atlas or literature
+auditory grouping	gestalt grouping	kind_of	added 2026-11 (model-proposed, add-only pass)
+auditory grouping	auditory perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+auditory imagery	mental imagery	kind_of	cognitive atlas or literature
+auditory learning	learning	kind_of	cognitive atlas or literature
+auditory learning	perceptual learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+auditory lexical access	lexical access	kind_of	cognitive atlas or literature
+auditory localization	localization	kind_of	cognitive atlas or literature
+auditory localization	auditory perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+auditory masking	auditory perception	kind_of	cognitive atlas or literature
+auditory memory	memory	kind_of	cognitive atlas or literature
+auditory perception	perception	kind_of	cognitive atlas or literature
+auditory recognition	auditory perception	kind_of	cognitive atlas or literature
+auditory recognition	recognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+auditory scene analysis	auditory perception	kind_of	cognitive atlas or literature
+auditory sentence comprehension	sentence comprehension	kind_of	cognitive atlas or literature
+auditory sentence recognition	auditory word recognition	kind_of	cognitive atlas or literature
+auditory sentence recognition	auditory recognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+auditory stream segregation	auditory scene analysis	kind_of	cognitive atlas or literature
+auditory tone detection	auditory tone perception	kind_of	cognitive atlas or literature
+auditory tone detection	detection	kind_of	added 2026-11 (model-proposed, add-only pass)
+auditory tone discrimination	auditory tone perception	kind_of	cognitive atlas or literature
+auditory tone discrimination	pitch discrimination	kind_of	added 2026-11 (model-proposed, add-only pass)
+auditory tone perception	auditory perception	kind_of	cognitive atlas or literature
+auditory word comprehension	word comprehension	kind_of	cognitive atlas or literature
+auditory word comprehension	speech perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+auditory word recognition	word recognition	kind_of	cognitive atlas or literature
+auditory word recognition	auditory recognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+auditory working memory	working memory	kind_of	cognitive atlas or literature
+auditory working memory	auditory memory	kind_of	added 2026-11 (model-proposed, add-only pass)
+autobiographical memory	episodic memory	kind_of	cognitive atlas or literature
+autobiographical memory specificity	autobiographical memory	kind_of	cognitive atlas or literature
+autobiographical memory specificity	memory specificity	kind_of	added 2026-11 (model-proposed, add-only pass)
+autobiographical recall	autobiographical memory	kind_of	cognitive atlas or literature
+autobiographical recall	recall	kind_of	added 2026-11 (model-proposed, add-only pass)
+automatic priming	semantic priming	kind_of	cognitive atlas or literature
+automatic priming	priming	kind_of	added 2026-11 (model-proposed, add-only pass)
+autonoesis	consciousness	kind_of	cognitive atlas or literature
+autonomic nervous system acuity	interoception	kind_of	cognitive atlas or literature
+autonomic nervous system acuity	interoceptive accuracy	kind_of	added 2026-11 (model-proposed, add-only pass)
+aversive learning	learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+aversive responding	fear	kind_of	cognitive atlas or literature
+aversive responding	emotional response	kind_of	added 2026-11 (model-proposed, add-only pass)
+aversive salience	salience	kind_of	cognitive atlas or literature
+awareness	consciousness	kind_of	cognitive atlas or literature
+balance	motor control	kind_of	cognitive atlas or literature
+basic emotion	emotion	kind_of	cognitive atlas or literature
+basic emotions	emotion	kind_of	cognitive atlas or literature
+beat perception	rhythm	kind_of	cognitive atlas or literature
+beat perception	music perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+beat perception	time perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+behavioral approach system	motivation	kind_of	cognitive atlas or literature
+behavioral approach system	appetitive motivation	kind_of	added 2026-11 (model-proposed, add-only pass)
+behavioral flexibility	cognitive control	kind_of	cognitive atlas or literature
+behavioral flexibility	cognitive flexibility	kind_of	added 2026-11 (model-proposed, add-only pass)
+behavioral inhibition	self control	kind_of	cognitive atlas or literature
+behavioral inhibition	inhibition	kind_of	added 2026-11 (model-proposed, add-only pass)
+behavioral inhibition (cognitive)	inhibition	kind_of	cognitive atlas or literature
+belief updating	updating	kind_of	cognitive atlas or literature
+binaural integration	multisensory integration	kind_of	cognitive atlas or literature
+binaural integration	auditory perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+binaural integration	integration	kind_of	added 2026-11 (model-proposed, add-only pass)
+binocular convergence	binocular vision	kind_of	cognitive atlas or literature
+binocular convergence	depth cue	kind_of	added 2026-11 (model-proposed, add-only pass)
+binocular disparity	binocular vision	kind_of	cognitive atlas or literature
+binocular disparity	depth cue	kind_of	added 2026-11 (model-proposed, add-only pass)
+binocular rivalry	multistable perception	kind_of	cognitive atlas or literature
+binocular rivalry	binocular vision	kind_of	added 2026-11 (model-proposed, add-only pass)
+binocular vision	visual perception	kind_of	cognitive atlas or literature
+biological motion	dynamic visual perception	kind_of	cognitive atlas or literature
+biological motion	action perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+bitterness	gustatory perception	kind_of	cognitive atlas or literature
+body orientation	spatial perception	kind_of	cognitive atlas or literature
+body representation	mental representation	kind_of	cognitive atlas or literature
+bottom up	attention	kind_of	cognitive atlas or literature
+capacity limitation	limited capacity	kind_of	cognitive atlas or literature
+cardiac interoception	interoception	kind_of	cognitive atlas or literature
+cardiac interoceptive accuracy	interoception	kind_of	cognitive atlas or literature
+cardiac interoceptive accuracy	interoceptive accuracy	kind_of	added 2026-11 (model-proposed, add-only pass)
+categorical clustering	categorization	kind_of	cognitive atlas or literature
+categorical knowledge	knowledge	kind_of	cognitive atlas or literature
+categorical knowledge	semantic knowledge	kind_of	added 2026-11 (model-proposed, add-only pass)
+categorical perception	perception	kind_of	cognitive atlas or literature
+categorical perception	categorization	kind_of	added 2026-11 (model-proposed, add-only pass)
+categorization	decision making	kind_of	cognitive atlas or literature
+category based induction	inductive reasoning	kind_of	cognitive atlas or literature
+category learning	concept learning	kind_of	cognitive atlas or literature
+causal inference	inference	kind_of	cognitive atlas or literature
+central auditory	auditory perception	kind_of	cognitive atlas or literature
+central coherence	holistic processing	kind_of	cognitive atlas or literature
+central executive	working memory	kind_of	cognitive atlas or literature
+central executive	executive processes	kind_of	added 2026-11 (model-proposed, add-only pass)
+central fixation	fixation	kind_of	cognitive atlas or literature
+change blindness	visual awareness	kind_of	cognitive atlas or literature
+chemonociception	nociception	kind_of	cognitive atlas or literature
+choice impulsivity	impulsivity	kind_of	cognitive atlas or literature
+chromatic contrast	color perception	kind_of	cognitive atlas or literature
+chronesthesia	temporal cognition	kind_of	cognitive atlas or literature
+chunk	chunking	kind_of	cognitive atlas or literature
+chunk	mental representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+chunking	working memory	kind_of	cognitive atlas or literature
+chunking	encoding	kind_of	added 2026-11 (model-proposed, add-only pass)
+co representation	social cognition	kind_of	cognitive atlas or literature
+cocaine craving	addiction	kind_of	cognitive atlas or literature
+cocaine craving	craving	kind_of	added 2026-11 (model-proposed, add-only pass)
+cognitive dissonance	cognitive bias	kind_of	cognitive atlas or literature
+cognitive effort	effort	kind_of	cognitive atlas or literature
+cognitive empathy	empathy	kind_of	cognitive atlas or literature
+cognitive empathy	mentalization	kind_of	added 2026-11 (model-proposed, add-only pass)
+cognitive flexibility	cognitive control	kind_of	cognitive atlas or literature
+cognitive heuristic	decision making	kind_of	cognitive atlas or literature
+cognitive heuristic	strategy	kind_of	added 2026-11 (model-proposed, add-only pass)
+cognitive map	mental representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+cognitive motor interference	interference	kind_of	cognitive atlas or literature
+cognitive skill learning	skill acquisition	kind_of	cognitive atlas or literature
+cognitive skill learning	learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+cognitive theory of mind	theory of mind	kind_of	cognitive atlas or literature
+cognitive tom	theory of mind	kind_of	cognitive atlas or literature
+color perception	visual perception	kind_of	cognitive atlas or literature
+color recognition	color perception	kind_of	cognitive atlas or literature
+color recognition	visual recognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+combinatorial semantics	semantic processing	kind_of	cognitive atlas or literature
+competition	social cognition	kind_of	cognitive atlas or literature
+concept	knowledge	kind_of	cognitive atlas or literature
+concept	mental representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+concept learning	learning	kind_of	cognitive atlas or literature
+conceptual category	concept	kind_of	cognitive atlas or literature
+conceptual coherence	concept	kind_of	cognitive atlas or literature
+conceptual combination	conceptualization	kind_of	cognitive atlas or literature
+conceptual metaphor	metaphor	kind_of	cognitive atlas or literature
+conceptual planning	planning	kind_of	cognitive atlas or literature
+conceptual priming	priming	kind_of	cognitive atlas or literature
+conceptualization	concept	kind_of	cognitive atlas or literature
+conceptualization	thought	kind_of	added 2026-11 (model-proposed, add-only pass)
+conditional reasoning	deductive reasoning	kind_of	cognitive atlas or literature
+conditioned fear	fear	kind_of	cognitive atlas or literature
+conditioned fear response	fear	kind_of	cognitive atlas or literature
+conditioned fear response	emotional response	kind_of	added 2026-11 (model-proposed, add-only pass)
+confidence judgment	metacognition	kind_of	cognitive atlas or literature
+confidence judgment	judgment	kind_of	added 2026-11 (model-proposed, add-only pass)
+conflict adaptation effect	adaptive control	kind_of	cognitive atlas or literature
+conflict detection	detection	kind_of	added 2026-11 (model-proposed, add-only pass)
+conflict monitoring	cognitive control	kind_of	cognitive atlas or literature
+conflict monitoring	conflict detection	kind_of	cognitive atlas or literature
+conflict monitoring	performance monitoring	kind_of	added 2026-11 (model-proposed, add-only pass)
+conjunction search	visual search	kind_of	cognitive atlas or literature
+conscious judgment knowledge	explicit knowledge	kind_of	cognitive atlas or literature
+consolidation	memory	kind_of	cognitive atlas or literature
+constancy	perception	kind_of	cognitive atlas or literature
+constituent structure	syntax	kind_of	cognitive atlas or literature
+context dependent	context	kind_of	cognitive atlas or literature
+context memory	memory	kind_of	cognitive atlas or literature
+context memory	episodic memory	kind_of	added 2026-11 (model-proposed, add-only pass)
+context representation	mental representation	kind_of	cognitive atlas or literature
+context updating	updating	kind_of	cognitive atlas or literature
+contextual knowledge	knowledge	kind_of	cognitive atlas or literature
+contingency learning	association learning	kind_of	cognitive atlas or literature
+contrastive stress	prosodic stress	kind_of	cognitive atlas or literature
+convergent thinking	thought	kind_of	added 2026-11 (model-proposed, add-only pass)
+conversation	communication	kind_of	cognitive atlas or literature
+cooperation	social cognition	kind_of	cognitive atlas or literature
+cooperation	prosocial behavior	kind_of	added 2026-11 (model-proposed, add-only pass)
+coordination	motor control	kind_of	added 2026-11 (model-proposed, add-only pass)
+coping	emotion regulation	kind_of	cognitive atlas or literature
+coreference	discourse processing	kind_of	cognitive atlas or literature
+covert attention	attention	kind_of	cognitive atlas or literature
+craving	desire	kind_of	cognitive atlas or literature
+craving response	desire	kind_of	cognitive atlas or literature
+craving response	craving	kind_of	added 2026-11 (model-proposed, add-only pass)
+creative potential	creative cognition	kind_of	cognitive atlas or literature
+creative problem solving	problem solving	kind_of	cognitive atlas or literature
+creative problem solving	creative thinking	kind_of	added 2026-11 (model-proposed, add-only pass)
+creative thinking	creative cognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+creative thinking	thought	kind_of	added 2026-11 (model-proposed, add-only pass)
+crossmodal	multisensory	kind_of	cognitive atlas or literature
+cue elicited craving	food cue reactivity	kind_of	cognitive atlas or literature
+cue elicited craving	craving	kind_of	added 2026-11 (model-proposed, add-only pass)
+cue induced craving	food cue reactivity	kind_of	cognitive atlas or literature
+cue induced craving	craving	kind_of	added 2026-11 (model-proposed, add-only pass)
+cueing	attention	kind_of	cognitive atlas or literature
+cueing	orienting	kind_of	added 2026-11 (model-proposed, add-only pass)
+curiosity	intrinsic motivation	kind_of	cognitive atlas or literature
+decision	decision making	kind_of	cognitive atlas or literature
+decision certainty	confidence judgment	kind_of	cognitive atlas or literature
+decision making under ambiguity	decision under uncertainty	kind_of	cognitive atlas or literature
+decision making under ambiguity	decision making	kind_of	added 2026-11 (model-proposed, add-only pass)
+decision making under risk	decision making	kind_of	cognitive atlas or literature
+decision making under risk	decision under uncertainty	kind_of	added 2026-11 (model-proposed, add-only pass)
+decision uncertainty	uncertainty	kind_of	cognitive atlas or literature
+decision under uncertainty	decision making	kind_of	added 2026-11 (model-proposed, add-only pass)
+declarative knowledge	knowledge	kind_of	cognitive atlas or literature
+declarative memory	long term memory	kind_of	cognitive atlas or literature
+declarative memory	memory	kind_of	cognitive atlas or literature
+declarative rule	rule	kind_of	cognitive atlas or literature
+deductive inference	deductive reasoning	kind_of	cognitive atlas or literature
+deductive inference	inference	kind_of	added 2026-11 (model-proposed, add-only pass)
+deductive reasoning	reasoning	kind_of	cognitive atlas or literature
+deductive reasoning	logical reasoning	kind_of	added 2026-11 (model-proposed, add-only pass)
+deep processing	encoding	kind_of	cognitive atlas or literature
+delay discounting	intertemporal choice	kind_of	added 2026-11 (model-proposed, add-only pass)
+deliberation	decision making	kind_of	cognitive atlas or literature
+depth cue	depth perception	kind_of	cognitive atlas or literature
+depth perception	visual perception	kind_of	cognitive atlas or literature
+desire	motivation	kind_of	added 2026-11 (model-proposed, add-only pass)
+detection	perception	kind_of	cognitive atlas or literature
+dexterity	motor control	kind_of	cognitive atlas or literature
+dexterity	motor skill	kind_of	added 2026-11 (model-proposed, add-only pass)
+difference threshold	discrimination	kind_of	cognitive atlas or literature
+diphthong	phonological processing	kind_of	cognitive atlas or literature
+discounting rate	delay discounting	kind_of	cognitive atlas or literature
+discourse comprehension	discourse processing	kind_of	cognitive atlas or literature
+discourse comprehension	language comprehension	kind_of	added 2026-11 (model-proposed, add-only pass)
+discourse planning	discourse production	kind_of	cognitive atlas or literature
+discourse planning	planning	kind_of	added 2026-11 (model-proposed, add-only pass)
+discourse processing	language processing	kind_of	cognitive atlas or literature
+discourse production	language production	kind_of	cognitive atlas or literature
+discourse production	discourse processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+discrimination	perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+disengagement	attention shifting	kind_of	cognitive atlas or literature
+divergent thinking	creative thinking	kind_of	added 2026-11 (model-proposed, add-only pass)
+divided attention	attention	kind_of	cognitive atlas or literature
+dominant percept	multistable perception	kind_of	cognitive atlas or literature
+dream	sleep	kind_of	cognitive atlas or literature
+dream	state consciousness	kind_of	added 2026-11 (model-proposed, add-only pass)
+driving ability	skill	kind_of	cognitive atlas or literature
+duration perception	time perception	kind_of	cognitive atlas or literature
+dynamic attention	attention	kind_of	cognitive atlas or literature
+dynamic visual attention	visual attention	kind_of	cognitive atlas or literature
+dynamic visual attention	dynamic attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+dynamic visual perception	visual perception	kind_of	cognitive atlas or literature
+echoic memory	sensory memory	kind_of	cognitive atlas or literature
+echoic memory	auditory memory	kind_of	added 2026-11 (model-proposed, add-only pass)
+echolocation	auditory perception	kind_of	cognitive atlas or literature
+echolocation	auditory localization	kind_of	added 2026-11 (model-proposed, add-only pass)
+economic decision making	decision making	kind_of	cognitive atlas or literature
+economic value processing	economic decision making	kind_of	cognitive atlas or literature
+economic value processing	reward valuation	kind_of	added 2026-11 (model-proposed, add-only pass)
+edge detection	feature detection	kind_of	cognitive atlas or literature
+effort valuation	reward valuation	kind_of	cognitive atlas or literature
+effortful processing	cognitive effort	kind_of	cognitive atlas or literature
+egocentric	spatial cognition	kind_of	cognitive atlas or literature
+elaborative processing	deep processing	kind_of	cognitive atlas or literature
+emotion perception	perception	kind_of	cognitive atlas or literature
+emotion recognition	recognition	kind_of	cognitive atlas or literature
+emotion recognition	emotion perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+emotion regulation	self control	kind_of	cognitive atlas or literature
+emotion regulation strategy	emotion regulation	kind_of	cognitive atlas or literature
+emotion regulation strategy	strategy	kind_of	added 2026-11 (model-proposed, add-only pass)
+emotion regulation success	emotion regulation	kind_of	cognitive atlas or literature
+emotional bonding	attachment	kind_of	cognitive atlas or literature
+emotional conflict	response conflict	kind_of	cognitive atlas or literature
+emotional decision making	decision making	kind_of	added 2026-11 (model-proposed, add-only pass)
+emotional enhancement	emotional processing	kind_of	cognitive atlas or literature
+emotional expression	emotion	kind_of	cognitive atlas or literature
+emotional expression	communication	kind_of	added 2026-11 (model-proposed, add-only pass)
+emotional face recognition	emotion recognition	kind_of	cognitive atlas or literature
+emotional face recognition	visual face recognition	kind_of	cognitive atlas or literature
+emotional interference	interference	kind_of	cognitive atlas or literature
+emotional memory	memory	kind_of	added 2026-11 (model-proposed, add-only pass)
+emotional mimicry	imitation	kind_of	cognitive atlas or literature
+emotional processing	emotion	kind_of	cognitive atlas or literature
+emotional reactivity	emotion	kind_of	cognitive atlas or literature
+emotional reactivity	emotional response	kind_of	added 2026-11 (model-proposed, add-only pass)
+emotional reappraisal	emotion regulation strategy	kind_of	cognitive atlas or literature
+emotional reappraisal	emotion regulation	kind_of	added 2026-11 (model-proposed, add-only pass)
+emotional response	emotion	kind_of	cognitive atlas or literature
+emotional responses	emotion	kind_of	cognitive atlas or literature
+emotional self evaluation	self evaluation	kind_of	cognitive atlas or literature
+emotional state	emotion	kind_of	cognitive atlas or literature
+emotional stroop effect	attentional bias	kind_of	cognitive atlas or literature
+emotional stroop effect	emotional interference	kind_of	added 2026-11 (model-proposed, add-only pass)
+emotional suppression	emotion regulation strategy	kind_of	cognitive atlas or literature
+empathic concern	empathy	kind_of	cognitive atlas or literature
+empathic concern	affective empathy	kind_of	added 2026-11 (model-proposed, add-only pass)
+empathic responses	empathy	kind_of	cognitive atlas or literature
+empathic responses	emotional response	kind_of	added 2026-11 (model-proposed, add-only pass)
+empathy	social cognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+endogenous orienting	attention shift	kind_of	cognitive atlas or literature
+endogenous orienting	orienting	kind_of	added 2026-11 (model-proposed, add-only pass)
+enumeration	numerical cognition	kind_of	cognitive atlas or literature
+episodic buffer	working memory	kind_of	cognitive atlas or literature
+episodic buffer	short term memory	kind_of	added 2026-11 (model-proposed, add-only pass)
+episodic future thinking	prospection	kind_of	cognitive atlas or literature
+episodic future thinking	episodic simulation	kind_of	added 2026-11 (model-proposed, add-only pass)
+episodic intention	intention	kind_of	cognitive atlas or literature
+episodic learning	learning	kind_of	cognitive atlas or literature
+episodic memory	declarative memory	kind_of	cognitive atlas or literature
+episodic prediction	episodic future thinking	kind_of	cognitive atlas or literature
+episodic simulation	imagination	kind_of	cognitive atlas or literature
+error detection	cognitive control	kind_of	cognitive atlas or literature
+error detection	detection	kind_of	added 2026-11 (model-proposed, add-only pass)
+error detection	performance monitoring	kind_of	added 2026-11 (model-proposed, add-only pass)
+error signal	feedback processing	kind_of	cognitive atlas or literature
+excitation	activation	kind_of	cognitive atlas or literature
+executive network	cognitive control	kind_of	cognitive atlas or literature
+executive processes	cognitive control	kind_of	cognitive atlas or literature
+exogenous attention	attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+exogenous attention	involuntary attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+expectancy violation	expectancy	kind_of	cognitive atlas or literature
+expertise	skill	kind_of	cognitive atlas or literature
+explicit adaptation	adaptation	kind_of	cognitive atlas or literature
+explicit adaptation	motor adaptation	kind_of	added 2026-11 (model-proposed, add-only pass)
+explicit knowledge	knowledge	kind_of	cognitive atlas or literature
+explicit learning	learning	kind_of	cognitive atlas or literature
+explicit memory	declarative memory	kind_of	cognitive atlas or literature
+explicit strategy	strategy	kind_of	cognitive atlas or literature
+extinction	learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+extrinsic motivation	motivation	kind_of	cognitive atlas or literature
+face maintenance	working memory maintenance	kind_of	cognitive atlas or literature
+face maintenance	visual working memory maintenance	kind_of	added 2026-11 (model-proposed, add-only pass)
+face perception	visual perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+face recognition	recognition	kind_of	cognitive atlas or literature
+face recognition	visual object recognition	kind_of	cognitive atlas or literature
+facial age recognition	face recognition	kind_of	cognitive atlas or literature
+facial attractiveness recognition	face recognition	kind_of	cognitive atlas or literature
+facial emotions	facial expression	kind_of	cognitive atlas or literature
+facial expression	emotional expression	kind_of	added 2026-11 (model-proposed, add-only pass)
+facial happiness recognition	emotional face recognition	kind_of	cognitive atlas or literature
+facial recognition	face perception	kind_of	cognitive atlas or literature
+facial recognition	visual recognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+facial trustworthiness recognition	face recognition	kind_of	cognitive atlas or literature
+fairness	social norm processing	kind_of	cognitive atlas or literature
+fairness consideration	social norm processing	kind_of	cognitive atlas or literature
+fairness considerations	fairness	kind_of	cognitive atlas or literature
+fairness considerations	social norm processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+fairness norm	social norm processing	kind_of	cognitive atlas or literature
+fairness perception	social norm processing	kind_of	cognitive atlas or literature
+false belief	theory of mind	kind_of	cognitive atlas or literature
+false belief	belief	kind_of	added 2026-11 (model-proposed, add-only pass)
+false belief understanding	theory of mind	kind_of	cognitive atlas or literature
+false memory	memory	kind_of	cognitive atlas or literature
+far spatial distance	spatial distance	kind_of	cognitive atlas or literature
+far temporal distance	temporal distance	kind_of	cognitive atlas or literature
+fear	negative emotion	kind_of	cognitive atlas or literature
+fear generalization	generalization	kind_of	cognitive atlas or literature
+fear learning	aversive learning	kind_of	cognitive atlas or literature
+fear memory	memory	kind_of	cognitive atlas or literature
+fear memory	emotional memory	kind_of	cognitive atlas or literature
+feature based attention	selective attention	kind_of	cognitive atlas or literature
+feature comparison	discrimination	kind_of	cognitive atlas or literature
+feature detection	perception	kind_of	cognitive atlas or literature
+feature extraction	perception	kind_of	cognitive atlas or literature
+feature integration	integration	kind_of	cognitive atlas or literature
+feature search	visual search	kind_of	cognitive atlas or literature
+figure ground reversal	multistable perception	kind_of	cognitive atlas or literature
+figure ground reversal	figure ground segregation	kind_of	added 2026-11 (model-proposed, add-only pass)
+figure ground segregation	visual perception	kind_of	cognitive atlas or literature
+filtering	selective attention	kind_of	cognitive atlas or literature
+fine motor	motor control	kind_of	cognitive atlas or literature
+fine motor control	motor control	kind_of	cognitive atlas or literature
+fixation	oculomotor control	kind_of	cognitive atlas or literature
+flicker fusion threshold	temporal sensitivity	kind_of	cognitive atlas or literature
+fluid intelligence	intelligence	kind_of	added 2026-11 (model-proposed, add-only pass)
+focused attention	attention	kind_of	cognitive atlas or literature
+focused attention	selective attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+forgetting	memory	kind_of	cognitive atlas or literature
+form perception	visual perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+framing	cognitive bias	kind_of	cognitive atlas or literature
+frustration	negative emotion	kind_of	cognitive atlas or literature
+functional fixedness	cognitive bias	kind_of	cognitive atlas or literature
+gaze following	joint attention	kind_of	cognitive atlas or literature
+gaze following	social attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+generalization	learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+generic knowledge	knowledge	kind_of	cognitive atlas or literature
+generosity	altruism	kind_of	cognitive atlas or literature
+generosity	prosocial behavior	kind_of	added 2026-11 (model-proposed, add-only pass)
+gestalt	perception	kind_of	cognitive atlas or literature
+gestalt grouping	gestalt	kind_of	cognitive atlas or literature
+global motion	motion detection	kind_of	cognitive atlas or literature
+global motion perception	motion detection	kind_of	cognitive atlas or literature
+global motion perception	visual perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+global precedence	visual perception	kind_of	cognitive atlas or literature
+global precedence	holistic processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+goal directed	action outcome learning	kind_of	cognitive atlas or literature
+goal directed	action	kind_of	added 2026-11 (model-proposed, add-only pass)
+goal maintenance	goal management	kind_of	cognitive atlas or literature
+goal management	executive processes	kind_of	cognitive atlas or literature
+goal selection	goal management	kind_of	cognitive atlas or literature
+goal state	goal	kind_of	cognitive atlas or literature
+grammatical encoding	language production	kind_of	cognitive atlas or literature
+grammatical encoding	syntactic processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+grapheme	orthography	kind_of	cognitive atlas or literature
+grapheme	orthographic representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+grief	sadness	kind_of	cognitive atlas or literature
+guilt	emotion	kind_of	cognitive atlas or literature
+gustation processing	gustatory perception	kind_of	cognitive atlas or literature
+gustatory perception	perception	kind_of	cognitive atlas or literature
+habit learning	procedural learning	kind_of	cognitive atlas or literature
+hallucination	perception	kind_of	cognitive atlas or literature
+happiness	basic emotion	kind_of	cognitive atlas or literature
+hedonism	motivation	kind_of	cognitive atlas or literature
+high energy density food recognition	visual object recognition	kind_of	cognitive atlas or literature
+holistic processing	face perception	kind_of	cognitive atlas or literature
+holistic processing	visual perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+humiliation	negative emotion	kind_of	cognitive atlas or literature
+illocutionary force	pragmatic knowledge	kind_of	cognitive atlas or literature
+imageability	imagery	kind_of	cognitive atlas or literature
+imagery	mental representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+imagination	mental representation	kind_of	cognitive atlas or literature
+imagination	thought	kind_of	added 2026-11 (model-proposed, add-only pass)
+imagined emotional pain	imagined pain	kind_of	cognitive atlas or literature
+imagined pain	imagination	kind_of	cognitive atlas or literature
+imagined pain	mental imagery	kind_of	added 2026-11 (model-proposed, add-only pass)
+imagined physical pain	imagined pain	kind_of	cognitive atlas or literature
+imitation	social learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+implicit adaptation	motor learning	kind_of	cognitive atlas or literature
+implicit adaptation	motor adaptation	kind_of	added 2026-11 (model-proposed, add-only pass)
+implicit emotion regulation	emotion regulation	kind_of	cognitive atlas or literature
+implicit knowledge	knowledge	kind_of	cognitive atlas or literature
+implicit learning	learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+implicit memory	memory	kind_of	cognitive atlas or literature
+implicit motor learning	motor learning	kind_of	cognitive atlas or literature
+implicit motor learning	implicit learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+implicit motor sequence learning	motor sequence learning	kind_of	cognitive atlas or literature
+implicit motor sequence learning	implicit sequence learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+implicit motor sequence learning	implicit motor learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+implicit sequence learning	sequence learning	kind_of	cognitive atlas or literature
+implicit sequence learning	implicit learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+implicit theory of mind	theory of mind	kind_of	cognitive atlas or literature
+impulsive action selection	response selection	kind_of	cognitive atlas or literature
+impulsive action selection	impulsivity	kind_of	added 2026-11 (model-proposed, add-only pass)
+impulsive choice	impulsivity	kind_of	cognitive atlas or literature
+impulsive choice	intertemporal choice	kind_of	added 2026-11 (model-proposed, add-only pass)
+impulsive decision making	impulsivity	kind_of	cognitive atlas or literature
+impulsive decision making	decision making	kind_of	cognitive atlas or literature
+inappropriate speech	speech production	kind_of	cognitive atlas or literature
+incentive salience	motivational salience	kind_of	cognitive atlas or literature
+incidental learning	learning	kind_of	cognitive atlas or literature
+incubation	creative problem solving	kind_of	cognitive atlas or literature
+incubation	unconscious process	kind_of	added 2026-11 (model-proposed, add-only pass)
+indignation	negative emotion	kind_of	cognitive atlas or literature
+induction	inference	kind_of	added 2026-11 (model-proposed, add-only pass)
+inductive reasoning	reasoning	kind_of	cognitive atlas or literature
+inequity aversion	social preference	kind_of	cognitive atlas or literature
+inference	reasoning	kind_of	cognitive atlas or literature
+inhibition	cognitive control	kind_of	cognitive atlas or literature
+inhibition of prepotent responses	response inhibition	kind_of	cognitive atlas or literature
+inhibition of reflexive saccade	response inhibition	kind_of	cognitive atlas or literature
+inhibition of reflexive saccade	oculomotor inhibition	kind_of	added 2026-11 (model-proposed, add-only pass)
+inhibition of reflexive saccade	saccadic inhibition	kind_of	added 2026-11 (model-proposed, add-only pass)
+inhibition of reflexive saccades	oculomotor inhibition	kind_of	cognitive atlas or literature
+inhibition of reflexive saccades	saccadic inhibition	kind_of	added 2026-11 (model-proposed, add-only pass)
+inhibition of reflexive saccades	inhibition of prepotent responses	kind_of	added 2026-11 (model-proposed, add-only pass)
+inhibition of return	attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+inhibitory attentional control	inhibition	kind_of	cognitive atlas or literature
+inhibitory attentional control	attentional control	kind_of	added 2026-11 (model-proposed, add-only pass)
+insight	problem solving	kind_of	cognitive atlas or literature
+instrumental conditioning	association learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+instrumental learning	learning	kind_of	cognitive atlas or literature
+instrumental learning	association learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+intentional forgetting	forgetting	kind_of	cognitive atlas or literature
+intentional learning	learning	kind_of	cognitive atlas or literature
+intentional learning	explicit learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+interference control	inhibition	kind_of	added 2026-11 (model-proposed, add-only pass)
+interference control	cognitive control	kind_of	added 2026-11 (model-proposed, add-only pass)
+interference resolution	cognitive control	kind_of	cognitive atlas or literature
+interference resolution	interference control	kind_of	added 2026-11 (model-proposed, add-only pass)
+internal speech	language production	kind_of	cognitive atlas or literature
+interoception	somatosensation	kind_of	cognitive atlas or literature
+interoception	perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+interoceptive ability	interoception	kind_of	cognitive atlas or literature
+interoceptive accuracy	interoception	kind_of	cognitive atlas or literature
+interoceptive accuracy	interoceptive ability	kind_of	added 2026-11 (model-proposed, add-only pass)
+interoceptive attention	attention	kind_of	cognitive atlas or literature
+interoceptive awareness	interoception	kind_of	added 2026-11 (model-proposed, add-only pass)
+interoceptive representation	mental representation	kind_of	cognitive atlas or literature
+interoceptive sensibility	interoception	kind_of	cognitive atlas or literature
+interoceptive sensitivity	interoception	kind_of	cognitive atlas or literature
+interoceptive sensitivity	interoceptive ability	kind_of	added 2026-11 (model-proposed, add-only pass)
+interpersonal conflict	social cognition	kind_of	cognitive atlas or literature
+intertemporal choice	decision making	kind_of	cognitive atlas or literature
+intonation	prosody	kind_of	cognitive atlas or literature
+intrinsic motivation	motivation	kind_of	cognitive atlas or literature
+introspection	metacognition	kind_of	cognitive atlas or literature
+invariance	perception	kind_of	cognitive atlas or literature
+involuntary attention	attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+irony	pragmatic inference	kind_of	cognitive atlas or literature
+irritability	mood	kind_of	cognitive atlas or literature
+irritability	negative mood	kind_of	added 2026-11 (model-proposed, add-only pass)
+item memory	recognition	kind_of	cognitive atlas or literature
+item memory	episodic memory	kind_of	added 2026-11 (model-proposed, add-only pass)
+joint attention	social attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+joint attention	attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+kinaesthetic representation	body representation	kind_of	cognitive atlas or literature
+kinesthesia	proprioception	kind_of	cognitive atlas or literature
+language comprehension	language processing	kind_of	cognitive atlas or literature
+language control	cognitive control	kind_of	cognitive atlas or literature
+language lateralization	language	kind_of	cognitive atlas or literature
+language learning	learning	kind_of	cognitive atlas or literature
+language production	language processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+left finger response execution	response execution	kind_of	cognitive atlas or literature
+left hand response execution	response execution	kind_of	cognitive atlas or literature
+left toe response execution	response execution	kind_of	cognitive atlas or literature
+lexical access	lexical processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+lexical ambiguity	lexical processing	kind_of	cognitive atlas or literature
+lexical processing	language processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+lexical representation	mental representation	kind_of	cognitive atlas or literature
+lexical representations	mental representation	kind_of	cognitive atlas or literature
+lexical retrieval	lexical processing	kind_of	cognitive atlas or literature
+lexical retrieval	retrieval	kind_of	cognitive atlas or literature
+lexical selection	lexical access	kind_of	cognitive atlas or literature
+limited capacity	attention capacity	kind_of	cognitive atlas or literature
+listening	auditory perception	kind_of	cognitive atlas or literature
+listening effort	cognitive effort	kind_of	cognitive atlas or literature
+localization	perception	kind_of	cognitive atlas or literature
+localization	spatial perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+locomotion	movement	kind_of	cognitive atlas or literature
+logical reasoning	reasoning	kind_of	cognitive atlas or literature
+long term memory	memory	kind_of	cognitive atlas or literature
+loss anticipation	anticipation	kind_of	cognitive atlas or literature
+loss aversion	risk aversion	kind_of	cognitive atlas or literature
+loss aversion	cognitive bias	kind_of	added 2026-11 (model-proposed, add-only pass)
+lying	deception	kind_of	cognitive atlas or literature
+magnitude processing	numerical cognition	kind_of	cognitive atlas or literature
+magnitude representation	numerical cognition	kind_of	cognitive atlas or literature
+magnitude representation	mental representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+manual dexterity	motor skill	kind_of	cognitive atlas or literature
+manual dexterity	motor control	kind_of	cognitive atlas or literature
+manual dexterity	dexterity	kind_of	added 2026-11 (model-proposed, add-only pass)
+manual dexterity	fine motor control	kind_of	added 2026-11 (model-proposed, add-only pass)
+mathematical reasoning	reasoning	kind_of	cognitive atlas or literature
+mechanical reasoning	reasoning	kind_of	cognitive atlas or literature
+melody	music perception	kind_of	cognitive atlas or literature
+memory acquisition	learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+memory consolidation	memory	kind_of	cognitive atlas or literature
+memory consolidation	consolidation	kind_of	added 2026-11 (model-proposed, add-only pass)
+memory retrieval	retrieval	kind_of	cognitive atlas or literature
+memory specificity	autobiographical memory	kind_of	cognitive atlas or literature
+mental arithmetic	arithmetic processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+mental imagery	imagination	kind_of	cognitive atlas or literature
+mental imagery	imagery	kind_of	added 2026-11 (model-proposed, add-only pass)
+mental number line	numerical cognition	kind_of	cognitive atlas or literature
+mental number line	magnitude representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+mental number line	mental representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+mental rotation	mental transformation	kind_of	added 2026-11 (model-proposed, add-only pass)
+mental state decoding	theory of mind	kind_of	cognitive atlas or literature
+mental transformation	mental imagery	kind_of	cognitive atlas or literature
+mentalization	social cognition	kind_of	cognitive atlas or literature
+metamemory	metacognition	kind_of	cognitive atlas or literature
+metaphor	language	kind_of	cognitive atlas or literature
+meter	rhythm	kind_of	cognitive atlas or literature
+mindfulness	attention	kind_of	cognitive atlas or literature
+mindset	belief	kind_of	cognitive atlas or literature
+misattribution	attribution	kind_of	cognitive atlas or literature
+monetary loss	loss	kind_of	cognitive atlas or literature
+monetary reward prediction error	error signal	kind_of	cognitive atlas or literature
+monitoring	cognitive control	kind_of	cognitive atlas or literature
+mood	emotional state	kind_of	added 2026-11 (model-proposed, add-only pass)
+moral judgment	judgment	kind_of	cognitive atlas or literature
+moral judgment	social cognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+moral judgments	moral judgment	kind_of	cognitive atlas or literature
+morphological processing	language processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+motion aftereffect	optical illusion	kind_of	cognitive atlas or literature
+motion detection	detection	kind_of	added 2026-11 (model-proposed, add-only pass)
+motion detection	visual perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+motivational salience	attention	kind_of	cognitive atlas or literature
+motivational salience	salience	kind_of	added 2026-11 (model-proposed, add-only pass)
+motor adaptation	motor learning	kind_of	cognitive atlas or literature
+motor adaptation	adaptation	kind_of	added 2026-11 (model-proposed, add-only pass)
+motor imagery	mental imagery	kind_of	cognitive atlas or literature
+motor learning	learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+motor performance	motor control	kind_of	cognitive atlas or literature
+motor planning	planning	kind_of	added 2026-11 (model-proposed, add-only pass)
+motor planning	motor control	kind_of	added 2026-11 (model-proposed, add-only pass)
+motor praxis	motor control	kind_of	cognitive atlas or literature
+motor program	motor planning	kind_of	cognitive atlas or literature
+motor sequence learning	sequence learning	kind_of	cognitive atlas or literature
+motor sequence learning	motor learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+motor skill	skill	kind_of	cognitive atlas or literature
+motor speed	motor control	kind_of	cognitive atlas or literature
+motor speed	motor performance	kind_of	added 2026-11 (model-proposed, add-only pass)
+motor timing	timing	kind_of	cognitive atlas or literature
+motor timing	motor control	kind_of	added 2026-11 (model-proposed, add-only pass)
+movement	action	kind_of	added 2026-11 (model-proposed, add-only pass)
+multisensory	perception	kind_of	cognitive atlas or literature
+multisensory integration	integration	kind_of	added 2026-11 (model-proposed, add-only pass)
+multistable perception	perception	kind_of	cognitive atlas or literature
+music perception	perception	kind_of	cognitive atlas or literature
+music perception	auditory perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+music semantics	music cognition	kind_of	cognitive atlas or literature
+music semantics	semantic processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+music syntax	music cognition	kind_of	cognitive atlas or literature
+naming	word production	kind_of	added 2026-11 (model-proposed, add-only pass)
+naming	language production	kind_of	added 2026-11 (model-proposed, add-only pass)
+narrative comprehension	discourse comprehension	kind_of	cognitive atlas or literature
+naturalistic biological motion	biological motion	kind_of	cognitive atlas or literature
+naturalistic scenes	visual scene perception	kind_of	cognitive atlas or literature
+navigation	spatial cognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+navigation strategy	strategy	kind_of	cognitive atlas or literature
+near spatial distance	spatial distance	kind_of	cognitive atlas or literature
+near temporal distance	temporal distance	kind_of	cognitive atlas or literature
+negative emotion	emotion	kind_of	cognitive atlas or literature
+negative feedback processing	feedback processing	kind_of	cognitive atlas or literature
+negative mood	mood	kind_of	cognitive atlas or literature
+negative mood	negative emotion	kind_of	added 2026-11 (model-proposed, add-only pass)
+negative priming	priming	kind_of	cognitive atlas or literature
+nociception	interoception	kind_of	cognitive atlas or literature
+nociception	somatosensation	kind_of	cognitive atlas or literature
+noise sensitivity	auditory perception	kind_of	cognitive atlas or literature
+non verbal intelligence	intelligence	kind_of	cognitive atlas or literature
+non verbal reasoning	reasoning	kind_of	cognitive atlas or literature
+nonverbal intelligence	intelligence	kind_of	cognitive atlas or literature
+novelty detection	detection	kind_of	added 2026-11 (model-proposed, add-only pass)
+numerical comparison	numerical cognition	kind_of	cognitive atlas or literature
+numerical comparison	magnitude processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+numerical magnitude	numerical cognition	kind_of	cognitive atlas or literature
+numerical magnitude	magnitude representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+numerical scale judgment	numerical cognition	kind_of	cognitive atlas or literature
+numerical scale judgment	judgment	kind_of	added 2026-11 (model-proposed, add-only pass)
+object based attention	selective attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+object based attention	visual attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+object categorization	categorization	kind_of	cognitive atlas or literature
+object centered representation	mental representation	kind_of	cognitive atlas or literature
+object centered representation	visual representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+object maintenance	working memory maintenance	kind_of	cognitive atlas or literature
+object manipulation	motor control	kind_of	cognitive atlas or literature
+object perception	perception	kind_of	cognitive atlas or literature
+object recognition	recognition	kind_of	cognitive atlas or literature
+obsession	thought	kind_of	cognitive atlas or literature
+oculomotor control	motor control	kind_of	cognitive atlas or literature
+oculomotor inhibition	response inhibition	kind_of	cognitive atlas or literature
+oculomotor inhibition	oculomotor control	kind_of	added 2026-11 (model-proposed, add-only pass)
+oddball detection	novelty detection	kind_of	cognitive atlas or literature
+olfaction	perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+olfactory perception	perception	kind_of	cognitive atlas or literature
+optical illusion	visual perception	kind_of	cognitive atlas or literature
+orienting	attention	kind_of	cognitive atlas or literature
+orienting response	orienting	kind_of	added 2026-11 (model-proposed, add-only pass)
+orthographic lexicon	orthographic representation	kind_of	cognitive atlas or literature
+orthographic processing	lexical processing	kind_of	cognitive atlas or literature
+orthographic representation	orthography	kind_of	cognitive atlas or literature
+orthographic representation	mental representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+orthographic representations	orthography	kind_of	cognitive atlas or literature
+orthographic representations	mental representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+other reference effect	memory	kind_of	cognitive atlas or literature
+overgeneral memory	autobiographical memory	kind_of	cognitive atlas or literature
+overt attention	attention	kind_of	cognitive atlas or literature
+overt naming	naming	kind_of	cognitive atlas or literature
+pain	somatosensation	kind_of	cognitive atlas or literature
+pain empathy	empathy	kind_of	cognitive atlas or literature
+pain habituation	pain	kind_of	cognitive atlas or literature
+pain habituation	adaptation	kind_of	added 2026-11 (model-proposed, add-only pass)
+pain sensitization	nociception	kind_of	cognitive atlas or literature
+parsing	language processing	kind_of	cognitive atlas or literature
+passive attention	attention	kind_of	cognitive atlas or literature
+past tense	past time	kind_of	cognitive atlas or literature
+past time	temporal cognition	kind_of	cognitive atlas or literature
+pattern recognition	perception	kind_of	cognitive atlas or literature
+pattern recognition	recognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+pavlovian bias	pavlovian conditioning	kind_of	cognitive atlas or literature
+pavlovian bias	response bias	kind_of	added 2026-11 (model-proposed, add-only pass)
+pavlovian conditioning	association learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+perceptual asymmetry	perception	kind_of	cognitive atlas or literature
+perceptual bias	response bias	kind_of	cognitive atlas or literature
+perceptual bias	cognitive bias	kind_of	added 2026-11 (model-proposed, add-only pass)
+perceptual binding	feature integration	kind_of	cognitive atlas or literature
+perceptual categorization	categorization	kind_of	cognitive atlas or literature
+perceptual cognitive	perceptual skill	kind_of	cognitive atlas or literature
+perceptual decision making	decision making	kind_of	cognitive atlas or literature
+perceptual fluency	perception	kind_of	cognitive atlas or literature
+perceptual identification	recognition	kind_of	cognitive atlas or literature
+perceptual learning	learning	kind_of	cognitive atlas or literature
+perceptual priming	priming	kind_of	cognitive atlas or literature
+perceptual similarity	perception	kind_of	cognitive atlas or literature
+perceptual skill	skill	kind_of	added 2026-11 (model-proposed, add-only pass)
+performance monitoring	cognitive control	kind_of	cognitive atlas or literature
+performance monitoring	monitoring	kind_of	added 2026-11 (model-proposed, add-only pass)
+perseveration	rigidity	kind_of	cognitive atlas or literature
+phonation	speech production	kind_of	cognitive atlas or literature
+phonological assembly	phonological processing	kind_of	cognitive atlas or literature
+phonological awareness	phonological processing	kind_of	cognitive atlas or literature
+phonological buffer	phonological loop	kind_of	cognitive atlas or literature
+phonological buffer	phonological working memory	kind_of	added 2026-11 (model-proposed, add-only pass)
+phonological code	phonological representations	kind_of	added 2026-11 (model-proposed, add-only pass)
+phonological code	mental representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+phonological comparison	phonological processing	kind_of	cognitive atlas or literature
+phonological encoding	encoding	kind_of	cognitive atlas or literature
+phonological encoding	phonological processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+phonological loop	working memory	kind_of	cognitive atlas or literature
+phonological processing	language processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+phonological representations	mental representation	kind_of	cognitive atlas or literature
+phonological retrieval	phonological processing	kind_of	cognitive atlas or literature
+phonological retrieval	retrieval	kind_of	added 2026-11 (model-proposed, add-only pass)
+phonological working memory	working memory	kind_of	cognitive atlas or literature
+phototransduction	visual perception	kind_of	cognitive atlas or literature
+physical activity	movement	kind_of	cognitive atlas or literature
+pitch discrimination	pitch perception	kind_of	cognitive atlas or literature
+pitch discrimination	discrimination	kind_of	added 2026-11 (model-proposed, add-only pass)
+pitch perception	auditory perception	kind_of	cognitive atlas or literature
+planning	cognitive control	kind_of	cognitive atlas or literature
+positive feedback processing	feedback processing	kind_of	cognitive atlas or literature
+positive priming	priming	kind_of	cognitive atlas or literature
+postural control	balance	kind_of	cognitive atlas or literature
+postural control	motor control	kind_of	added 2026-11 (model-proposed, add-only pass)
+potential monetary loss	monetary loss	kind_of	cognitive atlas or literature
+potential monetary reward	reward anticipation	kind_of	cognitive atlas or literature
+pragmatic inference	inference	kind_of	cognitive atlas or literature
+pragmatic knowledge	knowledge	kind_of	cognitive atlas or literature
+pragmatic reasoning	reasoning	kind_of	cognitive atlas or literature
+preattentive processing	perception	kind_of	cognitive atlas or literature
+predictable threat	fear	kind_of	cognitive atlas or literature
+prejudice	attitude	kind_of	cognitive atlas or literature
+prepotent response	response inhibition	kind_of	cognitive atlas or literature
+prepotent response tendency	response inhibition	kind_of	cognitive atlas or literature
+priming	implicit learning	kind_of	cognitive atlas or literature
+priming	implicit memory	kind_of	cognitive atlas or literature
+proactive control	cognitive control	kind_of	cognitive atlas or literature
+proactive inhibition	inhibition	kind_of	cognitive atlas or literature
+proactive inhibition	response inhibition	kind_of	cognitive atlas or literature
+proactive interference	interference	kind_of	cognitive atlas or literature
+problem solving	reasoning	kind_of	cognitive atlas or literature
+problem solving	thought	kind_of	added 2026-11 (model-proposed, add-only pass)
+procedural knowledge	knowledge	kind_of	cognitive atlas or literature
+procedural learning	implicit learning	kind_of	cognitive atlas or literature
+procedural memory	long term memory	kind_of	cognitive atlas or literature
+procedural memory	implicit memory	kind_of	added 2026-11 (model-proposed, add-only pass)
+procedural rule	rule	kind_of	cognitive atlas or literature
+production of non facial communication	communication	kind_of	cognitive atlas or literature
+productive facial communication	communication	kind_of	cognitive atlas or literature
+proper noun	lexical representation	kind_of	cognitive atlas or literature
+proprioception	somatosensation	kind_of	added 2026-11 (model-proposed, add-only pass)
+proprioceptive recalibration	proprioception	kind_of	cognitive atlas or literature
+proprioceptive recalibration	adaptation	kind_of	added 2026-11 (model-proposed, add-only pass)
+prosodic stress	prosody	kind_of	cognitive atlas or literature
+prosody	speech processing	kind_of	cognitive atlas or literature
+prospection	temporal cognition	kind_of	cognitive atlas or literature
+prospective memory	memory	kind_of	cognitive atlas or literature
+prospective planning	planning	kind_of	cognitive atlas or literature
+prospective planning	prospection	kind_of	added 2026-11 (model-proposed, add-only pass)
+prototype	concept	kind_of	cognitive atlas or literature
+prototype	mental representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+psychological refractory period	attention capacity	kind_of	cognitive atlas or literature
+psychological refractory period	capacity limitation	kind_of	added 2026-11 (model-proposed, add-only pass)
+psychosocial stress	stress	kind_of	cognitive atlas or literature
+punishment processing	negative feedback processing	kind_of	cognitive atlas or literature
+pure altruism	altruism	kind_of	cognitive atlas or literature
+quantitative skill	numerical cognition	kind_of	cognitive atlas or literature
+quantitative skill	skill	kind_of	added 2026-11 (model-proposed, add-only pass)
+reactive control	cognitive control	kind_of	cognitive atlas or literature
+reactive inhibition	response inhibition	kind_of	cognitive atlas or literature
+reading	language processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+reality monitoring	source monitoring	kind_of	cognitive atlas or literature
+reasoning	thought	kind_of	added 2026-11 (model-proposed, add-only pass)
+recall	memory retrieval	kind_of	cognitive atlas or literature
+receipt	reward processing	kind_of	cognitive atlas or literature
+receipt of reward	reward processing	kind_of	cognitive atlas or literature
+reception of facial communication	communication	kind_of	cognitive atlas or literature
+reception of non facial communication	communication	kind_of	cognitive atlas or literature
+reciprocity	prosocial behavior	kind_of	added 2026-11 (model-proposed, add-only pass)
+recognition	memory	kind_of	cognitive atlas or literature
+recollection	episodic memory	kind_of	cognitive atlas or literature
+recollection	memory retrieval	kind_of	added 2026-11 (model-proposed, add-only pass)
+reconsolidation	memory consolidation	kind_of	cognitive atlas or literature
+reflexive attentional shift	involuntary attention	kind_of	cognitive atlas or literature
+reflexive attentional shift	attention shift	kind_of	added 2026-11 (model-proposed, add-only pass)
+reflexive orienting	exogenous attention	kind_of	cognitive atlas or literature
+reflexive orienting	orienting	kind_of	added 2026-11 (model-proposed, add-only pass)
+reflexive saccade	saccadic eye movement	kind_of	cognitive atlas or literature
+reflexive saccades	saccadic eye movement	kind_of	cognitive atlas or literature
+regret	negative emotion	kind_of	cognitive atlas or literature
+rehearsal	maintenance	kind_of	added 2026-11 (model-proposed, add-only pass)
+reinforcement learning	learning	kind_of	cognitive atlas or literature
+reinstatement	extinction	kind_of	cognitive atlas or literature
+relational comparison	reasoning	kind_of	cognitive atlas or literature
+relational learning	learning	kind_of	cognitive atlas or literature
+remote memory	long term memory	kind_of	cognitive atlas or literature
+repetition priming	priming	kind_of	cognitive atlas or literature
+repetition priming	implicit memory	kind_of	added 2026-11 (model-proposed, add-only pass)
+repressed memory	memory	kind_of	cognitive atlas or literature
+repressed memory	autobiographical memory	kind_of	added 2026-11 (model-proposed, add-only pass)
+resistance to distractor inference	interference control	kind_of	cognitive atlas or literature
+resource sharing	attentional resources	kind_of	cognitive atlas or literature
+resource sharing	divided attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+response alternatives	response selection	kind_of	cognitive atlas or literature
+response bias	cognitive bias	kind_of	added 2026-11 (model-proposed, add-only pass)
+response capture	response conflict	kind_of	cognitive atlas or literature
+response conflict	interference	kind_of	added 2026-11 (model-proposed, add-only pass)
+response execution	motor control	kind_of	cognitive atlas or literature
+response inhibition	inhibition	kind_of	cognitive atlas or literature
+response prepotency	response inhibition	kind_of	cognitive atlas or literature
+response priming	priming	kind_of	cognitive atlas or literature
+response selection	executive processes	kind_of	added 2026-11 (model-proposed, add-only pass)
+retention	memory	kind_of	cognitive atlas or literature
+retrieval cue	memory retrieval	kind_of	cognitive atlas or literature
+retroactive interference	interference	kind_of	cognitive atlas or literature
+reversal learning	cognitive flexibility	kind_of	cognitive atlas or literature
+reversal learning	reinforcement learning	kind_of	cognitive atlas or literature
+reward anticipation	anticipation	kind_of	cognitive atlas or literature
+reward anticipation	reward processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+reward learning	reinforcement learning	kind_of	cognitive atlas or literature
+reward processing	feedback processing	kind_of	cognitive atlas or literature
+reward sensitivity	impulsivity	kind_of	cognitive atlas or literature
+reward sensitivity	reward processing	kind_of	cognitive atlas or literature
+reward valuation	reward processing	kind_of	cognitive atlas or literature
+rhythm	music cognition	kind_of	cognitive atlas or literature
+right finger response execution	response execution	kind_of	cognitive atlas or literature
+right hand response execution	response execution	kind_of	cognitive atlas or literature
+right toe response execution	response execution	kind_of	cognitive atlas or literature
+rigidity	cognitive control	kind_of	cognitive atlas or literature
+risk	uncertainty	kind_of	added 2026-11 (model-proposed, add-only pass)
+risk aversion	risk processing	kind_of	cognitive atlas or literature
+risk perception	risk processing	kind_of	cognitive atlas or literature
+risk seeking	risk taking	kind_of	added 2026-11 (model-proposed, add-only pass)
+risk taking	risky decision making	kind_of	added 2026-11 (model-proposed, add-only pass)
+risk taking propensity	risk taking	kind_of	cognitive atlas or literature
+risky decision making	decision under uncertainty	kind_of	cognitive atlas or literature
+route knowledge	spatial memory	kind_of	cognitive atlas or literature
+routine	habit	kind_of	cognitive atlas or literature
+rule abstraction	rule learning	kind_of	cognitive atlas or literature
+rule learning	learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+saccade planning	motor planning	kind_of	cognitive atlas or literature
+saccade preparation	motor planning	kind_of	cognitive atlas or literature
+saccadic eye movement	movement	kind_of	added 2026-11 (model-proposed, add-only pass)
+saccadic inhibition	response inhibition	kind_of	cognitive atlas or literature
+saccadic inhibition	oculomotor inhibition	kind_of	added 2026-11 (model-proposed, add-only pass)
+sadness	negative emotion	kind_of	cognitive atlas or literature
+schema	knowledge	kind_of	cognitive atlas or literature
+schema	mental representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+selective attention	attention	kind_of	cognitive atlas or literature
+selective auditory attention	auditory attention	kind_of	cognitive atlas or literature
+selective auditory attention	selective attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+selective response inhibition	response inhibition	kind_of	cognitive atlas or literature
+self control	cognitive control	kind_of	cognitive atlas or literature
+self evaluation	judgment	kind_of	cognitive atlas or literature
+self interest	social cognition	kind_of	cognitive atlas or literature
+self interest	motivation	kind_of	added 2026-11 (model-proposed, add-only pass)
+self knowledge	knowledge	kind_of	cognitive atlas or literature
+self monitoring	monitoring	kind_of	cognitive atlas or literature
+self other integration	social cognition	kind_of	cognitive atlas or literature
+self reference effect	self referential	kind_of	cognitive atlas or literature
+self talk	internal speech	kind_of	cognitive atlas or literature
+semantic activation	spreading activation	kind_of	cognitive atlas or literature
+semantic categorization	categorization	kind_of	cognitive atlas or literature
+semantic categorization	semantic processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+semantic category	conceptual category	kind_of	cognitive atlas or literature
+semantic inhibition	inhibition	kind_of	cognitive atlas or literature
+semantic knowledge	long term memory	kind_of	cognitive atlas or literature
+semantic knowledge	knowledge	kind_of	added 2026-11 (model-proposed, add-only pass)
+semantic memory	declarative memory	kind_of	cognitive atlas or literature
+semantic network	semantic memory	kind_of	cognitive atlas or literature
+semantic network	mental representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+semantic priming	priming	kind_of	cognitive atlas or literature
+semantic processing	language processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+semantic retrieval	semantic processing	kind_of	cognitive atlas or literature
+semantic retrieval	retrieval	kind_of	cognitive atlas or literature
+sense of body ownership	sense of ownership	kind_of	cognitive atlas or literature
+sense of ownership	agency	kind_of	cognitive atlas or literature
+sensory memory	memory	kind_of	cognitive atlas or literature
+sentence comprehension	language comprehension	kind_of	cognitive atlas or literature
+sentence comprehension	sentence processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+sentence processing	language processing	kind_of	cognitive atlas or literature
+sentence production	language production	kind_of	cognitive atlas or literature
+sequence learning	learning	kind_of	cognitive atlas or literature
+sequence specific learning	sequence learning	kind_of	cognitive atlas or literature
+serial learning	sequence learning	kind_of	cognitive atlas or literature
+serial search	visual search	kind_of	cognitive atlas or literature
+serial search	search	kind_of	added 2026-11 (model-proposed, add-only pass)
+set shifting	cognitive flexibility	kind_of	cognitive atlas or literature
+shallow processing	encoding	kind_of	cognitive atlas or literature
+shame	emotion	kind_of	cognitive atlas or literature
+shame	negative emotion	kind_of	added 2026-11 (model-proposed, add-only pass)
+shape recognition	object recognition	kind_of	cognitive atlas or literature
+shape recognition	form perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+sharing behavior	altruism	kind_of	cognitive atlas or literature
+sharing behavior	prosocial behavior	kind_of	added 2026-11 (model-proposed, add-only pass)
+short term memory	memory	kind_of	cognitive atlas or literature
+skepticism	belief	kind_of	cognitive atlas or literature
+skill acquisition	learning	kind_of	added 2026-11 (model-proposed, add-only pass)
+sleep	state consciousness	kind_of	added 2026-11 (model-proposed, add-only pass)
+social attention	attention	kind_of	cognitive atlas or literature
+social attention	social cognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+social context	context	kind_of	cognitive atlas or literature
+social decision making	decision making	kind_of	cognitive atlas or literature
+social evaluative threat	stress	kind_of	cognitive atlas or literature
+social evaluative threat	psychosocial stress	kind_of	added 2026-11 (model-proposed, add-only pass)
+social evaluative threat	social stress	kind_of	added 2026-11 (model-proposed, add-only pass)
+social exclusion	social cognition	kind_of	cognitive atlas or literature
+social inclusion	social cognition	kind_of	cognitive atlas or literature
+social inference	social cognition	kind_of	cognitive atlas or literature
+social inference	inference	kind_of	added 2026-11 (model-proposed, add-only pass)
+social influence	social cognition	kind_of	cognitive atlas or literature
+social learning	learning	kind_of	cognitive atlas or literature
+social motivation	motivation	kind_of	cognitive atlas or literature
+social norm processing	social cognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+social pain	pain	kind_of	cognitive atlas or literature
+social preference	social cognition	kind_of	cognitive atlas or literature
+social preferences	social cognition	kind_of	cognitive atlas or literature
+social stress	stress	kind_of	cognitive atlas or literature
+social stress	psychosocial stress	kind_of	added 2026-11 (model-proposed, add-only pass)
+somatosensation	perception	kind_of	cognitive atlas or literature
+sound perception	auditory perception	kind_of	cognitive atlas or literature
+source memory	episodic memory	kind_of	cognitive atlas or literature
+source monitoring	metamemory	kind_of	added 2026-11 (model-proposed, add-only pass)
+source monitoring	monitoring	kind_of	added 2026-11 (model-proposed, add-only pass)
+spatial ability	spatial cognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+spatial attention	selective attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+spatial attentional bias	attentional bias	kind_of	cognitive atlas or literature
+spatial attentional bias	spatial bias	kind_of	added 2026-11 (model-proposed, add-only pass)
+spatial bias	attentional bias	kind_of	cognitive atlas or literature
+spatial bias	perceptual bias	kind_of	added 2026-11 (model-proposed, add-only pass)
+spatial distance	spatial cognition	kind_of	cognitive atlas or literature
+spatial learning	learning	kind_of	cognitive atlas or literature
+spatial localization	spatial perception	kind_of	cognitive atlas or literature
+spatial localization	localization	kind_of	added 2026-11 (model-proposed, add-only pass)
+spatial memory	memory	kind_of	cognitive atlas or literature
+spatial neglect	spatial attention	kind_of	cognitive atlas or literature
+spatial neglect	attentional deficit	kind_of	added 2026-11 (model-proposed, add-only pass)
+spatial numerical association	numerical cognition	kind_of	cognitive atlas or literature
+spatial perception	spatial cognition	kind_of	cognitive atlas or literature
+spatial perception	perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+spatial planning	planning	kind_of	cognitive atlas or literature
+spatial planning	spatial cognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+spatial selective attention	selective attention	kind_of	cognitive atlas or literature
+spatial selective attention	spatial attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+spatial visualization	spatial ability	kind_of	cognitive atlas or literature
+spatial working memory	working memory	kind_of	cognitive atlas or literature
+spatial working memory	spatial memory	kind_of	added 2026-11 (model-proposed, add-only pass)
+specific pit	pavlovian conditioning	kind_of	cognitive atlas or literature
+speech perception	auditory perception	kind_of	cognitive atlas or literature
+speech perception	speech processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+speech processing	language processing	kind_of	cognitive atlas or literature
+speech production	language production	kind_of	cognitive atlas or literature
+spreading activation	activation	kind_of	added 2026-11 (model-proposed, add-only pass)
+state anxiety	anxiety	kind_of	cognitive atlas or literature
+state consciousness	consciousness	kind_of	cognitive atlas or literature
+statistical learning	implicit learning	kind_of	cognitive atlas or literature
+stereopsis	depth perception	kind_of	cognitive atlas or literature
+stereopsis	binocular vision	kind_of	added 2026-11 (model-proposed, add-only pass)
+stereotypes	social cognition	kind_of	cognitive atlas or literature
+stereotypes	belief	kind_of	added 2026-11 (model-proposed, add-only pass)
+stimulus detection	detection	kind_of	cognitive atlas or literature
+stimulus response conflict	response conflict	kind_of	cognitive atlas or literature
+stop process	response inhibition	kind_of	cognitive atlas or literature
+strategic considerations	strategy	kind_of	cognitive atlas or literature
+strategic search	cognitive control	kind_of	cognitive atlas or literature
+strategic search	search	kind_of	cognitive atlas or literature
+stress reactivity	stress	kind_of	cognitive atlas or literature
+structural knowledge	implicit knowledge	kind_of	cognitive atlas or literature
+subjective food value	subjective value judgment	kind_of	cognitive atlas or literature
+subjective value judgment	judgment	kind_of	added 2026-11 (model-proposed, add-only pass)
+sublexical route	reading	kind_of	cognitive atlas or literature
+subliminal perception	unconscious perception	kind_of	cognitive atlas or literature
+successful inhibition	response inhibition	kind_of	cognitive atlas or literature
+suppression	inhibition	kind_of	cognitive atlas or literature
+surprise	emotion	kind_of	cognitive atlas or literature
+sustained attention	attention	kind_of	cognitive atlas or literature
+synchrony perception	time perception	kind_of	cognitive atlas or literature
+syntactic parsing	syntactic processing	kind_of	cognitive atlas or literature
+syntactic parsing	parsing	kind_of	added 2026-11 (model-proposed, add-only pass)
+syntactic processing	language processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+syntax	language	kind_of	cognitive atlas or literature
+tactile working memory	working memory	kind_of	cognitive atlas or literature
+task set	cognitive control	kind_of	cognitive atlas or literature
+task set	mental representation	kind_of	added 2026-11 (model-proposed, add-only pass)
+task switching	cognitive control	kind_of	cognitive atlas or literature
+task switching	cognitive flexibility	kind_of	added 2026-11 (model-proposed, add-only pass)
+taste aversion	aversive learning	kind_of	cognitive atlas or literature
+taste aversion	pavlovian conditioning	kind_of	added 2026-11 (model-proposed, add-only pass)
+temporal attention	attention	kind_of	cognitive atlas or literature
+temporal categorization	categorization	kind_of	cognitive atlas or literature
+temporal categorization	temporal cognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+temporal discrimination	time perception	kind_of	cognitive atlas or literature
+temporal discrimination	discrimination	kind_of	added 2026-11 (model-proposed, add-only pass)
+temporal distance	temporal cognition	kind_of	cognitive atlas or literature
+temporal dynamics of attention	attention	kind_of	cognitive atlas or literature
+temporal sensitivity	time perception	kind_of	cognitive atlas or literature
+text comprehension	language comprehension	kind_of	cognitive atlas or literature
+text comprehension	discourse comprehension	kind_of	added 2026-11 (model-proposed, add-only pass)
+theory of mind	social cognition	kind_of	cognitive atlas or literature
+thermosensation	somatosensation	kind_of	cognitive atlas or literature
+thirst	motivation	kind_of	cognitive atlas or literature
+time perception	temporal cognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+time perception	perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+time sensitivity	time perception	kind_of	cognitive atlas or literature
+timing	temporal cognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+tone recognition	auditory recognition	kind_of	cognitive atlas or literature
+tone recognition	auditory tone perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+tongue response execution	response execution	kind_of	cognitive atlas or literature
+tracking ability	visual attention	kind_of	cognitive atlas or literature
+tracking ability	attentional tracking	kind_of	added 2026-11 (model-proposed, add-only pass)
+traumatic memory	emotional memory	kind_of	cognitive atlas or literature
+traumatic memory	autobiographical memory	kind_of	added 2026-11 (model-proposed, add-only pass)
+trust decision	trust	kind_of	cognitive atlas or literature
+trust decision	social decision making	kind_of	added 2026-11 (model-proposed, add-only pass)
+trust decisions	social decision making	kind_of	cognitive atlas or literature
+trustworthiness	trust	kind_of	cognitive atlas or literature
+trustworthiness	social cognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+unconscious perception	perception	kind_of	cognitive atlas or literature
+unconscious structural knowledge	implicit knowledge	kind_of	cognitive atlas or literature
+unconscious structural knowledge	structural knowledge	kind_of	added 2026-11 (model-proposed, add-only pass)
+uncontrollability	stress	kind_of	cognitive atlas or literature
+understanding mental states	social cognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+unisensory	perception	kind_of	cognitive atlas or literature
+updating	cognitive control	kind_of	cognitive atlas or literature
+utility	decision making	kind_of	cognitive atlas or literature
+vection	visual perception	kind_of	cognitive atlas or literature
+vection	dynamic visual perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+vector inversion	motor planning	kind_of	cognitive atlas or literature
+verbal divergent thinking	divergent thinking	kind_of	cognitive atlas or literature
+verbal fluency	language production	kind_of	added 2026-11 (model-proposed, add-only pass)
+verbal inhibition	inhibition	kind_of	cognitive atlas or literature
+verbal initiation	action initiation	kind_of	cognitive atlas or literature
+verbal learning	learning	kind_of	cognitive atlas or literature
+verbal memory	memory	kind_of	cognitive atlas or literature
+vestibular control	balance	kind_of	cognitive atlas or literature
+vestibular control	postural control	kind_of	added 2026-11 (model-proposed, add-only pass)
+visual acuity	visual perception	kind_of	cognitive atlas or literature
+visual attention	attention	kind_of	cognitive atlas or literature
+visual awareness	awareness	kind_of	cognitive atlas or literature
+visual body recognition	visual recognition	kind_of	cognitive atlas or literature
+visual color discrimination	color perception	kind_of	cognitive atlas or literature
+visual color discrimination	discrimination	kind_of	added 2026-11 (model-proposed, add-only pass)
+visual distraction	distraction	kind_of	cognitive atlas or literature
+visual episodic memory	episodic memory	kind_of	cognitive atlas or literature
+visual episodic memory	visual memory	kind_of	added 2026-11 (model-proposed, add-only pass)
+visual face recognition	face recognition	kind_of	cognitive atlas or literature
+visual face recognition	visual recognition	kind_of	cognitive atlas or literature
+visual form discrimination	discrimination	kind_of	cognitive atlas or literature
+visual form discrimination	visual perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+visual form recognition	form perception	kind_of	cognitive atlas or literature
+visual form recognition	visual perception	kind_of	cognitive atlas or literature
+visual form recognition	visual recognition	kind_of	cognitive atlas or literature
+visual imagery	mental imagery	kind_of	cognitive atlas or literature
+visual letter recognition	visual recognition	kind_of	cognitive atlas or literature
+visual localization	localization	kind_of	cognitive atlas or literature
+visual localization	visual perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+visual masking	visual perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+visual memory	memory	kind_of	cognitive atlas or literature
+visual number recognition	visual recognition	kind_of	cognitive atlas or literature
+visual object detection	detection	kind_of	cognitive atlas or literature
+visual object detection	visual perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+visual object maintenance	visual working memory maintenance	kind_of	cognitive atlas or literature
+visual object maintenance	object maintenance	kind_of	added 2026-11 (model-proposed, add-only pass)
+visual object recognition	object recognition	kind_of	cognitive atlas or literature
+visual object recognition	visual recognition	kind_of	cognitive atlas or literature
+visual orientation	visual perception	kind_of	cognitive atlas or literature
+visual orientation	spatial perception	kind_of	added 2026-11 (model-proposed, add-only pass)
+visual pattern recognition	pattern recognition	kind_of	cognitive atlas or literature
+visual pattern recognition	visual recognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+visual perception	perception	kind_of	cognitive atlas or literature
+visual place recognition	visual recognition	kind_of	cognitive atlas or literature
+visual pseudoword recognition	visual word recognition	kind_of	cognitive atlas or literature
+visual recognition	recognition	kind_of	cognitive atlas or literature
+visual recognition	visual perception	kind_of	cognitive atlas or literature
+visual representation	mental representation	kind_of	cognitive atlas or literature
+visual scene perception	visual perception	kind_of	cognitive atlas or literature
+visual search	search	kind_of	cognitive atlas or literature
+visual search	visual attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+visual selective attention	selective attention	kind_of	cognitive atlas or literature
+visual selective attention	visual attention	kind_of	added 2026-11 (model-proposed, add-only pass)
+visual sentence comprehension	sentence comprehension	kind_of	cognitive atlas or literature
+visual sentence comprehension	reading	kind_of	added 2026-11 (model-proposed, add-only pass)
+visual sentence recognition	visual word recognition	kind_of	cognitive atlas or literature
+visual sentence recognition	visual recognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+visual sentence recognition	sentence processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+visual shape recognition	shape recognition	kind_of	cognitive atlas or literature
+visual shape recognition	visual recognition	kind_of	added 2026-11 (model-proposed, add-only pass)
+visual short term memory	short term memory	kind_of	cognitive atlas or literature
+visual short term memory	visual memory	kind_of	added 2026-11 (model-proposed, add-only pass)
+visual string recognition	visual recognition	kind_of	cognitive atlas or literature
+visual tool recognition	visual object recognition	kind_of	cognitive atlas or literature
+visual word recognition	visual form recognition	kind_of	cognitive atlas or literature
+visual word recognition	word recognition	kind_of	cognitive atlas or literature
+visual working memory	visual memory	kind_of	cognitive atlas or literature
+visual working memory	working memory	kind_of	cognitive atlas or literature
+visual working memory maintenance	working memory maintenance	kind_of	cognitive atlas or literature
+visuospatial bias	attentional bias	kind_of	cognitive atlas or literature
+visuospatial bias	spatial bias	kind_of	added 2026-11 (model-proposed, add-only pass)
+visuospatial memory	spatial memory	kind_of	cognitive atlas or literature
+visuospatial memory	visual memory	kind_of	added 2026-11 (model-proposed, add-only pass)
+visuospatial planning	planning	kind_of	cognitive atlas or literature
+visuospatial planning	spatial planning	kind_of	added 2026-11 (model-proposed, add-only pass)
+visuospatial sketch pad	working memory	kind_of	cognitive atlas or literature
+visuospatial sketch pad	visuospatial memory	kind_of	added 2026-11 (model-proposed, add-only pass)
+vocal response execution	response execution	kind_of	cognitive atlas or literature
+voice perception	auditory perception	kind_of	cognitive atlas or literature
+voluntary orienting	attention shifting	kind_of	cognitive atlas or literature
+voluntary orienting	orienting	kind_of	added 2026-11 (model-proposed, add-only pass)
+voluntary saccade generation	saccadic eye movement	kind_of	cognitive atlas or literature
+voluntary saccade generation	oculomotor control	kind_of	added 2026-11 (model-proposed, add-only pass)
+word comprehension	language comprehension	kind_of	cognitive atlas or literature
+word generation	language production	kind_of	cognitive atlas or literature
+word generation	word production	kind_of	added 2026-11 (model-proposed, add-only pass)
+word order	syntax	kind_of	cognitive atlas or literature
+word production	language production	kind_of	cognitive atlas or literature
+word pronunciation	speech production	kind_of	cognitive atlas or literature
+word pronunciation	word production	kind_of	added 2026-11 (model-proposed, add-only pass)
+word recognition	recognition	kind_of	cognitive atlas or literature
+word recognition	lexical processing	kind_of	added 2026-11 (model-proposed, add-only pass)
+word repetition	speech production	kind_of	cognitive atlas or literature
+word repetition	word production	kind_of	added 2026-11 (model-proposed, add-only pass)
+working memory	memory	kind_of	cognitive atlas or literature
+working memory maintenance	maintenance	kind_of	cognitive atlas or literature
+working memory retrieval	working memory	kind_of	cognitive atlas or literature
+working memory retrieval	memory retrieval	kind_of	added 2026-11 (model-proposed, add-only pass)
+working memory storage	retention	kind_of	added 2026-11 (model-proposed, add-only pass)
+working memory updating	updating	kind_of	cognitive atlas or literature
+worldview	belief	kind_of	cognitive atlas or literature
+anticipation	imagination	part_of	cognitive atlas
+anticipation	proactive control	part_of	cognitive atlas
+attention	attentional blink	part_of	cognitive atlas
+attention	visual search	part_of	cognitive atlas
+emotion recognition	emotion	part_of	cognitive atlas
+empathy	altruism	part_of	cognitive atlas
+encoding	memory	part_of	cognitive atlas
+expectancy	anticipation	part_of	cognitive atlas
+extinction	instrumental conditioning	part_of	cognitive atlas
+familiarity	declarative memory	part_of	cognitive atlas
+feedback processing	performance monitoring	part_of	cognitive atlas
+feedback processing	reinforcement learning	part_of	cognitive atlas
+impulsivity	cognitive control	part_of	cognitive atlas
+inhibition	task switching	part_of	cognitive atlas
+interference control	working memory	part_of	cognitive atlas
+interference resolution	working memory	part_of	cognitive atlas
+language processing	language	part_of	cognitive atlas
+language production	language	part_of	cognitive atlas
+lexical processing	language	part_of	cognitive atlas
+maintenance	working memory	part_of	cognitive atlas
+memory retrieval	recognition	part_of	cognitive atlas
+object based attention	attention	part_of	cognitive atlas
+olfaction	perception	part_of	cognitive atlas
+phonological processing	language processing	part_of	cognitive atlas
+proactive control	performance monitoring	part_of	cognitive atlas
+processing speed	fluid intelligence	part_of	cognitive atlas
+reading	language processing	part_of	cognitive atlas
+recognition	declarative memory	part_of	cognitive atlas
+rehearsal	short term memory	part_of	cognitive atlas
+reinforcement learning	decision making	part_of	cognitive atlas
+response conflict	performance monitoring	part_of	cognitive atlas
+response selection	decision making	part_of	cognitive atlas
+retrieval	memory	part_of	cognitive atlas
+risk	decision making	part_of	cognitive atlas
+semantic knowledge	language	part_of	cognitive atlas
+semantic memory	episodic memory	part_of	cognitive atlas
+semantic memory	language	part_of	cognitive atlas
+sentence comprehension	language	part_of	cognitive atlas
+theory of mind	empathy	part_of	cognitive atlas
+theory of mind	joint attention	part_of	cognitive atlas
+uncertainty	decision making	part_of	cognitive atlas
+updating	working memory	part_of	cognitive atlas
+word recognition	reading	part_of	cognitive atlas
+working memory	decision making	part_of	cognitive atlas
+working memory maintenance	working memory	part_of	cognitive atlas
+working memory storage	working memory	part_of	cognitive atlas
+working memory updating	working memory	part_of	cognitive atlas
