@@ -14,7 +14,9 @@ site are not here yet.
 | `data/` | The release tables: tasks, contrasts, concepts, their relations, and one row per analysis linked to Neurostore |
 | `data/cognitive_atlas/` | The same content as Cognitive Atlas-shaped records |
 | `data/audit/` | Changes made by the audit of task and construct placements |
-| `code/` | The working pipeline that built the corpus, fitted the model and exports the tables |
+| `src/construct_atlas/` | The package (ports and adapters): release tables, audit, hierarchy; see `docs/ARCHITECTURE.md` |
+| `legacy/` | The scripts the pipeline was first run with, moved into the package stage by stage |
+| `tests/` | Domain tests, the dependency-rule test, and parity tests against the scripts' output |
 | `docs/DESIGN.md` | The design notebook: every decision, test and result, in order |
 | `site/` | The static explorer page (its data files and maps are added after the refit) |
 
@@ -58,17 +60,21 @@ structure comparisons, held-out tests and known limits.
 
 ## The code
 
-`code/` is the pipeline as it was run, not a packaged library: scripts with absolute paths to the machines they ran
-on, and it depends on the task-networks model code (not included). Entry points:
+`construct_atlas` is a small package with a pure domain core, ports and adapters (`docs/ARCHITECTURE.md`):
 
-- `code/contrast_hub/`: normalizing contrasts (`hub.py`), attaching concepts (`constructs.py`, `attribute.py`,
-  `paper_attribute.py`), Cognitive Atlas normalization and hierarchy (`cogat_*.py`), trial phases (`phase_*.py`), the
-  audit (`audit_*.py`), and `export_release.py`, which writes `data/`.
-- `code/`: fitting and maps (`gibbs_init.py`, `cv_abs.py`, `zeroshot_tasks.py`, `construct_map*.py`,
-  `export_taxonomy.py`, `mkda_chi2.py`, `construct_screen.py`).
+```
+pip install -e .[test]
+pytest
+construct-atlas export-release --help
+```
+
+So far it holds the release export, the audit (compiling readers' verdicts, applying changes) and the hierarchy and
+normalization rules, each proven identical to the script it replaces. The rest of the pipeline is still in `legacy/`:
+scripts as they were run, with absolute paths to the machines they ran on, depending on the task-networks model code
+(not included). The migration table in `docs/ARCHITECTURE.md` lists what is where.
 
 ## Licenses
 
-Code: MIT (see `LICENSE`). Tables in `data/`: CC BY 4.0. `code/contrast_hub/cogat_concepts.json` is a copy of the
-Cognitive Atlas concept list and `code/contrast_hub/ns_analysis_features.py` is vendored from Neurostore; both keep
+Code: MIT (see `LICENSE`). Tables in `data/`: CC BY 4.0. `legacy/contrast_hub/cogat_concepts.json` is a copy of the
+Cognitive Atlas concept list and `legacy/contrast_hub/ns_analysis_features.py` is vendored from Neurostore; both keep
 their own terms.

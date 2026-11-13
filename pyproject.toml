@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "construct-atlas"
+version = "0.1.0"
+description = "Cognitive Construct Atlas: contrasts, constructs and tasks from published neuroimaging analyses"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+construct-atlas = "construct_atlas.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/construct_atlas"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["parity: compares the package with the legacy scripts' output on the full corpus (needs CCA_PARITY_DIR)"]
+
+[tool.ruff]
+line-length = 120
