@@ -3,9 +3,12 @@
 Brain maps for cognitive constructs and tasks, learned from published neuroimaging contrasts, with every contrast
 tagged by the constructs it measures and aligned with the [Cognitive Atlas](https://www.cognitiveatlas.org).
 
-**Status (2026-11-13): work in progress, private.** The tables in `data/` come from the audited corpus. The model is
-being refit on that corpus (the number of networks, K, is being re-chosen first), so the brain maps and the finished
-site are not here yet.
+**Explore it: https://neurostuff.github.io/cognitive-construct-atlas/**
+
+**Status (2026-11-13): interim.** The tables in `data/` come from the audited corpus. The model is being refit on that
+corpus with 30 networks (K was chosen again after the audit; see `docs/DESIGN.md`). The site currently shows an interim
+build averaged over the first 14 of 100 fits, without bootstrap bands; it will be replaced when the refit finishes.
+The brain maps as NIfTI files are not published yet.
 
 ## What is here
 
@@ -16,7 +19,7 @@ site are not here yet.
 | `data/audit/` | Changes made by the audit of task and construct placements |
 | `code/` | The working pipeline that built the corpus, fitted the model and exports the tables |
 | `docs/DESIGN.md` | The design notebook: every decision, test and result, in order |
-| `site/` | The static explorer page (its data files and maps are added after the refit) |
+| `site/` | The static explorer page. The live site, with its data files, is served from the `gh-pages` branch |
 
 ## The data
 
@@ -48,6 +51,17 @@ How to read it:
 `data/cognitive_atlas/` holds `concepts.json`, `tasks.json` (each with its contrasts) and `assertions.json`
 (concept measured by contrast). Existing entries carry their Cognitive Atlas id; new ones have `"id": null` and
 `"proposed": true`. These are proposals for alignment; nothing has been submitted to the Cognitive Atlas.
+
+## The site
+
+The explorer has three views: constructs and tasks with their maps, the model's networks, and how it was built. Each
+task page also lists its normalized contrasts that have at least 10 analyses from 5 papers (208 contrasts), each with
+a model map, MKDAChi2 maps and its analyses. Those analyses are shown by the name stored on Neurostore and link to the
+analysis and its study; this is the only place analysis names appear (the tables in `data/` carry ids and links).
+
+The page in `site/` is the source; the `gh-pages` branch holds the same page with its data files (about 56 MB of map
+thumbnails and listings), which is what GitHub Pages serves. The scripts that build the contrast and network data for
+the site are not in this repository yet.
 
 ## The model
 
