@@ -368,24 +368,27 @@ a { color: var(--accent); }
           on the test tasks themselves, which favours them.</p>
 
         <h2 id="m-k">How many networks</h2>
-        <p>K was searched from 12 to 40 and refined to a step of 1. Held-out prediction rises to a plateau at 18–21
-          and falls after; the release uses K = 21, the best on held-out contrasts. The search was run on the earlier
-          structure; it has not been repeated for this one.</p>
+        <p>K was searched again on the audited corpus, from 12 to 48. Held-out prediction rises to about 30 and is
+          flat after; the release uses K = 30, the best on held-out contrasts and tied for best on held-out tasks.</p>
         <div class="tablewrap"><table>
-          <thead><tr><th>K</th><th>Held-out log-likelihood per peak</th><th>Perplexity</th></tr></thead>
+          <thead><tr><th>K</th><th>Held-out contrasts, log-likelihood per peak</th><th>Held-out tasks, gain per peak</th></tr></thead>
           <tbody>
-            <tr><td class="num">18</td><td class="num">−9.84763</td><td class="num">18,914</td></tr>
-            <tr><td class="num">20</td><td class="num">−9.84692</td><td class="num">18,900</td></tr>
-            <tr class="hl"><td class="num">21</td><td class="num">−9.84687</td><td class="num">18,899</td></tr>
-            <tr><td>Average map only</td><td class="num">−9.9868</td><td class="num">21,730</td></tr>
+            <tr><td class="num">12</td><td class="num">−9.776</td><td class="num">0.187</td></tr>
+            <tr><td class="num">16</td><td class="num">−9.764</td><td class="num">0.206</td></tr>
+            <tr><td class="num">21</td><td class="num">−9.757</td><td class="num">0.207</td></tr>
+            <tr><td class="num">24</td><td class="num">−9.754</td><td class="num">0.213</td></tr>
+            <tr><td class="num">27</td><td class="num">−9.754</td><td class="num">0.212</td></tr>
+            <tr class="hl"><td class="num">30</td><td class="num">−9.751</td><td class="num">0.216</td></tr>
+            <tr><td class="num">35</td><td class="num">−9.752</td><td class="num">0.216</td></tr>
+            <tr><td class="num">48</td><td class="num">−9.755</td><td class="num">0.215</td></tr>
           </tbody>
         </table></div>
-        <p>The differences inside the plateau are smaller than the differences between random starts at one K, so 21
-          is a choice within a plateau, not a sharp optimum.</p>
+        <p>The gain over K = 21 is small (0.005 per peak on held-out contrasts, 0.009 on held-out tasks), and 24 to 35
+          are close to one another, so 30 is a choice on a plateau, not a sharp optimum.</p>
 
         <h2 id="m-stability">Stability</h2>
         <p>EM finds a local optimum, so fits from different random starts differ. Three fitting procedures were compared
-          on the same 20 starts at K = 21:</p>
+          on the same 20 starts at K = 21, the previous release's K (the comparison was not repeated at K = 30):</p>
         <div class="tablewrap"><table>
           <thead><tr><th></th><th>Plain EM</th><th>Annealed EM</th><th>Gibbs, then EM</th></tr></thead>
           <tbody>
@@ -426,7 +429,7 @@ a { color: var(--accent); }
             uniformity test shows where its contrasts activate consistently; the association test, where activation is
             more likely than in other contrasts (the reverse-inference map Neurosynth showed). Positive z at FDR
             q &lt; 0.05. Where
-            it disagrees with the model's maps, the model's networks have reshaped the pattern; at K = 21 one network
+            it disagrees with the model's maps, the model's networks have reshaped the pattern; at K = 30, as at K = 21, one network
             covers the whole striatum and peaks ventrally, so tasks with dorsal-striatum peaks get ventral-centred
             model maps.</li>
           <li><b>Credited mass</b> is how much data the map actually rests on, in contrast-equivalents: each contrast's
@@ -445,7 +448,7 @@ a { color: var(--accent); }
             regulation, gambling decision and outcome) are still pending.</li>
           <li><b>Thin constructs are less reliable.</b> Reliability tracks credited mass; 208 constructs are tagged only
             within one task, so their maps cannot separate the construct from that task.</li>
-          <li><b>One network covers the striatum.</b> At K = 21 dorsal and ventral striatum are not separated, so
+          <li><b>One network covers the striatum.</b> At K = 30, as at K = 21, dorsal and ventral striatum are not separated, so
             constructs with dorsal-striatum peaks get ventral-centred maps; compare with the MKDAChi2 maps.</li>
           <li><b>Claims are not ground truth.</b> A map shows where peaks fall for contrasts said to measure the
             construct, so it inherits the field's usage, including loose or contested usage.</li>
